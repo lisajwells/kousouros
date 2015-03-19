@@ -7,3 +7,8 @@ Template: daisychain-premium
 */
 
 @import url('../daisychain-premium/style.css');
+
+.header-content {
+  background-color: #14343a;
+  width: 100%;
+}
