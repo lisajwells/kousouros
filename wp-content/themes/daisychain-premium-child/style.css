@@ -29,3 +29,13 @@ Template: daisychain-premium
 #main-content-inner {
   border-top: none;
 }
+
+.menu-box {
+  background-color: #000;
+}
+
+.menu {
+  margin: 0 auto;
+  max-width: 1012px;
+  overflow: auto;
+}
