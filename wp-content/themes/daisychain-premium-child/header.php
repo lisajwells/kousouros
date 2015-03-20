@@ -77,7 +77,7 @@ foreach ($daisychain_options as $value) {
 
   <div id="main-content">  
   <div id="main-content-inner">
-    <div class="line-top"></div>
+    <!--<div class="line-top"></div> -->
 <?php if ( !is_page_template('template-landing-page.php') ) { ?>
     <div class="menu-box">
 <?php wp_nav_menu( array( 'menu_id'=>'nav', 'theme_location'=>'main-navigation' ) ); ?>

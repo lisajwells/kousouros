@@ -8,12 +8,26 @@ Template: daisychain-premium
 
 @import url('../daisychain-premium/style.css');
 
+.clearfix {
+  overflow: auto;
+}
+
 #header,
 #footer {  
+  background-color: #14343a;
   max-width: none;
+  overflow: auto;
 } 
 
 .header-content {
-  background-color: #14343a;
   width: 100%;
+  padding: 1.2em 0;
+  display: block;
+  margin: 0 auto;
+  float: none;
+  max-width: 1012px;
+}
+
+#main-content-inner {
+  border-top: none;
 }
