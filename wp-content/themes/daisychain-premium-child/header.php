@@ -73,10 +73,7 @@ foreach ($daisychain_options as $value) {
 <?php get_search_form(); ?>
 <?php } ?>
     </div>
-  </header> <!-- end of header -->
 
-  <div id="main-content">  
-  <div id="main-content-inner">
     <!--<div class="line-top"></div> -->
 <?php if ( !is_page_template('template-landing-page.php') ) { ?>
     <div class="menu-box">
@@ -94,4 +91,7 @@ foreach ($daisychain_options as $value) {
     <div class="header-image"><img src="<?php header_image(); ?>" alt="<?php bloginfo( 'name' ); ?>" /></div>
 <?php } ?>
 <?php } ?>  
+  </header> <!-- end of header -->
+  <div id="main-content">  
+  <div id="main-content-inner">
     <div id="content">
