@@ -35,8 +35,8 @@ Template: daisychain-premium
 }
 
 .menu-main-menu-container {
+  border-left: solid 1px #565f61;
   margin: 0 auto;
   max-width: 1012px;
   overflow: auto;
-  border-left: solid 1px #565f61;
 }
