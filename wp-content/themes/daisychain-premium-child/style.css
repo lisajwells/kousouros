@@ -29,9 +29,13 @@ Template: daisychain-premium
 #main-content-inner {
   border-top: none;
 }
+#content {
+  width: 100%;         
+}
 
 .menu-box {
   background-color: #000;
+  position: static;
 }
 
 .menu-main-menu-container {
@@ -40,3 +44,6 @@ Template: daisychain-premium
   max-width: 1012px;
   overflow: auto;
 }
+#wrapper .sticky-nav {
+  position: static;
+}   
