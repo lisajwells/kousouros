@@ -36,6 +36,7 @@ Template: daisychain-premium
 .menu-box {
   background-color: #000;
   position: static;
+  border-bottom: none;
 }
 
 .menu-main-menu-container {

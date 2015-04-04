@@ -2,7 +2,7 @@
 /**
  * The page template file.
  * Template Name: Kousouros1 Page
- * Description: A Page Template for non blogging.
+ * Description: A Home Page Template for non blogging.
 */
 
 get_header(); ?>
