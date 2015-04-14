@@ -24,7 +24,8 @@ foreach ($daisychain_options as $value) {
 } ?>
   <meta charset="<?php bloginfo( 'charset' ); ?>" /> 
   <meta name="viewport" content="width=device-width" />  
-<?php if ( ! function_exists( '_wp_render_title_tag' ) ) { ?><title><?php wp_title( '|', true, 'right' ); ?></title><?php } ?>  
+<?php if ( ! function_exists( '_wp_render_title_tag' ) ) { ?><title><?php wp_title( '|', true, 'right' ); ?></title><?php } ?> 
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"> 
 <?php if ($daisychain_favicon_url != ''){ ?>
 	<link rel="shortcut icon" href="<?php echo esc_url($daisychain_favicon_url); ?>" />
 <?php } ?>

@@ -82,7 +82,7 @@ function update($new_instance, $old_instance) {
 		$instance = $old_instance;
     $instance['icon'] = $new_instance['icon'];
     $instance['title'] = sanitize_text_field($new_instance['title']);
-		$instance['content'] = esc_textarea($new_instance['content']);
+		$instance['content'] = $new_instance['content'];
 	return $instance;
 	}
 

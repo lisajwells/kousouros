@@ -14,10 +14,13 @@ Template: daisychain-premium
 
 #header,
 #footer {  
-  background-color: #14343a;
   max-width: none;
   overflow: auto;
 } 
+#brand {
+  background-color: #14343a;
+  
+}
 
 .header-content {
   padding: 1.2em 0;

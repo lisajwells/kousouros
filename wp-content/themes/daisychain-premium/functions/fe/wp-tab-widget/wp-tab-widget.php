@@ -492,10 +492,8 @@ class daisychain_widget extends WP_Widget {
 add_action( 'widgets_init', create_function( '', 'register_widget( "daisychain_widget" );' ) );
 
 // unregister MTS Tabs Widget and Tabs Widget v2
-add_action('widgets_init', 'unregister_mts_tabs_widget', 100);
-function unregister_mts_tabs_widget() {
+add_action('widgets_init', 'daisychain_unregister_mts_tabs_widget', 100);
+function daisychain_unregister_mts_tabs_widget() {
     unregister_widget('mts_Widget_Tabs_2');
     unregister_widget('mts_Widget_Tabs');
-}
-
-?>
+} ?>

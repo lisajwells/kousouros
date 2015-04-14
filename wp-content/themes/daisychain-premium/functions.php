@@ -10,7 +10,7 @@
  *  
 */    
 $daisychain_themename = "DaisyChain Premium";			//Theme Name
-$daisychain_themever = "1.1.0";									//Theme version
+$daisychain_themever = "1.1.1";									//Theme version
 $daisychain_shortname = "daisychain";							//Shortname 
 $daisychain_manualurl = get_template_directory_uri() . '/docs/documentation.html';	//Manual Url
 // Set path to DaisyChain Framework and theme specific functions
@@ -408,7 +408,6 @@ $plugins = array(
 		array(
 			'name'     => 'Breadcrumb NavXT',
 			'slug'     => 'breadcrumb-navxt',
-			'source'   => get_template_directory_uri() . '/plugins/breadcrumb-navxt.zip',
 			'required' => false,
 		),
     array(

@@ -9,6 +9,17 @@ Changelog Legend:
 
 ----
 
+(07/04/2015) - Update - Version 1.1.1
+
+[+] Added support for the "pingback" link in <head> section.
+[*] Updated 404 Page and No Search Results templates (added search form).
+[*] Updated Czech and Spanish translations.
+[*] Enabled using of HTML elements in the DaisyChain Info-Box widget.
+[*] Changed the source of the Breadcrumb NavXT recommended plugin from the private repository to the WordPress.org repository.
+[!] Fixed conflict with WP Tab Widget plugin.
+
+----
+
 (01/02/2015) - Update - Version 1.1.0
 
 [+] Added support for the Title Tag feature.

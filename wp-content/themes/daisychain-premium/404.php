@@ -11,6 +11,7 @@ get_header(); ?>
     </div>
     <div class="entry-content">
       <p><?php _e( 'Apologies, but no results were found for your request. Perhaps searching will help you to find a related content.', 'daisychain' ); ?></p>
+<?php get_search_form(); ?>
     </div>  
   </div> <!-- end of content -->
 <?php get_sidebar(); ?>

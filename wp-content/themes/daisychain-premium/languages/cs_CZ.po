@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DaisyChain 1.0\n"
 "POT-Creation-Date: 2014-06-27 07:44+0100\n"
-"PO-Revision-Date: 2014-06-27 07:53+0100\n"
+"PO-Revision-Date: 2015-04-03 10:05+0100\n"
 "Last-Translator: \n"
 "Language-Team: Tomas Toman <webdesign@tomastoman.cz>\n"
 "Language: Čeština\n"
@@ -276,7 +276,7 @@ msgstr "Novější komentáře &rarr;"
 
 #: comments.php:37
 msgid "Comments are closed."
-msgstr "Přidávání komentářů není povoleno."
+msgstr "Přidávání komentářů bylo ukončeno."
 
 #: comments.php:42
 msgid "Your name"
@@ -308,7 +308,7 @@ msgstr "Horní navigace v záhlaví"
 
 #: functions.php:140
 msgid "Right Sidebar"
-msgstr "Hlavní postranní sloupec"
+msgstr "Pravý postranní sloupec"
 
 #: functions.php:142
 msgid "Right sidebar which appears on all posts and pages."
@@ -412,7 +412,7 @@ msgstr "(Upravit)"
 
 #: functions.php:309
 msgid "(Post author)"
-msgstr "(Autor)"
+msgstr "(Autor článku)"
 
 #: functions.php:315
 #, php-format

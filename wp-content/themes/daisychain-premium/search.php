@@ -42,6 +42,7 @@ echo paginate_links( array(
 <?php daisychain_get_breadcrumb(); ?>
     </div>
     <p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'daisychain' ); ?></p>
+<?php get_search_form(); ?>
 <?php endif; ?>  
   </div> <!-- end of content -->
 <?php get_sidebar(); ?>
