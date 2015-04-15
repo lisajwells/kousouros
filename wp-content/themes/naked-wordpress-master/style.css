@@ -481,7 +481,7 @@ header .gravatar {
   float: right;
 }
 header #brand {
-  margin: 0;
+  margin:1em 0;
 }
 header #brand h1 {
   font-weight: 900;
@@ -491,7 +491,7 @@ header #brand h1 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  /*letter-spacing: 0.45em;*/
+  letter-spacing: 0.45em;
 }
 header #brand h1 a {
   color: #565656;
@@ -520,23 +520,6 @@ header nav ul li a {
   color: #888888;
   font-size: 14px;
 }
-
-header nav ul ul { /* this targets all sub menus */
-  display: none; /* hide all sub menus from view */
-  /*position: absolute;*/
- /* top: 30px;*/ /* this should be the same height as the top level menu -- height + padding + borders */
-}
-header nav ul ul li { /* this targets all submenu items */
-  float: none; /* overwriting our float up above */
-  /*width: 150px;*/ /* set to the width you want your sub menus to be. This needs to match the value we set below */
-}
-header nav ul ul li a { /* target all sub menu item links */
-  /*padding: 5px 10px;*/ /* give our sub menu links a nice button feel */
-}
-header nav ul li:hover > ul {
-  display: block; /* show sub menus when hovering over a parent */
-}
-
 /* Posts/Articles
 -------------------------------------------------------------- */
 article {
@@ -552,7 +535,7 @@ article .title {
   font-size: 3.8rem;
   font-weight: 400;
   text-align: center;
-  /*letter-spacing: 0.1em;*/
+  letter-spacing: 0.1em;
 }
 article .title a {
   text-decoration: none;
@@ -593,7 +576,7 @@ article .meta {
   font-size: 10px;
   font-size: 1rem;
   text-transform: uppercase;
-  /*letter-spacing: .9px;*/
+  letter-spacing: .9px;
 }
 article .meta div {
   margin:1px auto;
