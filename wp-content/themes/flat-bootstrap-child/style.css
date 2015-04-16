@@ -26,7 +26,10 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 div#site-branding {
   background-color: #14343a;
 }
-
+div#site-branding h1 {
+  font-size: 10px;
+  text-indent: -9999px;
+}
 
 /* Make the buttons square. This is just an example, remove it if you want. */
 .btn {
