@@ -23,6 +23,20 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
  * The best way to do this is to copy in the relevant section from the parent's style.css
  * file, change what you want, and remove the lines that you didn't change.
 */
+
+/* adjusting color --- reassigning our colors to their names */
+
+.darkmidnightblue, 
+.bg-darkmidnightblue {
+  background-color: #14343a;
+  color: #fff;
+}
+.color-darkmidnightblue {
+  color: #14343a;
+}
+
+/* hiding h1 in header with negative text indent */
+
 div#site-branding {
   background-color: #14343a;
 }

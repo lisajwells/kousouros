@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.1.1" created="2015-04-16 18:12" -->
+<!-- generator="WordPress/4.1.1" created="2015-04-16 21:19" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>The Law Office of James Kousouros &#124; Criminal Defense</title>
 	<link>http://localhost:8888/kousouros_law</link>
 	<description>Specializing in state and federal criminal defense in New York and throughout the country</description>
-	<pubDate>Thu, 16 Apr 2015 18:12:51 +0000</pubDate>
+	<pubDate>Thu, 16 Apr 2015 21:19:03 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:8888/kousouros_law</wp:base_site_url>
@@ -7881,9 +7881,26 @@
 		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
 		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1064</guid>
 		<description></description>
-		<content:encoded><![CDATA[<div class="section bg-gray"><div class="container">
-<a href="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-1200x4002.jpg"><img src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-1200x4002.jpg" alt="Image Alignment 1200x4002" width="1200" height="400" class="alignnone size-full wp-image-907" /></a>
-</div></div>]]></content:encoded>
+		<content:encoded><![CDATA[<div class="section bg-gray">
+<div class="container"><img class="alignnone size-full wp-image-907" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-1200x4002.jpg" alt="Image Alignment 1200x4002" width="1200" height="400" /></div>
+</div>
+<div class="section">
+<div class="container-fluid">
+<p style="text-align: center;"><strong>Specializing in state and federal criminal defense in New York and throughout the country</strong></p>
+
+<div class="row">
+<div class="col-md-2 col-md-offset-2"><img class="alignnone size-full wp-image-904 aligncenter" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-150x150.jpg" alt="Image Alignment 150x150" width="150" height="150" /></div>
+<div class="col-md-2"><img class="alignnone size-full wp-image-904" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-150x150.jpg" alt="Image Alignment 150x150" width="150" height="150" /></div>
+<div class="col-md-2"><img class="alignnone size-full wp-image-904" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-150x150.jpg" alt="Image Alignment 150x150" width="150" height="150" /></div>
+<div class="col-md-2"><img class="alignnone size-full wp-image-904" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-150x150.jpg" alt="Image Alignment 150x150" width="150" height="150" /></div>
+</div>
+<!-- .row -->
+
+</div>
+<!-- .container -->
+
+</div>
+<!-- .section -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>1064</wp:post_id>
 		<wp:post_date>2013-03-15 17:56:11</wp:post_date>
@@ -8388,171 +8405,6 @@ It contains child pages.]]></content:encoded>
 	</item>
 	<item>
 		<title></title>
-		<link>http://localhost:8888/kousouros_law/1374/</link>
-		<pubDate>Fri, 10 Apr 2015 22:13:05 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/kousouros_law/?p=1374</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1374</wp:post_id>
-		<wp:post_date>2015-04-10 18:13:05</wp:post_date>
-		<wp:post_date_gmt>2015-04-10 22:13:05</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>1374</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>1088</wp:post_parent>
-		<wp:menu_order>18</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[1342]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[1094]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title></title>
-		<link>http://localhost:8888/kousouros_law/1375/</link>
-		<pubDate>Fri, 10 Apr 2015 22:13:06 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/kousouros_law/?p=1375</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1375</wp:post_id>
-		<wp:post_date>2015-04-10 18:13:06</wp:post_date>
-		<wp:post_date_gmt>2015-04-10 22:13:06</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>1375</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>1094</wp:post_parent>
-		<wp:menu_order>19</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[1374]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[1102]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title></title>
-		<link>http://localhost:8888/kousouros_law/1377/</link>
-		<pubDate>Fri, 10 Apr 2015 22:13:05 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/kousouros_law/?p=1377</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1377</wp:post_id>
-		<wp:post_date>2015-04-10 18:13:05</wp:post_date>
-		<wp:post_date_gmt>2015-04-10 22:13:05</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>1377</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>1088</wp:post_parent>
-		<wp:menu_order>17</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[1342]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[1090]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title></title>
 		<link>http://localhost:8888/kousouros_law/1403/</link>
 		<pubDate>Thu, 16 Apr 2015 17:47:17 +0000</pubDate>
 		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
@@ -8603,6 +8455,40 @@ It contains child pages.]]></content:encoded>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Firm Overview</title>
+		<link>http://localhost:8888/kousouros_law/the-practice/firm-overview/</link>
+		<pubDate>Thu, 16 Apr 2015 17:48:12 +0000</pubDate>
+		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/kousouros_law/?page_id=1404</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1404</wp:post_id>
+		<wp:post_date>2015-04-16 13:48:12</wp:post_date>
+		<wp:post_date_gmt>2015-04-16 17:48:12</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>firm-overview</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>1086</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_subtitle</wp:meta_key>
 			<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
@@ -8662,6 +8548,40 @@ It contains child pages.]]></content:encoded>
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Services Provided</title>
+		<link>http://localhost:8888/kousouros_law/the-practice/services-provided/</link>
+		<pubDate>Thu, 16 Apr 2015 17:50:32 +0000</pubDate>
+		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/kousouros_law/?page_id=1408</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1408</wp:post_id>
+		<wp:post_date>2015-04-16 13:50:32</wp:post_date>
+		<wp:post_date_gmt>2015-04-16 17:50:32</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>services-provided</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>1086</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_subtitle</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title></title>
 		<link>http://localhost:8888/kousouros_law/1409/</link>
 		<pubDate>Thu, 16 Apr 2015 17:50:32 +0000</pubDate>
@@ -8717,6 +8637,40 @@ It contains child pages.]]></content:encoded>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>The Process</title>
+		<link>http://localhost:8888/kousouros_law/the-practice/the-process/</link>
+		<pubDate>Thu, 16 Apr 2015 17:52:33 +0000</pubDate>
+		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/kousouros_law/?page_id=1411</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1411</wp:post_id>
+		<wp:post_date>2015-04-16 13:52:33</wp:post_date>
+		<wp:post_date_gmt>2015-04-16 17:52:33</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>the-process</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>1086</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_subtitle</wp:meta_key>
 			<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
@@ -9188,6 +9142,73 @@ It contains child pages.]]></content:encoded>
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Many Categories</title>
+		<link>http://localhost:8888/kousouros_law/many-categories/</link>
+		<pubDate>Fri, 02 Nov 2012 07:00:03 +0000</pubDate>
+		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
+		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/2007/11/24/many-categories/</guid>
+		<description></description>
+		<content:encoded><![CDATA[This post has many categories.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>168</wp:post_id>
+		<wp:post_date>2012-11-02 02:00:03</wp:post_date>
+		<wp:post_date_gmt>2012-11-02 07:00:03</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>many-categories</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="alignment"><![CDATA[Alignment]]></category>
+		<category domain="category" nicename="post-format-aside"><![CDATA[Aside]]></category>
+		<category domain="category" nicename="post-format-audio"><![CDATA[Audio]]></category>
+		<category domain="category" nicename="captions"><![CDATA[Captions]]></category>
+		<category domain="category" nicename="post-format-chat"><![CDATA[Chat]]></category>
+		<category domain="category" nicename="child-category-01"><![CDATA[Child Category 01]]></category>
+		<category domain="category" nicename="child-category-02"><![CDATA[Child Category 02]]></category>
+		<category domain="category" nicename="child-category-03"><![CDATA[Child Category 03]]></category>
+		<category domain="category" nicename="child-category-04"><![CDATA[Child Category 04]]></category>
+		<category domain="category" nicename="child-category-05"><![CDATA[Child Category 05]]></category>
+		<category domain="category" nicename="codex"><![CDATA[Codex]]></category>
+		<category domain="category" nicename="comments"><![CDATA[Comments]]></category>
+		<category domain="category" nicename="content"><![CDATA[Content]]></category>
+		<category domain="category" nicename="corner-case"><![CDATA[Corner Case]]></category>
+		<category domain="category" nicename="embeds"><![CDATA[Embeds]]></category>
+		<category domain="category" nicename="excerpt"><![CDATA[Excerpt]]></category>
+		<category domain="category" nicename="featured-images"><![CDATA[Featured Images]]></category>
+		<category domain="category" nicename="formatting"><![CDATA[Formatting]]></category>
+		<category domain="category" nicename="post-format-gallery"><![CDATA[Gallery]]></category>
+		<category domain="category" nicename="grandchild-category"><![CDATA[Grandchild Category]]></category>
+		<category domain="category" nicename="images"><![CDATA[Images]]></category>
+		<category domain="category" nicename="jetpack"><![CDATA[Jetpack]]></category>
+		<category domain="category" nicename="post-format-link"><![CDATA[Link]]></category>
+		<category domain="category" nicename="lists"><![CDATA[Lists]]></category>
+		<category domain="category" nicename="markup"><![CDATA[Markup]]></category>
+		<category domain="category" nicename="more-tag"><![CDATA[More Tag]]></category>
+		<category domain="category" nicename="parent-category"><![CDATA[Parent Category]]></category>
+		<category domain="category" nicename="password"><![CDATA[Password]]></category>
+		<category domain="category" nicename="pingbacks"><![CDATA[Pingbacks]]></category>
+		<category domain="category" nicename="post-formats"><![CDATA[Post Formats]]></category>
+		<category domain="category" nicename="post-format-quote"><![CDATA[Quote]]></category>
+		<category domain="category" nicename="shortcodes"><![CDATA[Shortcodes]]></category>
+		<category domain="category" nicename="standard"><![CDATA[Standard]]></category>
+		<category domain="category" nicename="post-format-status"><![CDATA[Status]]></category>
+		<category domain="category" nicename="titles"><![CDATA[Titles]]></category>
+		<category domain="category" nicename="trackbacks"><![CDATA[Trackbacks]]></category>
+		<category domain="category" nicename="twitter"><![CDATA[Twitter]]></category>
+		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+		<category domain="category" nicename="unpublished"><![CDATA[Unpublished]]></category>
+		<category domain="category" nicename="post-format-video"><![CDATA[Video]]></category>
+		<category domain="category" nicename="videopress"><![CDATA[VideoPress]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title>Scheduled</title>
 		<link>http://localhost:8888/kousouros_law/scheduled/</link>
 		<pubDate>Sat, 01 Jan 2050 18:00:18 +0000</pubDate>
@@ -9215,6 +9236,93 @@ It should not be displayed by the theme.]]></content:encoded>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Post Format: Video</title>
+		<link>http://localhost:8888/kousouros_law/post-format-video/</link>
+		<pubDate>Sun, 02 Dec 2012 08:00:58 +0000</pubDate>
+		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
+		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/?p=582</guid>
+		<description></description>
+		<content:encoded><![CDATA[http://www.youtube.com/watch?v=nwe-H6l4beM
+
+The official music video of "Rise Up" from <a title="Eddy Music" href="http://eddymusic.com/" target="_blank">Eddy's</a> <a title="Eddy - Start An Uproar! EP" href="http://bit.ly/bVmAyI" target="_blank">Start An Uproar!</a> EP.
+
+Learn more about <a title="WordPress Embeds" href="http://codex.wordpress.org/Embeds" target="_blank">WordPress Embeds</a>.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>582</wp:post_id>
+		<wp:post_date>2012-12-02 02:00:58</wp:post_date>
+		<wp:post_date_gmt>2012-12-02 08:00:58</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>post-format-video</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="post-formats"><![CDATA[Post Formats]]></category>
+		<category domain="category" nicename="post-format-video"><![CDATA[Video]]></category>
+		<category domain="post_format" nicename="post-format-video"><![CDATA[Video]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[post-format-test-video]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_7338f2ed6983f1e8f5ec2aef019d9c39</wp:meta_key>
+			<wp:meta_value><![CDATA[<iframe width="610" height="343" src="http://www.youtube.com/embed/nwe-H6l4beM?feature=oembed" frameborder="0" allowfullscreen></iframe>]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Post Format: Audio</title>
+		<link>http://localhost:8888/kousouros_law/post-format-audio/</link>
+		<pubDate>Sat, 01 Dec 2012 07:00:44 +0000</pubDate>
+		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
+		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/?p=587</guid>
+		<description></description>
+		<content:encoded><![CDATA[Link:
+
+<a href="http://wptest.io/demo/wp-content/uploads/2013/03/Eddy-Need-Remix.mp3">Eddy - Need (Remix)</a>
+
+Shortcode:
+
+[audio http://wptest.io/demo/wp-content/uploads/2013/03/Eddy-Need-Remix.mp3]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>587</wp:post_id>
+		<wp:post_date>2012-12-01 01:00:44</wp:post_date>
+		<wp:post_date_gmt>2012-12-01 07:00:44</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>post-format-audio</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="post-format-audio"><![CDATA[Audio]]></category>
+		<category domain="post_format" nicename="post-format-audio"><![CDATA[Audio]]></category>
+		<category domain="category" nicename="post-formats"><![CDATA[Post Formats]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[post-format-test-audio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>enclosure</wp:meta_key>
+			<wp:meta_value><![CDATA[http://wptest.io/demo/wp-content/uploads/2013/03/Eddy-Need-Remix.mp3
+11039151
+audio/mpeg
+]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -9316,7 +9424,7 @@ It should not be displayed by the theme.]]></content:encoded>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>child-page-01</wp:post_name>
-		<wp:status>publish</wp:status>
+		<wp:status>trash</wp:status>
 		<wp:post_parent>1088</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
@@ -9329,6 +9437,14 @@ It should not be displayed by the theme.]]></content:encoded>
 		<wp:postmeta>
 			<wp:meta_key>_wp_page_template</wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
+			<wp:meta_value><![CDATA[1429208770]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -9346,7 +9462,7 @@ It should not be displayed by the theme.]]></content:encoded>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>closed</wp:ping_status>
 		<wp:post_name>child-page-02</wp:post_name>
-		<wp:status>publish</wp:status>
+		<wp:status>trash</wp:status>
 		<wp:post_parent>1088</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
@@ -9359,6 +9475,14 @@ It should not be displayed by the theme.]]></content:encoded>
 		<wp:postmeta>
 			<wp:meta_key>_wp_page_template</wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
+			<wp:meta_value><![CDATA[1429208770]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -9378,7 +9502,7 @@ And, just for fun, it also contains a child page (aka. a grandchild page).]]></c
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>closed</wp:ping_status>
 		<wp:post_name>child-page-03</wp:post_name>
-		<wp:status>publish</wp:status>
+		<wp:status>trash</wp:status>
 		<wp:post_parent>1088</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
@@ -9391,6 +9515,14 @@ And, just for fun, it also contains a child page (aka. a grandchild page).]]></c
 		<wp:postmeta>
 			<wp:meta_key>_wp_page_template</wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
+			<wp:meta_value><![CDATA[1429208770]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -9408,7 +9540,7 @@ And, just for fun, it also contains a child page (aka. a grandchild page).]]></c
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>child-page-04</wp:post_name>
-		<wp:status>publish</wp:status>
+		<wp:status>trash</wp:status>
 		<wp:post_parent>1088</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
@@ -9421,6 +9553,14 @@ And, just for fun, it also contains a child page (aka. a grandchild page).]]></c
 		<wp:postmeta>
 			<wp:meta_key>_wp_page_template</wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
+			<wp:meta_value><![CDATA[1429208783]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -9438,7 +9578,7 @@ And, just for fun, it also contains a child page (aka. a grandchild page).]]></c
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>child-page-05</wp:post_name>
-		<wp:status>publish</wp:status>
+		<wp:status>trash</wp:status>
 		<wp:post_parent>1088</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
@@ -9451,6 +9591,14 @@ And, just for fun, it also contains a child page (aka. a grandchild page).]]></c
 		<wp:postmeta>
 			<wp:meta_key>_wp_page_template</wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
+			<wp:meta_value><![CDATA[1429208783]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -9468,7 +9616,7 @@ And, just for fun, it also contains a child page (aka. a grandchild page).]]></c
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>grandchild-page</wp:post_name>
-		<wp:status>publish</wp:status>
+		<wp:status>trash</wp:status>
 		<wp:post_parent>1094</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type>page</wp:post_type>
@@ -9482,107 +9630,13 @@ And, just for fun, it also contains a child page (aka. a grandchild page).]]></c
 			<wp:meta_key>_wp_page_template</wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
 		</wp:postmeta>
-	</item>
-	<item>
-		<title>Firm Overview</title>
-		<link>http://localhost:8888/kousouros_law/the-practice/firm-overview/</link>
-		<pubDate>Thu, 16 Apr 2015 17:48:12 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/kousouros_law/?page_id=1404</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1404</wp:post_id>
-		<wp:post_date>2015-04-16 13:48:12</wp:post_date>
-		<wp:post_date_gmt>2015-04-16 17:48:12</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>firm-overview</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>1086</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>page</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
 		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_wp_page_template</wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_subtitle</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Services Provided</title>
-		<link>http://localhost:8888/kousouros_law/the-practice/services-provided/</link>
-		<pubDate>Thu, 16 Apr 2015 17:50:32 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/kousouros_law/?page_id=1408</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1408</wp:post_id>
-		<wp:post_date>2015-04-16 13:50:32</wp:post_date>
-		<wp:post_date_gmt>2015-04-16 17:50:32</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>services-provided</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>1086</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>page</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_page_template</wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_subtitle</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>The Process</title>
-		<link>http://localhost:8888/kousouros_law/the-practice/the-process/</link>
-		<pubDate>Thu, 16 Apr 2015 17:52:33 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/kousouros_law/?page_id=1411</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1411</wp:post_id>
-		<wp:post_date>2015-04-16 13:52:33</wp:post_date>
-		<wp:post_date_gmt>2015-04-16 17:52:33</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>the-process</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>1086</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>page</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_page_template</wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_subtitle</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
+			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
+			<wp:meta_value><![CDATA[1429208770]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -9835,6 +9889,51 @@ This is typically done by placing the permalink on the post date.]]></content:en
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
+	</item>
+	<item>
+		<title>No Content</title>
+		<link>http://localhost:8888/kousouros_law/no-content/</link>
+		<pubDate>Sun, 06 Jan 2013 15:39:56 +0000</pubDate>
+		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
+		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/2007/09/04/this-post-has-no-body/</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>134</wp:post_id>
+		<wp:post_date>2013-01-06 09:39:56</wp:post_date>
+		<wp:post_date_gmt>2013-01-06 15:39:56</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>no-content</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="content"><![CDATA[Content]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[this-post-has-no-body]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:comment>
+			<wp:comment_id>30</wp:comment_id>
+			<wp:comment_author><![CDATA[Chris Ames]]></wp:comment_author>
+			<wp:comment_author_email>yo@chrisam.es</wp:comment_author_email>
+			<wp:comment_author_url>http://chrisam.es</wp:comment_author_url>
+			<wp:comment_author_IP>24.126.245.62</wp:comment_author_IP>
+			<wp:comment_date>2013-03-14 12:35:07</wp:comment_date>
+			<wp:comment_date_gmt>2013-03-14 17:35:07</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Having no content in the post should have no adverse effects on the layout or functionality.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
 	</item>
 	<item>
 		<title>Comments</title>
@@ -10544,73 +10643,6 @@ There should be no comment reply form or any pingbacks and trackbacks listed.]]>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Many Categories</title>
-		<link>http://localhost:8888/kousouros_law/many-categories/</link>
-		<pubDate>Fri, 02 Nov 2012 07:00:03 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/2007/11/24/many-categories/</guid>
-		<description></description>
-		<content:encoded><![CDATA[This post has many categories.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>168</wp:post_id>
-		<wp:post_date>2012-11-02 02:00:03</wp:post_date>
-		<wp:post_date_gmt>2012-11-02 07:00:03</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>many-categories</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="alignment"><![CDATA[Alignment]]></category>
-		<category domain="category" nicename="post-format-aside"><![CDATA[Aside]]></category>
-		<category domain="category" nicename="post-format-audio"><![CDATA[Audio]]></category>
-		<category domain="category" nicename="captions"><![CDATA[Captions]]></category>
-		<category domain="category" nicename="post-format-chat"><![CDATA[Chat]]></category>
-		<category domain="category" nicename="child-category-01"><![CDATA[Child Category 01]]></category>
-		<category domain="category" nicename="child-category-02"><![CDATA[Child Category 02]]></category>
-		<category domain="category" nicename="child-category-03"><![CDATA[Child Category 03]]></category>
-		<category domain="category" nicename="child-category-04"><![CDATA[Child Category 04]]></category>
-		<category domain="category" nicename="child-category-05"><![CDATA[Child Category 05]]></category>
-		<category domain="category" nicename="codex"><![CDATA[Codex]]></category>
-		<category domain="category" nicename="comments"><![CDATA[Comments]]></category>
-		<category domain="category" nicename="content"><![CDATA[Content]]></category>
-		<category domain="category" nicename="corner-case"><![CDATA[Corner Case]]></category>
-		<category domain="category" nicename="embeds"><![CDATA[Embeds]]></category>
-		<category domain="category" nicename="excerpt"><![CDATA[Excerpt]]></category>
-		<category domain="category" nicename="featured-images"><![CDATA[Featured Images]]></category>
-		<category domain="category" nicename="formatting"><![CDATA[Formatting]]></category>
-		<category domain="category" nicename="post-format-gallery"><![CDATA[Gallery]]></category>
-		<category domain="category" nicename="grandchild-category"><![CDATA[Grandchild Category]]></category>
-		<category domain="category" nicename="images"><![CDATA[Images]]></category>
-		<category domain="category" nicename="jetpack"><![CDATA[Jetpack]]></category>
-		<category domain="category" nicename="post-format-link"><![CDATA[Link]]></category>
-		<category domain="category" nicename="lists"><![CDATA[Lists]]></category>
-		<category domain="category" nicename="markup"><![CDATA[Markup]]></category>
-		<category domain="category" nicename="more-tag"><![CDATA[More Tag]]></category>
-		<category domain="category" nicename="parent-category"><![CDATA[Parent Category]]></category>
-		<category domain="category" nicename="password"><![CDATA[Password]]></category>
-		<category domain="category" nicename="pingbacks"><![CDATA[Pingbacks]]></category>
-		<category domain="category" nicename="post-formats"><![CDATA[Post Formats]]></category>
-		<category domain="category" nicename="post-format-quote"><![CDATA[Quote]]></category>
-		<category domain="category" nicename="shortcodes"><![CDATA[Shortcodes]]></category>
-		<category domain="category" nicename="standard"><![CDATA[Standard]]></category>
-		<category domain="category" nicename="post-format-status"><![CDATA[Status]]></category>
-		<category domain="category" nicename="titles"><![CDATA[Titles]]></category>
-		<category domain="category" nicename="trackbacks"><![CDATA[Trackbacks]]></category>
-		<category domain="category" nicename="twitter"><![CDATA[Twitter]]></category>
-		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
-		<category domain="category" nicename="unpublished"><![CDATA[Unpublished]]></category>
-		<category domain="category" nicename="post-format-video"><![CDATA[Video]]></category>
-		<category domain="category" nicename="videopress"><![CDATA[VideoPress]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>Post Format: Gallery</title>
 		<link>http://localhost:8888/kousouros_law/post-format-gallery/</link>
 		<pubDate>Mon, 10 Dec 2012 16:00:14 +0000</pubDate>
@@ -10889,93 +10921,6 @@ I really love this wallpaper. It makes me think fondly of <a title="Chris Ames"
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Post Format: Video</title>
-		<link>http://localhost:8888/kousouros_law/post-format-video/</link>
-		<pubDate>Sun, 02 Dec 2012 08:00:58 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/?p=582</guid>
-		<description></description>
-		<content:encoded><![CDATA[http://www.youtube.com/watch?v=nwe-H6l4beM
-
-The official music video of "Rise Up" from <a title="Eddy Music" href="http://eddymusic.com/" target="_blank">Eddy's</a> <a title="Eddy - Start An Uproar! EP" href="http://bit.ly/bVmAyI" target="_blank">Start An Uproar!</a> EP.
-
-Learn more about <a title="WordPress Embeds" href="http://codex.wordpress.org/Embeds" target="_blank">WordPress Embeds</a>.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>582</wp:post_id>
-		<wp:post_date>2012-12-02 02:00:58</wp:post_date>
-		<wp:post_date_gmt>2012-12-02 08:00:58</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>post-format-video</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="post-formats"><![CDATA[Post Formats]]></category>
-		<category domain="category" nicename="post-format-video"><![CDATA[Video]]></category>
-		<category domain="post_format" nicename="post-format-video"><![CDATA[Video]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[post-format-test-video]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_oembed_7338f2ed6983f1e8f5ec2aef019d9c39</wp:meta_key>
-			<wp:meta_value><![CDATA[<iframe width="610" height="343" src="http://www.youtube.com/embed/nwe-H6l4beM?feature=oembed" frameborder="0" allowfullscreen></iframe>]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Post Format: Audio</title>
-		<link>http://localhost:8888/kousouros_law/post-format-audio/</link>
-		<pubDate>Sat, 01 Dec 2012 07:00:44 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/?p=587</guid>
-		<description></description>
-		<content:encoded><![CDATA[Link:
-
-<a href="http://wptest.io/demo/wp-content/uploads/2013/03/Eddy-Need-Remix.mp3">Eddy - Need (Remix)</a>
-
-Shortcode:
-
-[audio http://wptest.io/demo/wp-content/uploads/2013/03/Eddy-Need-Remix.mp3]]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>587</wp:post_id>
-		<wp:post_date>2012-12-01 01:00:44</wp:post_date>
-		<wp:post_date_gmt>2012-12-01 07:00:44</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>post-format-audio</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="post-format-audio"><![CDATA[Audio]]></category>
-		<category domain="post_format" nicename="post-format-audio"><![CDATA[Audio]]></category>
-		<category domain="category" nicename="post-formats"><![CDATA[Post Formats]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[post-format-test-audio]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>enclosure</wp:meta_key>
-			<wp:meta_value><![CDATA[http://wptest.io/demo/wp-content/uploads/2013/03/Eddy-Need-Remix.mp3
-11039151
-audio/mpeg
-]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>Post Format: Image (Caption)</title>
 		<link>http://localhost:8888/kousouros_law/post-format-image-caption/</link>
 		<pubDate>Thu, 06 Dec 2012 12:00:19 +0000</pubDate>
@@ -11069,6 +11014,65 @@ Special characters in the post title have been known to cause issues with JavaSc
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt</title>
+		<link>http://localhost:8888/kousouros_law/non-breaking-text/</link>
+		<pubDate>Sat, 05 Jan 2013 18:00:59 +0000</pubDate>
+		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
+		<guid isPermaLink="false">http://wptest.io/demo/?p=877</guid>
+		<description></description>
+		<content:encoded><![CDATA[Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt
+
+A few things to check for:
+<ul>
+	<li>Non-breaking text in the title, content, and comments should have no adverse effects on layout or functionality.</li>
+	<li>Check the browser window / tab title.</li>
+	<li>If you are a plugin or widget developer, check that this text does not break anything.</li>
+</ul>
+The following CSS properties will help you support non-breaking text.
+<pre>-ms-word-wrap: break-word;
+word-wrap: break-word;</pre>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>877</wp:post_id>
+		<wp:post_date>2013-01-05 12:00:59</wp:post_date>
+		<wp:post_date_gmt>2013-01-05 18:00:59</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>non-breaking-text</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="comments"><![CDATA[Comments]]></category>
+		<category domain="category" nicename="content"><![CDATA[Content]]></category>
+		<category domain="category" nicename="titles"><![CDATA[Titles]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[non-breaking-tex]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:comment>
+			<wp:comment_id>31</wp:comment_id>
+			<wp:comment_author><![CDATA[Jared Erickson]]></wp:comment_author>
+			<wp:comment_author_email>jared@lessmade.com</wp:comment_author_email>
+			<wp:comment_author_url>http://jarederickson.com/</wp:comment_author_url>
+			<wp:comment_author_IP>24.126.245.62</wp:comment_author_IP>
+			<wp:comment_date>2013-03-14 13:07:19</wp:comment_date>
+			<wp:comment_date_gmt>2013-03-14 18:07:19</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Non-breaking text is my favorite!
+
+Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
+	</item>
+	<item>
 		<title>Post Format: Standard</title>
 		<link>http://localhost:8888/kousouros_law/post-format-standard/</link>
 		<pubDate>Tue, 11 Dec 2012 17:00:11 +0000</pubDate>
@@ -11160,6 +11164,53 @@ You will need to install <a title="Jetpack for WordPress" href="http://jetpack.
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Sticky</title>
+		<link>http://localhost:8888/kousouros_law/sticky/</link>
+		<pubDate>Mon, 07 Jan 2013 13:07:21 +0000</pubDate>
+		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
+		<guid isPermaLink="false">http://wptest.io/demo/?p=1241</guid>
+		<description></description>
+		<content:encoded><![CDATA[This is a sticky post.
+
+There are a few things to verify:
+<ul>
+	<li>The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the <code>.sticky</code> class if you are using the <a title="WordPress Codex post_class() Function" href="http://codex.wordpress.org/Function_Reference/post_class" target="_blank">post_class()</a> function to generate your post classes, which is a best practice.</li>
+	<li>They should show at the very top of the blog index page, even though they could be several posts back chronologically.</li>
+	<li>They should still show up again in their chronologically correct postion in time, but without the sticky indicator.</li>
+	<li>If you have a plugin or widget that lists popular posts or comments, make sure that this sticky post is not always at the top of those lists unless it really is popular.</li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1241</wp:post_id>
+		<wp:post_date>2013-01-07 07:07:21</wp:post_date>
+		<wp:post_date_gmt>2013-01-07 13:07:21</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>sticky</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>1</wp:is_sticky>
+		<category domain="category" nicename="sticky"><![CDATA[Sticky]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>standard_seo_post_level_layout</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>standard_link_url_field</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>standard_seo_post_meta_description</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title>Hello world!</title>
 		<link>http://localhost:8888/kousouros_law/hello-world/</link>
 		<pubDate>Tue, 17 Mar 2015 20:29:11 +0000</pubDate>
@@ -11191,51 +11242,6 @@ You will need to install <a title="Jetpack for WordPress" href="http://jetpack.
 			<wp:comment_date_gmt>2015-03-17 20:29:11</wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Hi, this is a comment.
 To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.]]></wp:comment_content>
-			<wp:comment_approved>1</wp:comment_approved>
-			<wp:comment_type></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
-	</item>
-	<item>
-		<title>No Content</title>
-		<link>http://localhost:8888/kousouros_law/no-content/</link>
-		<pubDate>Sun, 06 Jan 2013 15:39:56 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://wpthemetestdata.wordpress.com/2007/09/04/this-post-has-no-body/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>134</wp:post_id>
-		<wp:post_date>2013-01-06 09:39:56</wp:post_date>
-		<wp:post_date_gmt>2013-01-06 15:39:56</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>no-content</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="content"><![CDATA[Content]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[this-post-has-no-body]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>30</wp:comment_id>
-			<wp:comment_author><![CDATA[Chris Ames]]></wp:comment_author>
-			<wp:comment_author_email>yo@chrisam.es</wp:comment_author_email>
-			<wp:comment_author_url>http://chrisam.es</wp:comment_author_url>
-			<wp:comment_author_IP>24.126.245.62</wp:comment_author_IP>
-			<wp:comment_date>2013-03-14 12:35:07</wp:comment_date>
-			<wp:comment_date_gmt>2013-03-14 17:35:07</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Having no content in the post should have no adverse effects on the layout or functionality.]]></wp:comment_content>
 			<wp:comment_approved>1</wp:comment_approved>
 			<wp:comment_type></wp:comment_type>
 			<wp:comment_parent>0</wp:comment_parent>
@@ -11280,65 +11286,6 @@ Post Page 3]]></content:encoded>
 			<wp:meta_key>_wp_old_slug</wp:meta_key>
 			<wp:meta_value><![CDATA[layout-test]]></wp:meta_value>
 		</wp:postmeta>
-	</item>
-	<item>
-		<title>Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt</title>
-		<link>http://localhost:8888/kousouros_law/non-breaking-text/</link>
-		<pubDate>Sat, 05 Jan 2013 18:00:59 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?p=877</guid>
-		<description></description>
-		<content:encoded><![CDATA[Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt
-
-A few things to check for:
-<ul>
-	<li>Non-breaking text in the title, content, and comments should have no adverse effects on layout or functionality.</li>
-	<li>Check the browser window / tab title.</li>
-	<li>If you are a plugin or widget developer, check that this text does not break anything.</li>
-</ul>
-The following CSS properties will help you support non-breaking text.
-<pre>-ms-word-wrap: break-word;
-word-wrap: break-word;</pre>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>877</wp:post_id>
-		<wp:post_date>2013-01-05 12:00:59</wp:post_date>
-		<wp:post_date_gmt>2013-01-05 18:00:59</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>non-breaking-text</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="comments"><![CDATA[Comments]]></category>
-		<category domain="category" nicename="content"><![CDATA[Content]]></category>
-		<category domain="category" nicename="titles"><![CDATA[Titles]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[non-breaking-tex]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>31</wp:comment_id>
-			<wp:comment_author><![CDATA[Jared Erickson]]></wp:comment_author>
-			<wp:comment_author_email>jared@lessmade.com</wp:comment_author_email>
-			<wp:comment_author_url>http://jarederickson.com/</wp:comment_author_url>
-			<wp:comment_author_IP>24.126.245.62</wp:comment_author_IP>
-			<wp:comment_date>2013-03-14 13:07:19</wp:comment_date>
-			<wp:comment_date_gmt>2013-03-14 18:07:19</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Non-breaking text is my favorite!
-
-Super/Duper/Long/NonBreaking/Path/Name/To/A/File/That/Is/Way/Deep/Down/In/Some/Mysterious/Remote/Desolate/Part/Of/The/Operating/System/To/A/File/That/Just/So/Happens/To/Be/Strangely/Named/Supercalifragilisticexpialidocious.txt]]></wp:comment_content>
-			<wp:comment_approved>1</wp:comment_approved>
-			<wp:comment_type></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
 	</item>
 	<item>
 		<title>Text Alignment</title>
@@ -12033,53 +11980,6 @@ This is some text after the Tiled Gallery just to make sure that everything spac
 		<category domain="category" nicename="post-format-gallery"><![CDATA[Gallery]]></category>
 		<category domain="category" nicename="images"><![CDATA[Images]]></category>
 		<category domain="category" nicename="jetpack"><![CDATA[Jetpack]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>standard_seo_post_level_layout</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>standard_link_url_field</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>standard_seo_post_meta_description</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sticky</title>
-		<link>http://localhost:8888/kousouros_law/sticky/</link>
-		<pubDate>Mon, 07 Jan 2013 13:07:21 +0000</pubDate>
-		<dc:creator><![CDATA[kousouros_admin]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?p=1241</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a sticky post.
-
-There are a few things to verify:
-<ul>
-	<li>The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the <code>.sticky</code> class if you are using the <a title="WordPress Codex post_class() Function" href="http://codex.wordpress.org/Function_Reference/post_class" target="_blank">post_class()</a> function to generate your post classes, which is a best practice.</li>
-	<li>They should show at the very top of the blog index page, even though they could be several posts back chronologically.</li>
-	<li>They should still show up again in their chronologically correct postion in time, but without the sticky indicator.</li>
-	<li>If you have a plugin or widget that lists popular posts or comments, make sure that this sticky post is not always at the top of those lists unless it really is popular.</li>
-</ul>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1241</wp:post_id>
-		<wp:post_date>2013-01-07 07:07:21</wp:post_date>
-		<wp:post_date_gmt>2013-01-07 13:07:21</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>sticky</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>1</wp:is_sticky>
-		<category domain="category" nicename="sticky"><![CDATA[Sticky]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
