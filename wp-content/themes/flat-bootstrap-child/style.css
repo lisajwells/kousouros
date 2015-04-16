@@ -35,6 +35,15 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
   color: #14343a;
 }
 
+.darkgray, 
+.bg-darkgray {
+  background-color: #879298;
+}
+.color-darkgray {
+  color: #879298;
+}
+
+
 /* hiding h1 in header with negative text indent */
 
 div#site-branding {
@@ -62,6 +71,51 @@ div#site-branding h2 {
 /* Change the content header to dark blue. This is just an example. */
 .content-header {
 	background-color: #2980b9;
+}
+
+/* New button that is inverted (hollow) so works on any dark background */
+a.btn.btn-hollow,
+button.btn.btn-hollow {
+  color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+/*.btn-hollow:hover, a.btn.btn-hollow:hover {*/
+.btn-hollow:hover, 
+btn.btn-hollow:hover,
+button.btn.btn-hollow:hover {
+    color: #2f2f2f;
+    background-color: #fff
+}
+.white button.btn.btn-hollow, 
+.white .btn.btn-hollow, 
+.bg-white button.btn.btn-hollow, 
+.bg-white .btn.btn-hollow, 
+.offwhite button.btn.btn-hollow, 
+.offwhite .btn.btn-hollow, 
+.bg-offwhite button.btn.btn-hollow, 
+.bg-offwhite .btn.btn-hollow, 
+.lightgray button.btn.btn-hollow, 
+.lightgray .btn.btn-hollow, 
+.bg-lightgray button.btn.btn-hollow, 
+.bg-lightgray .btn.btn-hollow, 
+.gray button.btn.btn-hollow, 
+.gray .btn.btn-hollow, 
+.bg-gray button.btn.btn-hollow, 
+.bg-gray .btn.btn-hollow, 
+.darkgray button.btn.btn-hollow, 
+.darkgray .btn.btn-hollow,
+.bg-darkgray button.btn.btn-hollow, 
+.bg-darkgray .btn.btn-hollow {
+  color: #000;
+  border: 2px solid #fff;
+    background-color: transparent;
+}
+
+button.btn.btn-hollow:hover, 
+.btn.btn-hollow:hover {
+    color: #2f2f2f;
+    background-color: #fff;
 }
 
 /* PUT ANY NEW STYLES TO USE IN YOUR CONTENT AREAS HERE SO YOU CAN EASILY PASTE THIS

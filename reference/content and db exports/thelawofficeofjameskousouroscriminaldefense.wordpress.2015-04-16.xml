@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.1.1" created="2015-04-16 21:19" -->
+<!-- generator="WordPress/4.1.1" created="2015-04-16 22:45" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>The Law Office of James Kousouros &#124; Criminal Defense</title>
 	<link>http://localhost:8888/kousouros_law</link>
 	<description>Specializing in state and federal criminal defense in New York and throughout the country</description>
-	<pubDate>Thu, 16 Apr 2015 21:19:03 +0000</pubDate>
+	<pubDate>Thu, 16 Apr 2015 22:45:17 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:8888/kousouros_law</wp:base_site_url>
@@ -7886,9 +7886,9 @@
 </div>
 <div class="section">
 <div class="container-fluid">
-<p style="text-align: center;"><strong>Specializing in state and federal criminal defense in New York and throughout the country</strong></p>
+<p id="specializing" style="text-align: center;"><strong>Specializing in state and federal criminal defense in New York and throughout the country</strong></p>
 
-<div class="row">
+<div class="row" id="home-logos">
 <div class="col-md-2 col-md-offset-2"><img class="alignnone size-full wp-image-904 aligncenter" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-150x150.jpg" alt="Image Alignment 150x150" width="150" height="150" /></div>
 <div class="col-md-2"><img class="alignnone size-full wp-image-904" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-150x150.jpg" alt="Image Alignment 150x150" width="150" height="150" /></div>
 <div class="col-md-2"><img class="alignnone size-full wp-image-904" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-150x150.jpg" alt="Image Alignment 150x150" width="150" height="150" /></div>
@@ -7900,7 +7900,22 @@
 <!-- .container -->
 
 </div>
-<!-- .section -->]]></content:encoded>
+<!-- .section -->
+
+<div class="section bg-darkgray" id="home-testimonials"><div class="container">
+<h2>What clients are saying about James Kousouros</h2>
+<div class="row">
+<div class="col-md-4">
+<p>James Kousouros is proud to have earned a reputation throughout the legal community as an outstanding trial attorney and negotiator. But <strong>he is most proud of the gratitude and trust he has earned from his clients—</strong>a testament not only to the outcomes he has achieved, but to the relationships he has forged.</p>
+<a href="#" class="btn btn-hollow">Read More Testimonials</a>
+
+</div>
+<div class="col-md-2">The government accused me of millions of dollars of fraud</div>
+<div class="col-md-2">The government accused me of millions of dollars of fraud</div>
+<div class="col-md-2">The government accused me of millions of dollars of fraud</div>
+<div class="col-md-2">The government accused me of millions of dollars of fraud</div>
+</div><!-- .row -->
+</div></div><!-- .section --><!-- .container>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>1064</wp:post_id>
 		<wp:post_date>2013-03-15 17:56:11</wp:post_date>
