@@ -30,6 +30,13 @@ div#site-branding h1 {
   font-size: 10px;
   text-indent: -9999px;
 }
+div#site-branding h2 {
+  font-size: 10px;
+  text-indent: -9999px;
+}
+.custom-header-image {
+  margin: 0 0 0 35px;
+}
 
 /* Make the buttons square. This is just an example, remove it if you want. */
 .btn {
