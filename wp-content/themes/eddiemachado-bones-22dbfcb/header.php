@@ -50,7 +50,6 @@
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo content_url(); ?>/images/klawbanner3.png"></a>
-          <!-- img src="../../../wp-admin/images/klawbanner3.png" -->
 
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
