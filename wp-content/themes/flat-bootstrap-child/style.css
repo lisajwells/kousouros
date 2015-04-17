@@ -81,19 +81,31 @@ div#site-branding h2 {
 	background-color: #2980b9;
 }
 
-/* New button that is inverted (hollow), color white so works on any dark background */
+/* Button that is inverted (hollow), color white so works on any dark background */
 a.btn.btn-hollow,
 button.btn.btn-hollow {
   color: #fff;
     border: 2px solid #fff;
     background-color: transparent;
 }
+a.btn.btn-hollow-blackborder,
+button.btn.btn-hollow-blackborder {
+  color: #000;
+    border: 2px solid #000;
+    background-color: transparent;
+}
 /*.btn-hollow:hover, a.btn.btn-hollow:hover {*/
 .btn-hollow:hover, 
 btn.btn-hollow:hover,
 button.btn.btn-hollow:hover {
-    color: #2f2f2f;
-    background-color: #fff
+    color: #000;
+    background-color: #fff;
+}
+.btn-hollow-blackborder:hover, 
+btn.btn-hollow-blackborder:hover,
+button.btn.btn-hollow-blackborder:hover {
+    color: #000;
+    background-color: #879298;
 }
 .white button.btn.btn-hollow, 
 .white .btn.btn-hollow, 
@@ -119,11 +131,15 @@ button.btn.btn-hollow:hover {
   border: 2px solid #fff;
     background-color: transparent;
 }
-
 button.btn.btn-hollow:hover, 
 .btn.btn-hollow:hover {
     color: #2f2f2f;
     background-color: #fff;
+}
+button.btn.btn-hollow-blackborder:hover, 
+.btn.btn-hollow-blackborder:hover {
+    color: #2f2f2f;
+    background-color: #879298;
 }
 
 /* elemants i created */
@@ -148,9 +164,16 @@ button.btn.btn-hollow:hover,
   color: #fff;
 }
 
+#home-testimonials {
+  margin-bottom: 5em;
+}
 #home-represents {
-  border: 1px solid;
+  border: 2px solid;
   background-color: #fff;
   margin-top: 1em;
-  padding: 0 1em;
+  padding: 1em;
+  position: absolute;
+}
+#site-credits a {
+  color: #8caab4;
 }
