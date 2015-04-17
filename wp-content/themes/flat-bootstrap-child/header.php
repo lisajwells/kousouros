@@ -47,6 +47,7 @@
                 <?php //if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<p class="color-darkblue" id="header-contact">contact: <br>212-532-1934 <br><a href="#">james@kousouroslaw.com</a></p>
 				</div></div>
 			<?php
 
@@ -66,6 +67,7 @@
 		<?php			
 		endif; // $custom_header_location
 		?>			
+
 
 		<?php
 		/**

@@ -1,15 +1,14 @@
 /*
 Theme Name: Flat Bootstrap Child
-Theme URI: http://xtremelysocial.com/wordpress/child/
-Description: Child theme for Flat Bootstrap. Includes a stylesheet (style.css) for you to restyle any of the CSS and a functions.php file to change theme parameters or components. Both files include samples of a few common things you might want to do.
-Author: XtremelySocial
-Author url: http://xtremelysocial.com
-Version: 1.4
+Theme URI: 
+Description: Child theme for Flat Bootstrap. For kousouroslaw
+Author: Lisa Wells
+Author url: 
+Version: 1.0.0
 License: GNU General Public License
 License URI: http://www.opensource.org/licenses/GPL-3.0
 Template: flat-bootstrap
 Template Version: 1.4
-Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
 */
 
 /* Include the parent theme's stylesheet(s). Then anything you change below that will
@@ -33,6 +32,15 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 }
 .color-darkmidnightblue {
   color: #14343a;
+}
+
+.darkblue,
+.bg-darkblue {
+  background-color: #8caab4;
+  color: #fff;
+}
+.color-darkblue {
+  color: #8caab4;
 }
 
 .darkgray, 
@@ -73,7 +81,7 @@ div#site-branding h2 {
 	background-color: #2980b9;
 }
 
-/* New button that is inverted (hollow) so works on any dark background */
+/* New button that is inverted (hollow), color white so works on any dark background */
 a.btn.btn-hollow,
 button.btn.btn-hollow {
   color: #fff;
@@ -118,6 +126,31 @@ button.btn.btn-hollow:hover,
     background-color: #fff;
 }
 
-/* PUT ANY NEW STYLES TO USE IN YOUR CONTENT AREAS HERE SO YOU CAN EASILY PASTE THIS
- * SECTION IF YOU CHANGE THEMES
- */
+/* elemants i created */
+
+/*.custom-header-image {*/
+  /*position: relative;*/
+/*}*/
+
+#header-contact {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: 0;
+  padding: 1em 50px 1em 0;
+  text-align: right;
+}
+
+#header-contact a {
+  color: #8caab4;
+}
+#header-contact a:hover {
+  color: #fff;
+}
+
+#home-represents {
+  border: 1px solid;
+  background-color: #fff;
+  margin-top: 1em;
+  padding: 0 1em;
+}
