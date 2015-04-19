@@ -81,16 +81,23 @@
 			</div><!-- .footer-nav-menu -->
 		<?php endif; ?>
 
-		<?php // Footer site credits
-		if ( $site_credits AND $nav_menu ) : ?>
-			<div id="site-credits" class="site-credits pull-right">
-			<?php echo $site_credits; ?>
-			</div><!-- .site-credits -->
-		<?php elseif ( $site_credits ) : ?>
-			<div id="site-credits" class="site-credits pull-left">
-			<?php echo $site_credits; ?>
-			</div><!-- .site-credits -->
-		<?php endif; ?>
+		<div id="social-footer">
+			<p><span class="fa fa-facebook-square"><span></p>
+			<p><span class="fa fa-twitter-square"><span></p>
+		</div>
+
+		<div id="contact-footer">
+			<p>Contact Us:</p>
+			<p>260 Madison Avenue, 22nd floor, <br>New York, New York 10018</p>
+			<p>212-000-0000 Fax 212-000-0000</p>
+			<p>james@kousouroslaw.com</p>
+		</div>
+
+		<div id="copyright-footer">
+			&copy; <?php echo date ( 'Y' ); ?> James Kousouros
+		</div>
+
+<!-- removed dynamic site credits -->
 
 	</div><!-- .container -->
 	</div><!-- .after-footer -->
