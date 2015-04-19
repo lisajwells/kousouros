@@ -73,7 +73,7 @@
 
 		<?php // Footer nav menu
 		if ( $nav_menu ) : ?>
-			<div class="footer-nav-menu pull-left">
+			<div class="footer-nav-menu pull-left col-md-3">
 			<nav id="footer-navigation" class="secondary-navigation" role="navigation">
 				<h1 class="menu-toggle sr-only"><?php _e( 'Footer Menu', 'flat-bootstrap' ); ?></h1>
 				<?php echo $nav_menu; ?>
@@ -81,19 +81,19 @@
 			</div><!-- .footer-nav-menu -->
 		<?php endif; ?>
 
-		<div id="social-footer">
+		<div id="social-footer" class="col-md-3">
 			<p><span class="fa fa-facebook-square"><span></p>
 			<p><span class="fa fa-twitter-square"><span></p>
 		</div>
 
-		<div id="contact-footer">
+		<div id="contact-footer" class="col-md-3">
 			<p>Contact Us:</p>
 			<p>260 Madison Avenue, 22nd floor, <br>New York, New York 10018</p>
 			<p>212-000-0000 Fax 212-000-0000</p>
 			<p>james@kousouroslaw.com</p>
 		</div>
 
-		<div id="copyright-footer">
+		<div id="copyright-footer" class="col-md-3">
 			&copy; <?php echo date ( 'Y' ); ?> James Kousouros
 		</div>
 
