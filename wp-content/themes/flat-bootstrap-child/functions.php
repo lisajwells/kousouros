@@ -79,6 +79,22 @@ $xsbf_theme_options = array(
 	//'testimonials'			=> true
 );
 
+// function wpb_add_google_fonts() {
+
+	// wp_register_style('wpb-googleFonts', 'http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic');
+  // wp_enqueue_style( 'wpb-googleFonts');
+// }
+	// wp_register_style('wpb-googleFonts', 'http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic');
+
+// add_action('wp_print_styles', 'wpb_add_google_fonts');
+// <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+ /* Load google fonts CSS Style
+ */
+
+	/* LOAD STYLESHEETS */
+	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic',array(), null, 'screen' );	
+
 /*
  * OVERRIDE THE SITE CREDITS TO GET RID OF THE "THEME BY XTREMELYSOCIAL" AND JUST LEAVE
  * COPYRIGHT YOUR SITE NAME
