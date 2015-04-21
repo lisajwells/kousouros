@@ -210,11 +210,18 @@ button.btn.btn-hollow-blackborder:hover,
 }
 
 #home-testimonials {
-  margin-bottom: 5em;
+  /*margin-bottom: 0;*/
 }
 #home-represents {
+  padding-top: 0;
+  margin-bottom: -4em;
+}
+#home-represents-box {
   border: 2px solid;
   padding: 1em;
+  position: relative;
+  top: -4em;
+  background-color: #fff;
 }
 #site-credits a {
   color: #8caab4;
