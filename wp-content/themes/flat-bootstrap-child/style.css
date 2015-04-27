@@ -19,11 +19,11 @@ Template Version: 1.4
 
 /* PUT YOUR CHANGED STYLES HERE 
  * 
- * The best way to do this is to copy in the relevant section from the parent's style.css
- * file, change what you want, and remove the lines that you didn't change.
 */
 
-/* This font is enqueued, too: font-family: 'Roboto Condensed', sans-serif; */
+/* This font is enqueued: font-family: 'Roboto', 'Roboto Condensed', sans-serif; */
+/* Roboto Weights: 400,500,700,300,100,900; */
+/* Roboto Condensed Weights: 400,700,300; */
 
 html {
   box-sizing: border-box;
@@ -34,8 +34,9 @@ html {
 
 body {
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16px;
     color: #000;
+    font-size: 16px;
+    font-weight: 300;
 }
 .center {
   text-align: center;
@@ -49,6 +50,7 @@ h5,
 h6 {
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   color: #000;
+  /*font-weight: 400;*/
 }
 
 h3 {
@@ -62,7 +64,7 @@ h3 {
 }
 
 p {
-    line-height: 24px;
+    line-height: 1.5em;
 }
 
 a {
@@ -153,6 +155,7 @@ button.btn.btn-hollow-blackborder {
     border: 2px solid #000;
     background-color: transparent;
 }
+
 /*.btn-hollow:hover, a.btn.btn-hollow:hover {*/
 .btn-hollow:hover, 
 btn.btn-hollow:hover,
@@ -166,22 +169,6 @@ button.btn.btn-hollow-blackborder:hover {
     color: #000;
     background-color: #879298;
 }
-.white button.btn.btn-hollow, 
-.white .btn.btn-hollow, 
-.bg-white button.btn.btn-hollow, 
-.bg-white .btn.btn-hollow, 
-.offwhite button.btn.btn-hollow, 
-.offwhite .btn.btn-hollow, 
-.bg-offwhite button.btn.btn-hollow, 
-.bg-offwhite .btn.btn-hollow, 
-.lightgray button.btn.btn-hollow, 
-.lightgray .btn.btn-hollow, 
-.bg-lightgray button.btn.btn-hollow, 
-.bg-lightgray .btn.btn-hollow, 
-.gray button.btn.btn-hollow, 
-.gray .btn.btn-hollow, 
-.bg-gray button.btn.btn-hollow, 
-.bg-gray .btn.btn-hollow, 
 .darkgray button.btn.btn-hollow, 
 .darkgray .btn.btn-hollow,
 .bg-darkgray button.btn.btn-hollow, 
@@ -201,15 +188,10 @@ button.btn.btn-hollow-blackborder:hover,
     background-color: #879298;
 }
 
-/* elemants i created */
-
-/*.custom-header-image {*/
-  /*position: relative;*/
-/*}*/
-
+/* an element i created to hold contact info in header */
 #header-contact {
   position: absolute;
-  top: 0;
+  top: 2em;
   right: 0;
   text-indent: 0;
   padding: 1em 50px 1em 0;
@@ -223,9 +205,8 @@ button.btn.btn-hollow-blackborder:hover,
   color: #fff;
 }
 
-#home-testimonials {
-  /*margin-bottom: 0;*/
-}
+/* home page */
+
 #home-represents {
   padding-top: 0;
   margin-bottom: -4em;
@@ -237,16 +218,54 @@ button.btn.btn-hollow-blackborder:hover,
   top: -4em;
   background-color: #fff;
 }
+
+/* footer */
+
 #site-credits a {
   color: #8caab4;
 }
 
 .after-footer {
-  background-color: #14343a;
+  background-color: rgba(133, 156, 167, 1);
 }
-#footer-navigation{
 
+#back-to-top {
+  margin-bottom: 2em;
 }
+#back-to-top a {
+  color: #000;
+}
+#back-to-top a:hover {
+  color: #fff;
+}
+
+#footer-navigation li {
+border: none;
+}
+/* Let's take away dividers between footer menu items */
+#footer-navigation ul.dividers > li:nth-child(n+2):before {
+  content: "";
+  height: 10px;
+  margin-right: 0px;
+  border-left: none;
+  padding-left: 0;
+}
+.list-inline>li {
+  display: inline-block;
+  padding-left: 0px;
+  padding-right: 0px;
+  line-height: 10px;
+}
+.footer-nav-menu li {
+  display: block;
+}
+.footer-nav-menu a:not(.btn) {
+  color: #000;
+}
+.footer-nav-menu a:not(.btn):hover {
+  color: #fff;
+}
+
 #social-footer{
 
 }

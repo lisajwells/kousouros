@@ -17,7 +17,7 @@
  * parent theme, but listed here so you can easily change them. Just uncomment (remove
  * the //) from any lines that you change.
  * 
- * Parameters:
+ * Parameters: */
 /**
  * Theme options. Can override in child theme. For theme developers, this is array so 
  * you can add these items to the customizer and store them all as a single options entry.
@@ -49,11 +49,9 @@
  * 		'content-header', displays it below the navbar in place of the colored content-
  *		header section.
  * 
- * image_keyboard_nav - Whether to load javascript for using the keyboard to navigate
- 		image attachment pages
+ * image_keyboard_nav - Whether to load javascript for using the keyboard to navigate image attachment pages
  * 
- * sample_widgets - Whether to display sample widgets in the footer and page-bottom widet
- 		areas.
+ * sample_widgets - Whether to display sample widgets in the footer and page-bottom widet areas.
  * 
  * sample_footer_menu - Whether to display sample footer menu with Top and Home links
  * 
@@ -81,15 +79,8 @@ $xsbf_theme_options = array(
 
 // function wpb_add_google_fonts() {
 
-	// wp_register_style('wpb-googleFonts', 'http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic');
-  // wp_enqueue_style( 'wpb-googleFonts');
-// }
-	// wp_register_style('wpb-googleFonts', 'http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic');
 
-// add_action('wp_print_styles', 'wpb_add_google_fonts');
-// <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
- /* Load google fonts CSS Style
+/* Load google fonts CSS Style
  */
 
 	/* LOAD STYLESHEETS */

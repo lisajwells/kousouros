@@ -21,6 +21,7 @@
 	?>
 
 	<?php // Check for footer navbar (optional)
+
 	global $xsbf_theme_options; 
 	$nav_menu = null; 
 	if ( function_exists('has_nav_menu') AND has_nav_menu( 'footer' ) ) {
@@ -70,6 +71,7 @@
 	if ( $nav_menu OR $site_credits ) : ?>	  
 	<div class="after-footer">
 	<div class="container">
+		<div id="back-to-top"><a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a></div>
 
 		<?php // Footer nav menu
 		if ( $nav_menu ) : ?>
@@ -94,7 +96,7 @@
 		</div>
 
 		<div id="copyright-footer" class="col-md-3">
-			&copy; <?php echo date ( 'Y' ); ?> James Kousouros
+			&copy; <?php echo date ( 'Y' ); ?> Kousouros Law
 		</div>
 
 <!-- removed dynamic site credits -->
