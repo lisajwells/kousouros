@@ -20,6 +20,9 @@ Template Version: 1.4
 /* PUT YOUR CHANGED STYLES HERE 
  * 
 */
+/****** I changed this color in the parent css. 
+Because it was all in the bootstrap css and everything and I couldn't copy every rule. 
+So shoot me. #1abc9c to #8caab4 *****/
 
 /* This font is enqueued: font-family: 'Roboto', 'Roboto Condensed', sans-serif; */
 /* Roboto Weights: 400,500,700,300,100,900; */
