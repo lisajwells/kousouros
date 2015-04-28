@@ -62,6 +62,14 @@ h3 {
   font-weight: 600;
 }
 
+.content-header h3 {
+  color: #000;
+  font-size: 1.4em;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: -7px;
+}
+
 .bg-darkgray h2 {
   color: #fff;
 }
@@ -81,6 +89,35 @@ a:hover {
 float: right;
 }
 
+p.intro-graph {
+  font-size: 1.1em;
+}
+
+/* Set page header to dark blue */
+.content-header {
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 0;
+}
+.content-header h1 {
+  color: #8caab4;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+header.content-header {
+  min-height: 10px;
+  }
+
+blockquote {
+  font-size: 16px;
+}
+
+blockquote footer, blockquote small, blockquote .small {
+  color: #000;
+  text-align: right;
+  font-style: italic;
+}
 /* adjusting color from theme-flat.css --- reassigning our colors to their names */
 
 .darkmidnightblue, 
@@ -133,11 +170,6 @@ div#site-branding h2 {
 	-webkit-border-radius: 0 !important;
 	-moz-border-radius: 0 !important;
 	border-radius: 0 !important;
-}
-
-/* Change the content header to dark blue. This is just an example. */
-.content-header {
-	background-color: #2980b9;
 }
 
 /* center videos in their columns */

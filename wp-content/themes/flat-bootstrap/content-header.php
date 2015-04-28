@@ -227,7 +227,7 @@
 
 <?php endif; // have_posts() ?>
 
-<a id="pagetop"></a>
+<!-- <a id="pagetop"></a> -->
 
 <?php 
 /** 
