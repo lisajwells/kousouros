@@ -1,17 +1,25 @@
 <?php
-/*
-Template Name: Testimonials
-*/
-
+/**
+ * Theme: Flat Bootstrap
+ * 
+ * Template Name: Page - Press (based on No Sidebar)
+ *
+ * Page with no sidebar, but still contained within the page margins
+ *
+ * This is the template that displays full width pages with no sidebar.
+ *
+ * @package flat-bootstrap
+ */
 
 get_header(); ?>
 
 <?php get_template_part( 'content', 'header' ); ?>
 
 <div class="container">
-  <div id="main-grid" class="row">
-    <div id="primary" class="content-area col-md-8 col-md-offset-2">
-      <main id="main" class="site-main" role="main">
+<div id="main-grid" class="row">
+
+	<div id="primary" class="content-area-wide col-md-12">
+		<main id="main" class="site-main" role="main">
 
         <?php while ( have_posts() ) : the_post(); ?>
 
@@ -21,12 +29,12 @@ get_header(); ?>
                 <?php the_content(); ?>
                 <?php 
 
-                $testimonial_query = new WP_Query( 'category_name=testimonials');
+                $press_query = new WP_Query( 'category_name=press');
 
-                while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
+                while ( $press_query->have_posts() ) : $press_query->the_post(); ?>
 
-                    <blockquote><p><?php the_content(); ?></p>
-                    <footer><?php  the_title();  ?></footer></blockquote>
+                    <p><?php the_content(); ?></p>
+                    <?php  the_title();  ?></p>
 
                 <?php endwhile; // end of the loop. ?>
 
@@ -38,9 +46,12 @@ get_header(); ?>
 
         <?php endwhile; // end of the loop. ?>
 
-      </main><!-- #main -->
-    </div><!-- #primary -->
-  </div><!-- .row -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<?php //get_sidebar(); ?>
+
+</div><!-- .row -->
 </div><!-- .container -->
 
 <?php get_footer(); ?>
