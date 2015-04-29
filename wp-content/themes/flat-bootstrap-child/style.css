@@ -20,6 +20,15 @@ Template Version: 1.4
 /* PUT YOUR CHANGED STYLES HERE 
  * 
 */
+
+/* COLORS:
+darkmidnightblue: 14343a;
+darkblue: 8caab4;
+darkgray: 859ca7;
+yellow: d9ce4d; 
+*/
+
+
 /****** I changed this color in the parent css. 
 Because it was all in the bootstrap css and everything and I couldn't copy every rule. 
 So shoot me. #1abc9c to #8caab4 *****/
@@ -93,6 +102,20 @@ p.intro-graph {
   font-size: 1.1em;
 }
 
+.press-subhed h3 {
+  color: #d9ce4d;
+}
+
+.print-title {
+  font-weight: 500;
+  font-size: .9em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.print-date {
+  margin-bottom: 0;
+}
+
 /* Set page header to dark blue */
 .content-header {
   background-color: #fff;
@@ -140,11 +163,11 @@ blockquote footer, blockquote small, blockquote .small {
 
 .darkgray, 
 .bg-darkgray {
-  background-color: rgba(133, 156, 167, 1);
+  background-color: #859ca7;
 ;
 }
 .color-darkgray {
-  background-color: rgba(133, 156, 167, 1);
+  background-color: #859ca7;
 }
 
 
