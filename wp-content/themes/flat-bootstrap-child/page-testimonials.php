@@ -30,7 +30,6 @@ get_header(); ?>
 
                 <?php endwhile; // end of the loop. ?>
 
-                <?php edit_post_link( __( '<span class="glyphicon glyphicon-edit"></span> Edit', 'flat-bootstrap' ), '<footer class="entry-meta"><div class="edit-link">', '</div></footer>' ); ?>
 
             </div><!-- .entry-content -->
 

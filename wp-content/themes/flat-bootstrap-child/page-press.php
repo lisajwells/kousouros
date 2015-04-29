@@ -45,7 +45,7 @@ get_header(); ?>
 								<p class="press-date"><?php  the_date();  ?></p>
 								<p class="press-title"><?php  the_title();  ?></p>
 								<?php if( get_field( 'download_pdf_file_url') ): ?>
-								<a target="_blank" class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
+									<a target="_blank" class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
 								<?php else: ?>
 								<?php endif; ?>
 
@@ -58,7 +58,7 @@ get_header(); ?>
 								<p class="press-date"><?php  the_date();  ?></p>
 								<p class="press-title"><?php  the_title();  ?></p>
 								<?php if( get_field( 'download_pdf_file_url') ): ?>
-								<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
+									<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
 								<?php else: ?>
 								<?php endif; ?>
 
@@ -71,7 +71,7 @@ get_header(); ?>
 								<p class="press-date"><?php  the_date();  ?></p>
 								<p class="press-title"><?php  the_title();  ?></p>
 								<?php if( get_field( 'download_pdf_file_url') ): ?>
-								<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
+									<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
 								<?php else: ?>
 								<?php endif; ?>
 
@@ -91,7 +91,7 @@ get_header(); ?>
 							<p class="press-date"><?php  the_date();  ?></p>
 							<p class="press-title"><?php  the_title();  ?></p>
 							<?php if( get_field( 'download_pdf_file_url') ): ?>
-							<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
+								<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
 							<?php else: ?>
 							<?php endif; ?>
 
@@ -104,7 +104,7 @@ get_header(); ?>
 							<p class="press-date"><?php  the_date();  ?></p>
 							<p class="press-title"><?php  the_title();  ?></p>
 							<?php if( get_field( 'download_pdf_file_url') ): ?>
-							<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
+								<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
 							<?php else: ?>
 							<?php endif; ?>
 
@@ -121,7 +121,6 @@ get_header(); ?>
 				</div>
 
 				<div class="row">
-
 					<div class="entry-content-press3 col-md-5 col-md-offset-1">
 
 						<?php 
@@ -130,13 +129,18 @@ get_header(); ?>
 
 						<?php while ( $press_tv1_query->have_posts() ) : $press_tv1_query->the_post(); ?>
 
+							<div class="press-tv-post">
 								<p class="press-title"><?php  the_title();  ?></p>
-							<p><?php the_content(); ?></p>
+								<p><?php the_content(); ?></p>
+								<?php if( get_field( 'press-video') ): ?>
+									<p class="press-video"><?php the_field('press-video'); ?></p>
+								<?php else: ?>
+								<?php endif; ?>
+							</div>
 
 						<?php endwhile; // end of the loop. ?>
 
 					</div><!-- .entry-content-press3 -->
-
 				</div><!-- .row TV -->
 
 			</article><!-- #post-## -->
