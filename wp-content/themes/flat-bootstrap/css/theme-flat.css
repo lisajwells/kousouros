@@ -23,7 +23,7 @@ body {
 }
 
 a {
-    color: #16a085;
+    color: #8caab4;
     word-wrap: break-word;
 
     -webkit-transition: color .1s ease-in, background .1s ease-in;
@@ -69,7 +69,7 @@ p {
 }
 
 blockquote {
-	border-color: #16a085;
+	border-color: #8caab4;
 }
 
  hr {
@@ -83,7 +83,7 @@ blockquote {
 
 .navbar-default 
 .navbar-brand {
-    color: #16a085;
+    color: #8caab4;
 }
 .navbar-default 
 .navbar-brand:hover, 
@@ -202,11 +202,11 @@ label {
 
 .darkgreen, 
 .bg-darkgreen {
-    background-color: #16a085;
+    background-color: #8caab4;
 	color: #fff;
 }
 .color-darkgreen {
-    color: #16a085;
+    color: #8caab4;
 }
 .darkgreen h1, 
 .darkgreen h2, 
@@ -786,8 +786,8 @@ html input[type="button"]:focus,
 input[type="submit"]:hover, 
 input[type="submit"]:focus {
     color: #fff;
-    background-color: #16a085;
-    border-color: #16a085;
+    background-color: #8caab4;
+    border-color: #8caab4;
     outline: 0;
 }
 
@@ -798,7 +798,7 @@ input[type="submit"]:focus {
 .pagination>li>a, 
 .pagination>li>span, 
 span.page-numbers.current {
-	color: #16a085;
+	color: #8caab4;
 }
 .pagination>li>a:hover, 
 .pagination>li>span:hover, 
@@ -807,8 +807,8 @@ span.page-numbers.current {
 span.page-numbers.current {
 	z-index: 2;
 	color: #fff;
-    background-color: #16a085;
-    border-color: #16a085;
+    background-color: #8caab4;
+    border-color: #8caab4;
 }
 
 /* Get rid of gradient on carousel left and right */
@@ -823,7 +823,7 @@ span.page-numbers.current {
 }
 .carousel-caption {
 	text-shadow: none;
-	background-color: #16a085;
+	background-color: #8caab4;
 	color: #fff;
 	opacity: .75;
 	font-weight: bold;

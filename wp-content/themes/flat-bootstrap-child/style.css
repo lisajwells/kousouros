@@ -24,6 +24,7 @@ Template Version: 1.4
 /* COLORS:
 darkmidnightblue: 14343a;
 darkblue: 8caab4;
+darkerblue: 6d93a0;
 darkgray: 859ca7;
 yellow: d9ce4d; 
 */
@@ -79,12 +80,8 @@ h3 {
   margin-bottom: -7px;
 }
 
-.bg-darkgray h2 {
-  color: #fff;
-}
-
 p {
-    line-height: 1.5em;
+  line-height: 1.5em;
 }
 
 a {
@@ -94,26 +91,45 @@ a:hover {
   color: #8caab4;
 }
 
+/* main navigation */
+
 #menu-main-menu {
 float: right;
 }
+
+/* general style */
 
 p.intro-graph {
   font-size: 1.1em;
 }
 
+/* press/media page */
+
 .press-subhed h3 {
   color: #d9ce4d;
+  margin-top: 2em;
+  font-size: 1.6em;
 }
 
-.print-title {
+.press-title {
   font-weight: 500;
   font-size: .9em;
   text-transform: uppercase;
   margin-bottom: 0;
 }
-.print-date {
+.press-date {
   margin-bottom: 0;
+  margin-top: 5px;
+}
+a.press-pdf {
+  color: #6d93a0;
+}
+a.press-pdf:hover {
+  color: #000;
+}
+.press-logo {
+  width: 60%;
+  margin-top: 14px;
 }
 
 /* Set page header to dark blue */
@@ -151,7 +167,6 @@ blockquote footer, blockquote small, blockquote .small {
 .color-darkmidnightblue {
   color: #14343a;
 }
-
 .darkblue,
 .bg-darkblue {
   background-color: #8caab4;
@@ -160,16 +175,16 @@ blockquote footer, blockquote small, blockquote .small {
 .color-darkblue {
   color: #8caab4;
 }
-
 .darkgray, 
 .bg-darkgray {
   background-color: #859ca7;
-;
 }
 .color-darkgray {
   background-color: #859ca7;
 }
-
+.bg-darkgray h2 {
+  color: #fff;
+}
 
 /* hiding h1 in header with negative text indent */
 
@@ -188,16 +203,16 @@ div#site-branding h2 {
   margin: 0 0 0 35px;
 }
 
-/* Make the buttons square. This is just an example, remove it if you want. */
+/* center videos in their columns */
+.jetpack-video-wrapper iframe {
+  margin: 0px auto;
+}
+
+/* Make the buttons square. */
 .btn {
 	-webkit-border-radius: 0 !important;
 	-moz-border-radius: 0 !important;
 	border-radius: 0 !important;
-}
-
-/* center videos in their columns */
-.jetpack-video-wrapper iframe {
-  margin: 0px auto;
 }
 
 /* Button that is inverted (hollow), color white so works on any dark background */
