@@ -1,25 +1,14 @@
 /*
 Theme Name: Flat Bootstrap Child
-Theme URI: 
 Description: Child theme for Flat Bootstrap. For kousouroslaw
 Author: Lisa Wells
-Author url: 
 Version: 1.0.0
-License: GNU General Public License
-License URI: http://www.opensource.org/licenses/GPL-3.0
 Template: flat-bootstrap
 Template Version: 1.4
 */
 
-/* Include the parent theme's stylesheet(s). Then anything you change below that will
- * override those styles. If you'd rather start from scratch, you can comment out this
- * next line.
- */
+/* Include the parent theme's stylesheet(s). */
 @import url("../flat-bootstrap/style.css");
-
-/* PUT YOUR CHANGED STYLES HERE 
- * 
-*/
 
 /* COLORS:
 darkmidnightblue: 14343a;
@@ -28,8 +17,6 @@ darkerblue: 6d93a0;
 darkgray: 859ca7;
 yellow: d9ce4d; 
 */
-
-
 /****** I changed this color in the parent css. 
 Because it was all in the bootstrap css and everything and I couldn't copy every rule. 
 So shoot me. #1abc9c to #8caab4 *****/
@@ -41,6 +28,7 @@ So shoot me. #1abc9c to #8caab4 *****/
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -51,6 +39,7 @@ body {
     font-size: 16px;
     font-weight: 300;
 }
+
 .center {
   text-align: center;
 }
@@ -72,14 +61,6 @@ h3 {
   font-weight: 600;
 }
 
-.content-header h3 {
-  color: #000;
-  font-size: 1.4em;
-  font-weight: 300;
-  margin-top: 40px;
-  margin-bottom: -7px;
-}
-
 p {
   line-height: 1.5em;
 }
@@ -91,52 +72,17 @@ a:hover {
   color: #8caab4;
 }
 
-/* main navigation */
-
-#menu-main-menu {
-float: right;
-}
-
-/* general style */
-
 p.intro-graph {
   font-size: 1.1em;
 }
 
-div#avvo2 {
-  margin-top: 3em;
+/* center videos in their columns */
+.jetpack-video-wrapper iframe {
+  margin: 0px auto;
 }
 
-/* press/media page */
+/****** content-header is the page title ******/
 
-.press-subhed h3 {
-  color: #d9ce4d;
-  margin-top: 2em;
-  font-size: 1.6em;
-}
-
-.press-title {
-  font-weight: 500;
-  font-size: .9em;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-.press-date {
-  margin-bottom: 0;
-  margin-top: 5px;
-}
-a.press-pdf {
-  color: #6d93a0;
-}
-a.press-pdf:hover {
-  color: #000;
-}
-.press-logo {
-  width: 60%;
-  margin-top: 14px;
-}
-
-/* Set page header to dark blue */
 .content-header {
   background-color: #fff;
   color: #000;
@@ -148,9 +94,19 @@ a.press-pdf:hover {
   text-transform: uppercase;
   font-weight: 700;
 }
+.content-header h3 {
+  color: #000;
+  font-size: 1.4em;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: -7px;
+}
+
 header.content-header {
   min-height: 10px;
   }
+
+/******  ******/
 
 blockquote {
   font-size: 16px;
@@ -161,6 +117,10 @@ blockquote footer, blockquote small, blockquote .small {
   text-align: right;
   font-style: italic;
 }
+
+/****** ---------------------- ******/
+/* COLORS                           */
+/****** ---------------------- ******/
 /* adjusting color from theme-flat.css --- reassigning our colors to their names */
 
 .darkmidnightblue, 
@@ -190,27 +150,9 @@ blockquote footer, blockquote small, blockquote .small {
   color: #fff;
 }
 
-/* hiding h1 in header with negative text indent */
-
-div#site-branding {
-  background-color: #14343a;
-}
-div#site-branding h1 {
-  font-size: 10px;
-  text-indent: -9999px;
-}
-div#site-branding h2 {
-  font-size: 10px;
-  text-indent: -9999px;
-}
-.custom-header-image {
-  margin: 0 0 0 35px;
-}
-
-/* center videos in their columns */
-.jetpack-video-wrapper iframe {
-  margin: 0px auto;
-}
+/****** ---------------------- ******/
+/* BUTTONS                          */
+/****** ---------------------- ******/
 
 /* Make the buttons square. */
 .btn {
@@ -265,7 +207,26 @@ button.btn.btn-hollow-blackborder:hover,
     background-color: #879298;
 }
 
-/* an element i created to hold contact info in header */
+/****** ---------------------- ******/
+/* HEADER                           */
+/****** ---------------------- ******/
+
+div#site-branding {
+  background-color: #14343a;
+}
+div#site-branding h1 {
+  font-size: 10px;
+  text-indent: -9999px;
+}
+div#site-branding h2 {
+  font-size: 10px;
+  text-indent: -9999px;
+}
+.custom-header-image {
+  margin: 0 0 0 35px;
+}
+
+/* contact info in header */
 #header-contact {
   position: absolute;
   top: 2em;
@@ -274,7 +235,6 @@ button.btn.btn-hollow-blackborder:hover,
   padding: 1em 50px 1em 0;
   text-align: right;
 }
-
 #header-contact a {
   color: #8caab4;
 }
@@ -282,7 +242,18 @@ button.btn.btn-hollow-blackborder:hover,
   color: #fff;
 }
 
-/* home page */
+/****** ---------------------- ******/
+/* HOME PAGE                        */
+/****** ---------------------- ******/
+
+/* main navigation */
+#menu-main-menu {
+float: right;
+}
+
+div#avvo2 {
+  margin-top: 3em;
+}
 
 #home-represents {
   padding-top: 0;
@@ -296,25 +267,40 @@ button.btn.btn-hollow-blackborder:hover,
   background-color: #fff;
 }
 
-/* footer */
+/****** ---------------------- ******/
+/* PRESS/MEDIA PAGE                 */
+/****** ---------------------- ******/
 
-#site-credits a {
-  color: #8caab4;
+.press-subhed h3 {
+  color: #d9ce4d;
+  margin-top: 2em;
+  font-size: 1.6em;
 }
 
-.after-footer {
-  background-color: rgba(133, 156, 167, 1);
+.press-title {
+  font-weight: 500;
+  font-size: .9em;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
-
-#back-to-top {
-  margin-bottom: 2em;
+.press-date {
+  margin-bottom: 0;
+  margin-top: 5px;
 }
-#back-to-top a {
+a.press-pdf {
+  color: #6d93a0;
+}
+a.press-pdf:hover {
   color: #000;
 }
-#back-to-top a:hover {
-  color: #fff;
+.press-logo {
+  width: 60%;
+  margin-top: 14px;
 }
+
+/****** ---------------------- ******/
+/* FOOTER                           */
+/****** ---------------------- ******/
 
 #footer-navigation li {
 border: none;
@@ -340,6 +326,24 @@ border: none;
   color: #000;
 }
 .footer-nav-menu a:not(.btn):hover {
+  color: #fff;
+}
+
+#site-credits a {
+  color: #8caab4;
+}
+
+.after-footer {
+  background-color: rgba(133, 156, 167, 1);
+}
+
+#back-to-top {
+  margin-bottom: 2em;
+}
+#back-to-top a {
+  color: #000;
+}
+#back-to-top a:hover {
   color: #fff;
 }
 
