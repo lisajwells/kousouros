@@ -41,36 +41,20 @@ get_header(); ?>
 							<img class="press-logo" id="dailynews-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-dailynews.png">
 
 							<?php while ( $press_print1_query->have_posts() ) : $press_print1_query->the_post(); ?>
-
-								<p class="press-date"><?php  the_date();  ?></p>
-								<p class="press-title"><?php  the_title();  ?></p>
-								<?php if( get_field( 'download_pdf_file_url') ): ?>
-									<a target="_blank" class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
-								<?php else: ?>
-								<?php endif; ?>
-
+								<!-- get content-print-press.php template part -->
+								<?php get_template_part( 'content', 'print-press' ); ?>
 							<?php endwhile; // end of the loop. ?>
 
 							<img class="press-logo" id="nyt-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-nytimes.png">
 
 							<?php while ( $press_print2_query->have_posts() ) : $press_print2_query->the_post(); ?>
-
-								<!-- get content-print-press.php template part -->
 								<?php get_template_part( 'content', 'print-press' ); ?>
-
 							<?php endwhile; // end of the loop. ?>
 
 							<img class="press-logo" id="journalnews-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-journalnews.png">
 
 							<?php while ( $press_print3_query->have_posts() ) : $press_print3_query->the_post(); ?>
-
-								<p class="press-date"><?php  the_date();  ?></p>
-								<p class="press-title"><?php  the_title();  ?></p>
-								<?php if( get_field( 'download_pdf_file_url') ): ?>
-									<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
-								<?php else: ?>
-								<?php endif; ?>
-
+								<?php get_template_part( 'content', 'print-press' ); ?>
 							<?php endwhile; // end of the loop. ?>
 
 						</div><!-- .entry-content -->
@@ -83,28 +67,15 @@ get_header(); ?>
 
 							<img class="press-logo" id="newsday-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-newsday.png">
 
-						<?php while ( $press_print4_query->have_posts() ) : $press_print4_query->the_post(); ?>
-							<p class="press-date"><?php  the_date();  ?></p>
-							<p class="press-title"><?php  the_title();  ?></p>
-							<?php if( get_field( 'download_pdf_file_url') ): ?>
-								<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
-							<?php else: ?>
-							<?php endif; ?>
-
-						<?php endwhile; // end of the loop. ?>
+							<?php while ( $press_print4_query->have_posts() ) : $press_print4_query->the_post(); ?>
+								<?php get_template_part( 'content', 'print-press' ); ?>
+							<?php endwhile; // end of the loop. ?>
 
 							<img class="press-logo" id="timessmithtown-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/thetimes.png">
 
-						<?php while ( $press_print5_query->have_posts() ) : $press_print5_query->the_post(); ?>
-
-							<p class="press-date"><?php  the_date();  ?></p>
-							<p class="press-title"><?php  the_title();  ?></p>
-							<?php if( get_field( 'download_pdf_file_url') ): ?>
-								<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
-							<?php else: ?>
-							<?php endif; ?>
-
-						<?php endwhile; // end of the loop. ?>
+							<?php while ( $press_print5_query->have_posts() ) : $press_print5_query->the_post(); ?>
+								<?php get_template_part( 'content', 'print-press' ); ?>
+							<?php endwhile; // end of the loop. ?>
 
 					</div><!-- .entry-content -->
 				</div><!-- .row Print -->
@@ -128,11 +99,17 @@ get_header(); ?>
 							<div class="press-tv-post">
 								<p class="press-title"><?php  the_title();  ?></p>
 								<p><?php the_content(); ?></p>
-								<?php if( get_field( 'press-video') ): ?>
-									<p class="press-video"><?php the_field('press-video'); ?></p>
+								<?php if( get_field( 'press_video') ): ?>
+									<p class="press-video"><?php the_field('press_video'); ?>xxx</p>
 								<?php else: ?>
 								<?php endif; ?>
-							</div>
+
+								<?php
+								global $wp_embed;
+								$video_url = get_field( 'press_video' );
+								echo $wp_embed->run_shortcode( '[embed]' . $video_url . '[/embed]' );?>
+
+							</div><!-- .press-tv-post -->
 
 						<?php endwhile; // end of the loop. ?>
 
