@@ -25,7 +25,7 @@ get_header(); ?>
 
                 while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
 
-                    <blockquote><p><?php the_content(); ?></p>
+                    <blockquote><?php the_content(); ?>
                     <footer><?php  the_title();  ?></footer></blockquote>
 
                 <?php endwhile; // end of the loop. ?>

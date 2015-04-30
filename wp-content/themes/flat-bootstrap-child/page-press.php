@@ -91,24 +91,30 @@ get_header(); ?>
 					<div class="entry-content-press3 col-md-5 col-md-offset-1">
 
 						<?php 
-							$press_tv1_query = new WP_Query( 'category_name=TV');
+							// $press_tv1_query = new WP_Query( 'category_name=TV');
+							// $press_tv1_query = new WP_Query( 'tag=83&cat=74' );
+							$press_tv1_query = new WP_Query( 'category_name=tv&tag=tv-column-1');
+
 						?>
 
 						<?php while ( $press_tv1_query->have_posts() ) : $press_tv1_query->the_post(); ?>
 
 							<div class="press-tv-post">
-								<p class="press-title"><?php  the_title();  ?></p>
-								<p><?php the_content(); ?></p>
-								<?php if( get_field( 'press_video') ): ?>
-									<p class="press-video"><?php the_field('press_video'); ?>xxx</p>
-								<?php else: ?>
-								<?php endif; ?>
+								<div class="row">
+								
+									<div class="col-md-6 press-tv-video">
+										<?php
+										global $wp_embed;
+										$video_url = get_field( 'press_video' );
+										echo $wp_embed->run_shortcode( '[embed]' . $video_url . '[/embed]' );?>
+									</div><!-- press-tv-video -->
 
-								<?php
-								global $wp_embed;
-								$video_url = get_field( 'press_video' );
-								echo $wp_embed->run_shortcode( '[embed]' . $video_url . '[/embed]' );?>
+									<div class="col-md-6 press-tv-text">
+										<p class="press-title"><?php  the_title();  ?></p>
+										<p class="press-content"><?php echo get_the_content(); ?></p>
+									</div>
 
+								</div><!-- row -->
 							</div><!-- .press-tv-post -->
 
 						<?php endwhile; // end of the loop. ?>

@@ -22,7 +22,7 @@ Because it was all in the bootstrap css and everything and I couldn't copy every
 So shoot me. #1abc9c to #8caab4 *****/
 
 /* This font is enqueued: font-family: 'Roboto', 'Roboto Condensed', sans-serif; */
-/* Roboto Weights: 400,500,700,300,100,900; */
+/* Roboto Weights: 400 normal, 500 medium, 700 bold, 300 light, 100 thin, 900 ultra-bold; */
 /* Roboto Condensed Weights: 400,700,300; */
 
 html {
@@ -38,6 +38,10 @@ body {
     color: #000;
     font-size: 16px;
     font-weight: 300;
+}
+
+strong {
+  font-weight: 500;
 }
 
 .center {
@@ -278,10 +282,11 @@ div#avvo2 {
 }
 
 .press-title {
-  font-weight: 500;
   font-size: .9em;
-  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2em;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .press-date {
   margin-bottom: 0;
@@ -298,9 +303,25 @@ a.press-pdf:hover {
   margin-top: 14px;
 }
 
+div.press-tv-post {
+  margin-top: 1.1em;
+}
+
+div.press-tv-video {
+  margin-right: -.7em;
+}
+
+div.press-tv-text {
+
+}
+
 /****** ---------------------- ******/
 /* FOOTER                           */
 /****** ---------------------- ******/
+
+#colophon {
+  margin-top: 3em;
+}
 
 #footer-navigation li {
 border: none;
