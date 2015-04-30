@@ -87,6 +87,14 @@ $xsbf_theme_options = array(
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic',array(), null, 'screen' );	
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700',array(), null, 'screen' );	
 
+	/* LOAD AVVO JAVASCRIPT */
+	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js');
+
+// wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
+
+add_action( 'wp_enqueue_scripts', 'avvo_badge_script' );
+
+
 /*
  * OVERRIDE THE SITE CREDITS TO GET RID OF THE "THEME BY XTREMELYSOCIAL" AND JUST LEAVE
  * COPYRIGHT YOUR SITE NAME
