@@ -55,18 +55,8 @@ get_header(); ?>
 
 							<?php while ( $press_print2_query->have_posts() ) : $press_print2_query->the_post(); ?>
 
-								<p class="press-date"><?php  the_date();  ?></p>
-
-								<?php if( get_field( 'external_link') ): ?>
-									<p class="press-title"><a target="_blank"  class="press-pdf" href="<?php the_field('external_link'); ?>"><?php  the_title();  ?></a></p>
-								<?php else: ?>
-									<p class="press-title"><?php  the_title();  ?></p>
-								<?php endif; ?>
-
-								<?php if( get_field( 'download_pdf_file_url') ): ?>
-									<a target="_blank"  class="press-pdf" href="<?php the_field('download_pdf_file_url'); ?>">Download PDF</a>
-								<?php else: ?>
-								<?php endif; ?>
+								<!-- get content-print-press.php template part -->
+								<?php get_template_part( 'content', 'print-press' ); ?>
 
 							<?php endwhile; // end of the loop. ?>
 
