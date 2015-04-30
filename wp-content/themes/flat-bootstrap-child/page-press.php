@@ -42,19 +42,19 @@ get_header(); ?>
 
 							<?php while ( $press_print1_query->have_posts() ) : $press_print1_query->the_post(); ?>
 								<!-- get content-print-press.php template part -->
-								<?php get_template_part( 'content', 'print-press' ); ?>
+								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
 
 							<img class="press-logo" id="nyt-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-nytimes.png">
 
 							<?php while ( $press_print2_query->have_posts() ) : $press_print2_query->the_post(); ?>
-								<?php get_template_part( 'content', 'print-press' ); ?>
+								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
 
 							<img class="press-logo" id="journalnews-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-journalnews.png">
 
 							<?php while ( $press_print3_query->have_posts() ) : $press_print3_query->the_post(); ?>
-								<?php get_template_part( 'content', 'print-press' ); ?>
+								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
 
 						</div><!-- .entry-content -->
@@ -68,13 +68,13 @@ get_header(); ?>
 							<img class="press-logo" id="newsday-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-newsday.png">
 
 							<?php while ( $press_print4_query->have_posts() ) : $press_print4_query->the_post(); ?>
-								<?php get_template_part( 'content', 'print-press' ); ?>
+								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
 
 							<img class="press-logo" id="timessmithtown-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/thetimes.png">
 
 							<?php while ( $press_print5_query->have_posts() ) : $press_print5_query->the_post(); ?>
-								<?php get_template_part( 'content', 'print-press' ); ?>
+								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
 
 					</div><!-- .entry-content -->
@@ -91,32 +91,22 @@ get_header(); ?>
 					<div class="entry-content-press3 col-md-5 col-md-offset-1">
 
 						<?php 
-							// $press_tv1_query = new WP_Query( 'category_name=TV');
-							// $press_tv1_query = new WP_Query( 'tag=83&cat=74' );
 							$press_tv1_query = new WP_Query( 'category_name=tv&tag=tv-column-1');
-
 						?>
 
 						<?php while ( $press_tv1_query->have_posts() ) : $press_tv1_query->the_post(); ?>
+								<?php get_template_part( 'content', 'press-tv' ); ?>
+						<?php endwhile; // end of the loop. ?>
 
-							<div class="press-tv-post">
-								<div class="row">
-								
-									<div class="col-md-6 press-tv-video">
-										<?php
-										global $wp_embed;
-										$video_url = get_field( 'press_video' );
-										echo $wp_embed->run_shortcode( '[embed]' . $video_url . '[/embed]' );?>
-									</div><!-- press-tv-video -->
+					</div><!-- .entry-content-press3 -->
+					<div class="entry-content-press3 col-md-5">
 
-									<div class="col-md-6 press-tv-text">
-										<p class="press-title"><?php  the_title();  ?></p>
-										<p class="press-content"><?php echo get_the_content(); ?></p>
-									</div>
+						<?php 
+							$press_tv2_query = new WP_Query( 'category_name=tv&tag=tv-column-2');
+						?>
 
-								</div><!-- row -->
-							</div><!-- .press-tv-post -->
-
+						<?php while ( $press_tv2_query->have_posts() ) : $press_tv2_query->the_post(); ?>
+								<?php get_template_part( 'content', 'press-tv' ); ?>
 						<?php endwhile; // end of the loop. ?>
 
 					</div><!-- .entry-content-press3 -->
