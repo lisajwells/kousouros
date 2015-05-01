@@ -99,7 +99,18 @@ get_header(); ?>
 						<?php endwhile; // end of the loop. ?>
 
 					</div><!-- .entry-content-press3 -->
+
 					<div class="entry-content-press3 col-md-5">
+						
+						<?php 
+							$press_tv2_intro = new WP_Query( 'category_name=tv&tag=tv-column-2-intro');
+						?>
+						<?php while ( $press_tv2_intro->have_posts() ) : $press_tv2_intro->the_post(); ?>
+							<div class="press-tv-post">
+								<p class="press-title"><?php  the_title();  ?></p>
+								<p class="press-content"><?php echo get_the_content(); ?></p>
+							</div>
+						<?php endwhile; // end of the loop. ?>
 
 						<?php 
 							$press_tv2_query = new WP_Query( 'category_name=tv&tag=tv-column-2');
