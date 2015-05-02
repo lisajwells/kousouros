@@ -2,7 +2,7 @@
 /**
  * Theme: Flat Bootstrap
  * 
- * The template used for displaying single post footer meta (categories, tags, etc.)
+ * The template used for displaying content in page-press-tv
  *
  * @package flat-bootstrap
  */

@@ -30,20 +30,26 @@ get_header(); ?>
 							<li class="active"><a href="#white-collar" data-toggle="tab">White Collar</a></li>
 							<li><a href="#healthcare" data-toggle="tab">Healthcare&sol;<br>Pharmaceutical</a></li>
 							<li><a href="#homicide" data-toggle="tab">Homicide</a></li>
+							<li><a href="#racketeering" data-toggle="tab">Racketeering&sol;<br>Bribery</a></li>
+							<li><a href="#narcotics" data-toggle="tab">Narcotics</a></li>
+							<li><a href="#misc" data-toggle="tab">Miscellaneous</a></li>
 						</ul>
 
 						<?php  
 		                $notables_white_query = new WP_Query( 'category_name=white-collar');
 		                $notables_health_query = new WP_Query( 'category_name=healthcare');
 		                $notables_homicide_query = new WP_Query( 'category_name=homicide');
+		                $notables_racketeer_query = new WP_Query( 'category_name=racketeering-and-bribery');
+		                $notables_narcotics_query = new WP_Query( 'category_name=narcotics');
+		                $notables_misc_query = new WP_Query( 'category_name=miscellaneous');
 		                ?>
 
 						<div class="tab-content">
 							<div class="tab-pane fade in active notable" id="white-collar">
 
 				               <?php  while ( $notables_white_query->have_posts() ) : $notables_white_query->the_post(); ?>
-				               	
-				                    <?php  the_title();  ?>
+
+				                    <h4 class="notables-title"><?php  the_title();  ?></h4>
 				                    <?php the_content(); ?>
 
 				                <?php endwhile; // end of the loop. ?>
@@ -51,7 +57,7 @@ get_header(); ?>
 							<div class="tab-pane fade notable" id="healthcare">
 				               <?php  while ( $notables_health_query->have_posts() ) : $notables_health_query->the_post(); ?>
 
-				                    <?php  the_title();  ?>
+				                    <h4 class="notables-title"><?php  the_title();  ?></h4>
 				                    <?php the_content(); ?>
 
 				                <?php endwhile; // end of the loop. ?>
@@ -59,7 +65,31 @@ get_header(); ?>
 							<div class="tab-pane fade notable" id="homicide">
 				               <?php  while ( $notables_homicide_query->have_posts() ) : $notables_homicide_query->the_post(); ?>
 
-				                    <?php  the_title();  ?>
+				                    <h4 class="notables-title"><?php  the_title();  ?></h4>
+				                    <?php the_content(); ?>
+
+				                <?php endwhile; // end of the loop. ?>
+							</div>
+							<div class="tab-pane fade notable" id="racketeering">
+				               <?php  while ( $notables_racketeer_query->have_posts() ) : $notables_racketeer_query->the_post(); ?>
+
+				                    <h4 class="notables-title"><?php  the_title();  ?></h4>
+				                    <?php the_content(); ?>
+
+				                <?php endwhile; // end of the loop. ?>
+							</div>
+							<div class="tab-pane fade notable" id="narcotics">
+				               <?php  while ( $notables_narcotics_query->have_posts() ) : $notables_narcotics_query->the_post(); ?>
+
+				                    <h4 class="notables-title"><?php  the_title();  ?></h4>
+				                    <?php the_content(); ?>
+
+				                <?php endwhile; // end of the loop. ?>
+							</div>
+							<div class="tab-pane fade notable" id="misc">
+				               <?php  while ( $notables_misc_query->have_posts() ) : $notables_misc_query->the_post(); ?>
+
+				                    <h4 class="notables-title"><?php  the_title();  ?></h4>
 				                    <?php the_content(); ?>
 
 				                <?php endwhile; // end of the loop. ?>

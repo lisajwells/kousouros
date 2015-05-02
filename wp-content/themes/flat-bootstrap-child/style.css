@@ -384,6 +384,14 @@ border: none;
 /* NOTABLES                         */
 /****** ---------------------- ******/
 
+.notables-title {
+  font-size: .9em;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: .1em 0 .05em 0;
+  text-transform: uppercase;
+}
+
 /* custom inclusion of left tabs */
 
 .tabs-left > .nav-tabs {
@@ -413,7 +421,8 @@ border: none;
 .tabs-left > .nav-tabs {
   float: left;
   margin-right: 19px;
-  border-right: 1px solid #ddd;
+  width: 20%;
+  /*border-right: 1px solid #ddd;*/
 }
 
 .tabs-left > .nav-tabs > li > a {
@@ -440,6 +449,14 @@ border: none;
   padding: 1.5em;
 }
 
+div.tab-content {
+  width: 80%;
+  margin-left: 20%;
+}
+/*ul.nav-tabs {
+  width: 20%;
+}
+*/
 /*.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
   color: #e0e0e0;
   background-color: #f2f2f2;

@@ -2,7 +2,7 @@
 /**
  * Theme: Flat Bootstrap
  * 
- * The template used for displaying single post footer meta (categories, tags, etc.)
+ * The template used for displaying content in page-press-print
  *
  * @package flat-bootstrap
  */
@@ -11,9 +11,9 @@
 								<p class="press-date"><?php  the_date();  ?></p>
 
 								<?php if( get_field( 'external_link') ): ?>
-									<p class="press-title"><a target="_blank"  class="press-pdf" href="<?php the_field('external_link'); ?>"><?php  the_title();  ?></a></p>
+									<h4 class="press-title"><a target="_blank"  class="press-pdf" href="<?php the_field('external_link'); ?>"><?php  the_title();  ?></a></h4>
 								<?php else: ?>
-									<p class="press-title"><?php  the_title();  ?></p>
+									<h4 class="press-title"><?php  the_title();  ?></h4>
 								<?php endif; ?>
 
 								<?php if( get_field( 'download_pdf_file_url') ): ?>
