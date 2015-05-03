@@ -60,9 +60,11 @@ h6 {
 }
 
 h3 {
+  color: #d9ce4d;
   font-size: 20px;
-  line-height: 1.3em;
   font-weight: 600;
+  line-height: 1.3em;
+  margin-bottom: .4em;
 }
 
 p {
@@ -273,6 +275,26 @@ div#avvo2 {
 }
 
 /****** ---------------------- ******/
+/* THE PRACTICE PAGES               */
+/****** ---------------------- ******/
+
+ul {
+  font-weight: 400;
+}
+
+p.process1 strong {
+  color: #d9ce4d;
+}
+
+p.process1 a {
+  color: #8caab4;
+}
+
+p.process1 a:hover {
+  color: #000;
+}
+
+/****** ---------------------- ******/
 /* PRESS/MEDIA PAGE                 */
 /****** ---------------------- ******/
 
@@ -384,11 +406,21 @@ border: none;
 /* NOTABLES                         */
 /****** ---------------------- ******/
 
+/* to make diamond shape */
+.fa-rotate-45 {
+  font-size: .6em;
+  margin-right: .5em;
+  margin-left: -1.5em;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
 .notables-title {
   font-size: .9em;
   font-weight: 500;
   line-height: 1.2em;
-  margin: .1em 0 .05em 0;
+  margin: 2em 0 .05em 0;
   text-transform: uppercase;
 }
 
@@ -446,7 +478,7 @@ border: none;
 .tab-pane {
   border: 1px solid #ddd;
   background-color: #f2f2f2;
-  padding: 1.5em;
+  padding: 0 1.5em .2em 1.5em;
 }
 
 div.tab-content {

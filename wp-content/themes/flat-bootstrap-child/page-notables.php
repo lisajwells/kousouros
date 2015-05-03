@@ -32,7 +32,7 @@ get_header(); ?>
 							<li><a href="#homicide" data-toggle="tab">Homicide</a></li>
 							<li><a href="#racketeering" data-toggle="tab">Racketeering&sol;<br>Bribery</a></li>
 							<li><a href="#narcotics" data-toggle="tab">Narcotics</a></li>
-							<li><a href="#misc" data-toggle="tab">Miscellaneous</a></li>
+							<li><a href="#misc" data-toggle="tab">Miscellaneous&sol;<br>Post-Conviction&sol;<br>Appeals&sol;<br>Extradition</a></li>
 						</ul>
 
 						<?php  
@@ -49,7 +49,7 @@ get_header(); ?>
 
 				               <?php  while ( $notables_white_query->have_posts() ) : $notables_white_query->the_post(); ?>
 
-				                    <h4 class="notables-title"><?php  the_title();  ?></h4>
+				                    <h4 class="notables-title"><i class="fa fa-square fa-rotate-45">&nbsp;</i><?php  the_title();  ?></h4>
 				                    <?php the_content(); ?>
 
 				                <?php endwhile; // end of the loop. ?>
