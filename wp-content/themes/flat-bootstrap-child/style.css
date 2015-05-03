@@ -69,6 +69,7 @@ h3 {
   font-weight: 600;
   line-height: 1.3em;
   margin-bottom: .4em;
+  margin-top: 0;
 }
 
 p {
@@ -196,7 +197,7 @@ button.btn.btn-hollow:hover {
 btn.btn-hollow-blackborder:hover,
 button.btn.btn-hollow-blackborder:hover {
     color: #000;
-    background-color: #879298;
+    background-color: #859ca7;
 }
 .darkgray button.btn.btn-hollow, 
 .darkgray .btn.btn-hollow,
@@ -214,7 +215,7 @@ button.btn.btn-hollow:hover,
 button.btn.btn-hollow-blackborder:hover, 
 .btn.btn-hollow-blackborder:hover {
     color: #2f2f2f;
-    background-color: #879298;
+    background-color: #859ca7;
 }
 
 /****** ---------------------- ******/
@@ -266,15 +267,19 @@ div#avvo2 {
   margin-top: 3em;
 }
 
+#home-testimonials {
+  padding-bottom: 3em;
+}
+
 #home-represents {
   padding-top: 0;
-  margin-bottom: -4em;
+  margin-bottom: -2em;
 }
 #home-represents-box {
   border: 2px solid;
   padding: 1em;
   position: relative;
-  top: -4em;
+  top: -2em;
   background-color: #fff;
 }
 

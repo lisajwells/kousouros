@@ -112,3 +112,14 @@ function xsbf_child_credits ( $site_credits ) {
 	);
 	return $site_credits;
 }
+
+ // * This came from template-tags.php, but I'm altering to remove read more link to excerpts *//
+
+if ( ! function_exists( 'xsbf_get_the_excerpt' ) ) :
+add_filter( 'get_the_excerpt', 'xsbf_get_the_excerpt' );
+function xsbf_get_the_excerpt( $excerpt ) {
+
+	return $excerpt;
+}
+endif; // end ! function_exists
+
