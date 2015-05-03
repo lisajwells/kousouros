@@ -78,8 +78,11 @@
 				<div id="home-represents-box">
 					<div class="row">
 						<div class="col-md-4">
-						<!-- <figure>[embed]https://www.youtube.com/watch?v=xXbW-K-HE9I[/embed]</figure> -->
-						<p style="text-align: center;"><a class="btn btn-hollow-blackborder" href="#">Watch More Videos</a></p>
+							<?php
+							global $wp_embed;
+							$video_url = get_field( 'home_represents_video_link' );
+							echo $wp_embed->run_shortcode( '[embed]' . $video_url . '[/embed]' );?>
+							<p style="text-align: center;"><a class="btn btn-hollow-blackborder" href="#">Watch More Videos</a></p>
 						</div>
 						<div class="col-md-8">
 							<h2><?php the_field('home_represents_title'); ?></h2>    
@@ -122,29 +125,41 @@
   <div class="container">
     <div class="row">
 		<h2><?php the_field('home_press_title'); ?></h2>    
-      <p>Mr. Kousouros is a frequent guest as a legal commentator on various network and cable stations.<p>
+      <p><?php the_field('home_press_subhed'); ?><p>
       <div class="col-md-3">
         <figure>
-          [embed]https://www.youtube.com/watch?v=xXbW-K-HE9I[/embed]
-          <figcaption>Bacon ipsum dolor amet shankle pig pork.</figcaption>
+							<?php
+							global $wp_embed;
+							$video_url = get_field( 'home_press_video_link_1' );
+							echo $wp_embed->run_shortcode( '[embed]' . $video_url . '[/embed]' );?>
+          <figcaption><?php the_field('home_press_video_cap_1'); ?></figcaption>
         </figure>
       </div>
       <div class="col-md-3">
         <figure>
-          [embed]https://www.youtube.com/watch?v=xXbW-K-HE9I[/embed]
-          <figcaption>Bacon ipsum dolor amet shankle pig pork.</figcaption>
+							<?php
+							global $wp_embed;
+							$video_url = get_field( 'home_press_video_link_2' );
+							echo $wp_embed->run_shortcode( '[embed]' . $video_url . '[/embed]' );?>
+          <figcaption><?php the_field('home_press_video_cap_2'); ?></figcaption>
         </figure>
       </div>
       <div class="col-md-3">
         <figure>
-          [embed]https://www.youtube.com/watch?v=LzcyNQ0jdjI[/embed]
-          <figcaption>Bacon ipsum dolor amet shankle pig pork.</figcaption>
+							<?php
+							global $wp_embed;
+							$video_url = get_field( 'home_press_video_link_3' );
+							echo $wp_embed->run_shortcode( '[embed]' . $video_url . '[/embed]' );?>
+          <figcaption><?php the_field('home_press_video_cap_3'); ?></figcaption>
         </figure>
       </div>
       <div class="col-md-3">
         <figure>
-          [embed]https://www.youtube.com/watch?v=wuQM8fLGePw[/embed]
-          <figcaption>Bacon ipsum dolor amet shankle pig pork.</figcaption>
+							<?php
+							global $wp_embed;
+							$video_url = get_field( 'home_press_video_link_4' );
+							echo $wp_embed->run_shortcode( '[embed]' . $video_url . '[/embed]' );?>
+          <figcaption><?php the_field('home_press_video_cap_4'); ?></figcaption>
         </figure>
       </div>
     </div><!-- row -->
@@ -159,28 +174,28 @@
     <div class="row">
       
       <div class="col-md-6">
-		<h2><?php the_field('home_notables_title'); ?></h2>    
-        <p>Bacon ipsum dolor amet shankle pig pork loin frankfurter tail brisket, alcatra doner tongue. Pork belly picanha frankfurter brisket, tail jerky beef ribs. Tenderloin biltong fatback, meatball tail andouille hamburger prosciutto ribeye. Beef biltong flank cow pancetta fatback pastrami.</p>
-        <p style="text-align: center;"><a class="btn btn-hollow-blackborder" href="#">Read more notable cases</a></p>
+				<h2><?php the_field('home_notables_title'); ?></h2>    
+        <p><?php the_field('home_notables_body'); ?></p>
+        <p class="center"><a class="btn btn-hollow" href="#">Read more notable cases</a></p>
       </div><!-- col-6 -->
 
       <div class="col-md-6"><!-- big six -->
 
         <div class="row">
           <div class="col-md-6">
-            <p>successfully avoided prosecution of texas stock trader</p>
+		        <p><?php the_field('home_notables_blurb_1'); ?></p>
           </div>
           <div class="col-md-6">
-            <p>client axquitted of the murder of the son of an alleged mafia boss</p>
+		        <p><?php the_field('home_notables_blurb_2'); ?></p>
           </div>
         </div><!-- row -->
 
         <div class="row">
           <div class="col-md-6">
-            <p>successfully avoided prosecution of texas stock trader</p>
+		        <p><?php the_field('home_notables_blurb_3'); ?></p>
           </div>
           <div class="col-md-6">
-            <p>client axquitted of the murder of the son of an alleged mafia boss</p>
+		        <p><?php the_field('home_notables_blurb_4'); ?></p>
           </div>
         </div><!-- row -->
 

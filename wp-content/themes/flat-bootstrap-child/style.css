@@ -285,6 +285,9 @@ div#avvo2 {
 #home-consultation-row div:nth-child(2n+1) h3 {
   color: #000;
 }
+#home-consultation-row p {
+  color: #fff;
+}
 
 /****** ---------------------- ******/
 /* THE PRACTICE PAGES, PROFILE PAGE */
