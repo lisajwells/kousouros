@@ -275,7 +275,7 @@ div#avvo2 {
 }
 
 /****** ---------------------- ******/
-/* THE PRACTICE PAGES               */
+/* THE PRACTICE PAGES, PROFILE PAGE */
 /****** ---------------------- ******/
 
 ul {
@@ -286,12 +286,18 @@ p.process1 strong {
   color: #d9ce4d;
 }
 
-p.process1 a {
+.page-id-1411 p a,
+.page-id-1077 p a {
   color: #8caab4;
 }
 
-p.process1 a:hover {
+.page-id-1411 p a:hover, 
+.page-id-1077 p a:hover {
   color: #000;
+}
+
+.profile-sidebar {
+  font-size: .8em;
 }
 
 /****** ---------------------- ******/
