@@ -73,8 +73,8 @@ $xsbf_theme_options = array(
 	//'custom_header_location' 	=> 'header',
 	//'image_keyboard_nav' 		=> true,
 	//'sample_widgets' 			=> true, // for possible future use
-	//'sample_footer_menu'		=> true,
-	//'testimonials'			=> true
+	//'sample_footer_menu'		=> true, 
+	'testimonials'			=> false
 );
 
 // function wpb_add_google_fonts() {
