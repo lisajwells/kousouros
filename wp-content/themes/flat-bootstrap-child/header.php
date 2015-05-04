@@ -41,15 +41,17 @@
 				<div class="container site-branding-container">
 		
 				<div class="row">
-					<div class="custom-header-image col-md-9 col-sm-12" style="background-image: url('<?php echo header_image() ?>'); width: <?php echo get_custom_header()->width; ?>px; height: <?php echo get_custom_header()->height ?>px;">
-		                <?php //if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
-						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-						</div>
-						<div class="col-md-3 col-sm-12">
+
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<div class="col-md-9 col-sm-12" id="header-image">
+						<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+					</div>
+					</a>
+
+					<div class="col-md-3 col-sm-12">
 						<p class="color-darkblue" id="header-contact">contact: <br>212-532-1934 <br><a href="#">james@kousouroslaw.com</a></p>
-						</div>
-					</div><!-- custom-header-image col-md-8 -->
+					</div>
+
 				</div><!-- row -->
 
 				</div><!-- container -->
