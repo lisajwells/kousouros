@@ -91,7 +91,7 @@
 		</div>
 
 		<div id="social-footer" class="col-md-4">
-			<p><span class="fa fa-facebook-square"></span>&nbsp;<span class="fa fa-linkedin-square"></span>&nbsp;<span class="fa fa-twitter-square"></span></p>
+			<p id="social-links"><a href="#"><i class="fa fa-facebook-square"></i></a>&nbsp;<a href="#"><i class="fa fa-linkedin-square"></i></a>&nbsp;<a href="#"><i class="fa fa-twitter-square"></i></a></p>
 			<p>&copy; <?php echo date ( 'Y' ); ?> Kousouros Law</p>
 			<p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
 		</div>

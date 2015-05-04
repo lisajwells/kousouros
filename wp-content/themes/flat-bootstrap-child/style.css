@@ -124,13 +124,31 @@ header.content-header {
 /************/
 
 blockquote {
-  font-size: 16px;
+  font-size: 1em;
+  border: none;
+  padding: 0;
+}
+
+blockquote p {
+  margin-bottom: 0;
 }
 
 blockquote footer, blockquote small, blockquote .small {
   color: #000;
   text-align: right;
   font-style: italic;
+  font-weight: 500;
+}
+
+div.textwidget blockquote {
+  color: #6d93a0;
+  font-size: 1.2em;
+  font-style: italic;
+}
+div.textwidget blockquote footer {
+  color: #6d93a0;
+  font-size: .8em;
+  font-style: normal;
 }
 
 /****** ---------------------- ******/
@@ -180,16 +198,32 @@ blockquote footer, blockquote small, blockquote .small {
 a.btn.btn-hollow,
 button.btn.btn-hollow {
   color: #fff;
-    border: 2px solid #fff;
     background-color: transparent;
+    border: 2px solid #fff;
+    font-size: .8em;
     margin-top: 1em;
+    text-transform: uppercase;
 }
+
 a.btn.btn-hollow-blackborder,
 button.btn.btn-hollow-blackborder {
   color: #000;
-    border: 2px solid #000;
     background-color: transparent;
+    border: 2px solid #000;
+    font-size: .8em;
     margin-top: 1em;
+    text-transform: uppercase;
+}
+
+#home-consultation .btn {
+  font-size: 1.1em;
+  color: #fff;
+  text-transform: none;
+  font-weight: 500;
+}
+
+#home-consultation .btn:hover {
+  color: #000;
 }
 
 /*.btn-hollow:hover, a.btn.btn-hollow:hover {*/
@@ -239,14 +273,11 @@ div#site-branding h2 {
   font-size: 10px;
   text-indent: -9999px;
 }
-.custom-header-image {
+header-image {
+  background-image: url(http://www.example.com/bck.png);
   margin: 0 0 0 0;
 }
 
-.site-branding-container {
-  width: 100%;
-  padding: 0 35px;
-}
 
 /* contact info in header */
 #header-contact {
@@ -287,6 +318,14 @@ div#avvo2 {
   padding-bottom: 3em;
 }
 
+#home-testimonials blockquote {
+  font-style: italic;
+}
+
+#home-testimonials blockquote footer {
+  font-style: normal;
+}
+
 #home-represents {
   padding-top: 0;
   margin-bottom: -2em;
@@ -305,10 +344,19 @@ div#avvo2 {
   color: #fff;
 }
 
+#home-press figcaption {
+  font-size: .8em;
+  margin-top: .5em;
+}
+
+#home-press figcaption b {
+  font-weight: 500;
+}
+
 .home-notables-blurbs {
   color: #fff;
-  font-size: .8em;
-  font-weight: 500;
+  font-size: .9em;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -323,7 +371,7 @@ div#avvo2 {
 /****** ---------------------- ******/
 
 ul {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 p.process1 strong {
@@ -342,128 +390,6 @@ p.process1 strong {
 
 .profile-sidebar {
   font-size: .8em;
-}
-
-/****** ---------------------- ******/
-/* PRESS/MEDIA PAGE                 */
-/****** ---------------------- ******/
-
-.press-subhed h3 {
-  color: #d9ce4d;
-  margin-top: 2em;
-  font-size: 1.6em;
-}
-
-.press-title {
-  font-size: .9em;
-  font-weight: 500;
-  line-height: 1.2em;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-.press-date {
-  margin-bottom: 0;
-  margin-top: 5px;
-}
-a.press-pdf {
-  color: #6d93a0;
-}
-a.press-pdf:hover {
-  color: #000;
-}
-.press-logo {
-  width: 60%;
-  margin-top: 14px;
-}
-
-div.press-tv-post {
-  margin-top: 1.1em;
-}
-
-div.press-tv-video {
-  margin-right: -.7em;
-  max-width: 200px;
-}
-
-div.press-tv-text {
-
-}
-
-/****** ---------------------- ******/
-/* FOOTER                           */
-/****** ---------------------- ******/
-
-#colophon {
-  margin-top: 2em;
-}
-
-#footer-navigation li {
-border: none;
-}
-/* Let's take away dividers between footer menu items */
-#footer-navigation ul.dividers > li:nth-child(n+2):before {
-  content: "";
-  height: 10px;
-  margin-right: 0px;
-  border-left: none;
-  padding-left: 0;
-}
-.list-inline>li {
-  display: inline-block;
-  padding-left: 0px;
-  padding-right: 0px;
-  line-height: 10px;
-}
-.footer-nav-menu li {
-  display: block;
-}
-.footer-nav-menu a:not(.btn) {
-  color: #000;
-}
-.footer-nav-menu a:not(.btn):hover {
-  color: #fff;
-}
-
-/*#site-credits a {
-  color: #8caab4;
-}
-*/
-.after-footer {
-  background-color: rgba(133, 156, 167, 1);
-}
-
-#back-to-top {
-  margin-bottom: 2em;
-}
-#back-to-top a {
-  color: #000;
-}
-#back-to-top a:hover {
-  color: #fff;
-}
-
-.footer-content {
-}
-
-div.footer-nav-menu {
-}
-
-div#contact-footer {
-}
-
-div#contact-footer a {
-  color: #fff;
-}
-div#contact-footer a:hover {
-  color: #000;
-}
-
-div#social-footer {
-  color: #000;
-}
-
-#social-footer .fa {
-  font-size: 2em;
 }
 
 /****** ---------------------- ******/
@@ -562,5 +488,133 @@ div.tab-content {
 }
 */
 /*8888888*****************8888888*/
+
+/****** ---------------------- ******/
+/* PRESS/MEDIA PAGE                 */
+/****** ---------------------- ******/
+
+.press-subhed h3 {
+  color: #d9ce4d;
+  margin-top: 2em;
+  font-size: 1.6em;
+}
+
+.press-title {
+  font-size: .9em;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.press-date {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+a.press-pdf {
+  color: #6d93a0;
+}
+a.press-pdf:hover {
+  color: #000;
+}
+.press-logo {
+  width: 60%;
+  margin-top: 14px;
+}
+
+div.press-tv-post {
+  margin-top: 1.1em;
+}
+
+div.press-tv-video {
+  margin-right: -.7em;
+  max-width: 200px;
+}
+
+div.press-tv-text {
+
+}
+
+/****** ---------------------- ******/
+/* FOOTER                           */
+/****** ---------------------- ******/
+
+#colophon {
+  margin-top: 2em;
+}
+
+#footer-navigation li {
+border: none;
+}
+/* Let's take away dividers between footer menu items */
+#footer-navigation ul.dividers > li:nth-child(n+2):before {
+  content: "";
+  height: 10px;
+  margin-right: 0px;
+  border-left: none;
+  padding-left: 0;
+}
+.list-inline>li {
+  display: inline-block;
+  padding-left: 0px;
+  padding-right: 0px;
+  line-height: 10px;
+}
+.footer-nav-menu li {
+  display: block;
+}
+.footer-nav-menu a:not(.btn) {
+  color: #000;
+}
+.footer-nav-menu a:not(.btn):hover {
+  color: #fff;
+}
+
+.after-footer {
+  background-color: #859ca7;
+}
+
+#back-to-top {
+  margin-bottom: 2em;
+}
+#back-to-top a {
+  color: #000;
+}
+#back-to-top a:hover {
+  color: #fff;
+}
+
+.footer-content {
+}
+
+div.footer-nav-menu {
+}
+
+div#contact-footer {
+}
+
+div#contact-footer a {
+  color: #fff;
+}
+div#contact-footer a:hover {
+  color: #000;
+}
+
+div#social-footer {
+  color: #000;
+}
+
+#social-links {
+}
+
+#social-footer p a {
+  color: #14343a;
+  font-size: 2em;
+  margin-right: .3em;
+}
+
+#social-footer p a:hover {
+  color: #d9ce4d;
+}
+
 
 
