@@ -37,33 +37,34 @@
 		$custom_header_location = isset ( $xsbf_theme_options['custom_header_location'] ) ? $xsbf_theme_options['custom_header_location'] : 'content-header';
 		if ( $custom_header_location == 'header' ) :
 		?>
-			<div id="site-branding" class="site-branding">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div id="site-branding" class="site-branding">
 		
-			<?php
-			// Get custom header image and determine its size
-			if ( get_header_image() ) {
-			?>
-				<div class="custom-header-image" style="background-image: url('<?php echo header_image() ?>'); width: <?php echo get_custom_header()->width; ?>px; height: <?php echo get_custom_header()->height ?>px;">
-				<div class="container">
-                <?php //if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-				<p class="color-darkblue" id="header-contact">contact: <br>212-532-1934 <br><a href="#">james@kousouroslaw.com</a></p>
-				</div></div>
-			<?php
+				<?php
+				// Get custom header image and determine its size
+				if ( get_header_image() ) {
+				?>
+					<div class="custom-header-image" style="background-image: url('<?php echo header_image() ?>'); width: <?php echo get_custom_header()->width; ?>px; height: <?php echo get_custom_header()->height ?>px;">
+						<div class="container">
+		                <?php //if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
+						<h1 class="site-title"><?php bloginfo( 'name' )?></h1>
+						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+						<p class="color-darkblue" id="header-contact">contact: <br>212-532-1934 <br><a href="#">james@kousouroslaw.com</a></p>
+						</div>
+					</div>
+				<?php
 
-			// If no custom header, then just display the site title and tagline
-			} else {
-			?>
-				<div class="container">
-                <?php //if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-				</div>
-			<?php
-			} //endif get_header_image()
-			?>
-			</div><!-- .site-branding -->
+				// If no custom header, then just display the site title and tagline
+				} else {
+				?>
+					<div class="container">
+	                <?php //if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
+					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+					</div>
+				<?php
+				} //endif get_header_image()
+				?>
+			</div></a><!-- .site-branding -->
 
 		<?php			
 		endif; // $custom_header_location

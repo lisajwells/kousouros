@@ -73,9 +73,10 @@
 	<div class="container">
 		<div id="back-to-top"><a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a></div>
 
+<div class="row footer-content">
 		<?php // Footer nav menu
 		if ( $nav_menu ) : ?>
-			<div class="footer-nav-menu pull-left col-md-3">
+			<div class="footer-nav-menu pull-left col-md-4">
 			<nav id="footer-navigation" class="secondary-navigation" role="navigation">
 				<h1 class="menu-toggle sr-only"><?php _e( 'Footer Menu', 'flat-bootstrap' ); ?></h1>
 				<?php echo $nav_menu; ?>
@@ -83,21 +84,18 @@
 			</div><!-- .footer-nav-menu -->
 		<?php endif; ?>
 
-		<div id="social-footer" class="col-md-3">
-			<p><span class="fa fa-facebook-square"><span></p>
-			<p><span class="fa fa-twitter-square"><span></p>
-		</div>
-
-		<div id="contact-footer" class="col-md-3">
-			<p>Contact Us:</p>
+		<div id="contact-footer" class="col-md-4">
 			<p>260 Madison Avenue, 22nd floor, <br>New York, New York 10018</p>
 			<p>212-000-0000 Fax 212-000-0000</p>
-			<p>james@kousouroslaw.com</p>
+			<p><a href="#">james@kousouroslaw.com</a></p>
 		</div>
 
-		<div id="copyright-footer" class="col-md-3">
-			&copy; <?php echo date ( 'Y' ); ?> Kousouros Law
+		<div id="social-footer" class="col-md-4">
+			<p><span class="fa fa-facebook-square"></span>&nbsp;<span class="fa fa-twitter-square"></span></p>
+			<p>&copy; <?php echo date ( 'Y' ); ?> Kousouros Law</p>
+			<p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
 		</div>
+</div><!-- row -->
 
 <!-- removed dynamic site credits -->
 

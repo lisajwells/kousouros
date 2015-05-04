@@ -179,11 +179,11 @@
         <p class="center"><a class="btn btn-hollow" href="#">Read more notable cases</a></p>
       </div><!-- col-6 -->
 
-      <div class="col-md-6"><!-- big six -->
+      <div class="col-md-6 home-notables-blurbs center"><!-- big six -->
 
         <div class="row">
           <div class="col-md-6">
-		        <p><?php the_field('home_notables_blurb_1'); ?></p>
+		        <p class="yellowfont"><?php the_field('home_notables_blurb_1'); ?></p>
           </div>
           <div class="col-md-6">
 		        <p><?php the_field('home_notables_blurb_2'); ?></p>
@@ -195,7 +195,7 @@
 		        <p><?php the_field('home_notables_blurb_3'); ?></p>
           </div>
           <div class="col-md-6">
-		        <p><?php the_field('home_notables_blurb_4'); ?></p>
+		        <p class="yellowfont"><?php the_field('home_notables_blurb_4'); ?></p>
           </div>
         </div><!-- row -->
 
@@ -218,7 +218,7 @@
           <img class="alignnone size-full wp-image-904 aligncenter" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-150x150.jpg" alt="Image Alignment 150x150" width="150" height="150" />
       </div>
     </div><!-- row -->
-    <p>Successful representation all across the Untied States and Internationally</p>
+    <p class="center">Successful representation all across the Untied States and Internationally</p>
   </div><!-- container -->
 </div><!-- section home-national -->
 

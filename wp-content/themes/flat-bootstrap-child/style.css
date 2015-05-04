@@ -92,6 +92,10 @@ p.intro-graph {
   margin: 0px auto;
 }
 
+.yellowfont {
+  color: #d9ce4d; 
+}
+
 /****** content-header is the page title ******/
 
 .content-header {
@@ -178,12 +182,14 @@ button.btn.btn-hollow {
   color: #fff;
     border: 2px solid #fff;
     background-color: transparent;
+    margin-top: 1em;
 }
 a.btn.btn-hollow-blackborder,
 button.btn.btn-hollow-blackborder {
   color: #000;
     border: 2px solid #000;
     background-color: transparent;
+    margin-top: 1em;
 }
 
 /*.btn-hollow:hover, a.btn.btn-hollow:hover {*/
@@ -263,6 +269,10 @@ div#site-branding h2 {
 float: right;
 }
 
+#specializing {
+  text-transform: uppercase;
+}
+
 div#avvo2 {
   margin-top: 3em;
 }
@@ -287,6 +297,19 @@ div#avvo2 {
 }
 #home-consultation-row p {
   color: #fff;
+}
+
+.home-notables-blurbs {
+  color: #fff;
+  font-size: .8em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#home-national h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
 }
 
 /****** ---------------------- ******/
@@ -365,7 +388,7 @@ div.press-tv-text {
 /****** ---------------------- ******/
 
 #colophon {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 #footer-navigation li {
@@ -395,10 +418,10 @@ border: none;
   color: #fff;
 }
 
-#site-credits a {
+/*#site-credits a {
   color: #8caab4;
 }
-
+*/
 .after-footer {
   background-color: rgba(133, 156, 167, 1);
 }
@@ -413,14 +436,28 @@ border: none;
   color: #fff;
 }
 
-#social-footer{
-
+.footer-content {
 }
-#contact-footer{
 
+div.footer-nav-menu {
 }
-#copyright-footer{
 
+div#contact-footer {
+}
+
+div#contact-footer a {
+  color: #fff;
+}
+div#contact-footer a:hover {
+  color: #000;
+}
+
+div#social-footer {
+  color: #000;
+}
+
+#social-footer .fa {
+  font-size: 2em;
 }
 
 /****** ---------------------- ******/
