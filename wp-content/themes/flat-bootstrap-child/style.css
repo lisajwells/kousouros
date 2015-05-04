@@ -240,22 +240,28 @@ div#site-branding h2 {
   text-indent: -9999px;
 }
 .custom-header-image {
-  margin: 0 0 0 35px;
+  margin: 0 0 0 0;
+}
+
+.site-branding-container {
   width: 100%;
+  padding: 0 35px;
 }
 
 /* contact info in header */
 #header-contact {
-  position: absolute;
-  top: 2em;
+/*  position: absolute;
+  top: 0;
   right: 0;
   text-indent: 0;
-  padding: 1em 50px 1em 0;
+*/  padding: 1em 0 1em 0;
   text-align: right;
 }
+
 #header-contact a {
   color: #8caab4;
 }
+
 #header-contact a:hover {
   color: #fff;
 }
