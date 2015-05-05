@@ -14,7 +14,7 @@ Template Version: 1.4
 darkmidnightblue: 14343a;
 darkblue: 8caab4;
 darkerblue: 6d93a0;
-darkgray: 859ca7;
+darkgray: 7c9eaa (was 859ca7);
 yellow: d9ce4d; 
 */
 /****** I changed this color in the parent css. 
@@ -174,10 +174,10 @@ div.textwidget blockquote footer {
 }
 .darkgray, 
 .bg-darkgray {
-  background-color: #859ca7;
+  background-color: #7C9EAA;
 }
 .color-darkgray {
-  background-color: #859ca7;
+  background-color: #7C9EAA;
 }
 .bg-darkgray h2 {
   color: #fff;
@@ -237,7 +237,7 @@ button.btn.btn-hollow:hover {
 btn.btn-hollow-blackborder:hover,
 button.btn.btn-hollow-blackborder:hover {
     color: #000;
-    background-color: #859ca7;
+    background-color: #7C9EAA;
 }
 .darkgray button.btn.btn-hollow, 
 .darkgray .btn.btn-hollow,
@@ -255,7 +255,7 @@ button.btn.btn-hollow:hover,
 button.btn.btn-hollow-blackborder:hover, 
 .btn.btn-hollow-blackborder:hover {
     color: #2f2f2f;
-    background-color: #859ca7;
+    background-color: #7C9EAA;
 }
 
 /****** ---------------------- ******/
@@ -313,6 +313,11 @@ float: right;
 div#avvo2 {
   margin-top: 3em;
 }
+
+/* the bootstrap text carousel for home-testimonials */
+
+
+
 
 #home-testimonials {
   padding-bottom: 3em;
@@ -570,7 +575,7 @@ border: none;
 }
 
 .after-footer {
-  background-color: #859ca7;
+  background-color: #7C9EAA;
 }
 
 #back-to-top {
