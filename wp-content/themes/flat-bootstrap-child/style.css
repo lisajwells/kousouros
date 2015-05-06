@@ -315,9 +315,18 @@ div#avvo2 {
 }
 
 /* the bootstrap text carousel for home-testimonials */
+#home-testimonials-carousel i {
+  font-size: 140px;
+}
 
+.carousel-inner {
+  width: 86%;
+  margin: 0 auto;
+}
 
-
+.carousel-control {
+  width: 6%;
+}
 
 #home-testimonials {
   padding-bottom: 3em;

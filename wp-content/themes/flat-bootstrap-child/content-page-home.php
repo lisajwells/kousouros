@@ -47,14 +47,10 @@
 <div class="section bg-darkgray" id="home-testimonials"><!-- home testimonials -->
 	<div class="container">
 
-
-
-
 		<h2><?php the_field('home_testimonials_title'); ?></h2>    
 		<div class="row"><!--  -->
 
       <?php $tesimonial_query = new WP_Query( 'category_name=testimonials');  ?>
-
 
 <!-- THE TEXT CAROUSEL EXPERIMENT -->
 
@@ -64,6 +60,7 @@
     <li data-target="#home-testimonials-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#home-testimonials-carousel" data-slide-to="1"></li>
     <li data-target="#home-testimonials-carousel" data-slide-to="2"></li>
+    <li data-target="#home-testimonials-carousel" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -104,11 +101,11 @@
 
   <!-- Controls -->
   <a class="left carousel-control" href="#home-testimonials-carousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#home-testimonials-carousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <i class="fa fa-angle-right" aria-hidden="true"></i>
     <span class="sr-only">Next</span>
   </a>
 </div>
