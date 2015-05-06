@@ -65,7 +65,10 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
 
-<!-- This seems to work okay if I only do it once but I need to loop through all nine, so I need 3 of these groups in a bigger loop so I can get items 1,2,3 in the item active div, then items 4,5,6 in an item div, then items 7,8,9 in an item div (!!!!!!!!!!!!!!!     -->
+<!-- This seems to work okay if I only do it once but I need to loop through all nine, 
+  1,2,3 in the item active div, then items 4,5,6 in an item div, then items 7,8,9 in an item div 
+So, loops within a loop? Maybe the $testimonial_query is an array I can refer to by index?
+  (!!!!!!!!!!!!!!!     -->
     <div class="item active">
       <?php $counter = 0; ?>
       <?php while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
@@ -82,7 +85,7 @@
       <?php $counter = 0; ?>
       <?php while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
         <?php $counter++; ?>
-        <?php if($counter < 4) : ?>
+        <?php if($counter > 3 && $counter < 7) : ?>
           <div class="col-md-4">
             <blockquote><?php the_excerpt(); ?><footer><?php  the_title();  ?></footer></blockquote>
           </div><!-- col-4 -->
@@ -94,7 +97,7 @@
       <?php $counter = 0; ?>
       <?php while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
         <?php $counter++; ?>
-        <?php if($counter < 4) : ?>
+        <?php if($counter > 6 && $counter < 10) : ?>
           <div class="col-md-4">
             <blockquote><?php the_excerpt(); ?><footer><?php  the_title();  ?></footer></blockquote>
           </div><!-- col-4 -->
