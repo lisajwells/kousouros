@@ -25,7 +25,12 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page-home' ); ?>
+				<?php get_template_part( 'content', 'page-home-specializing' ); ?>
+        <?php get_template_part( 'content', 'page-home-testimonials' ); ?>
+        <?php get_template_part( 'content', 'page-home-represents' ); ?>
+        <?php get_template_part( 'content', 'page-home-consultation' ); ?>
+        <?php get_template_part( 'content', 'page-home-press' ); ?>
+        <?php get_template_part( 'content', 'page-home-notables' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
