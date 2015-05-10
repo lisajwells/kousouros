@@ -88,7 +88,7 @@ p.intro-graph {
 }
 
 /* center videos in their columns */
-.jetpack-video-wrapper iframe {
+.video iframe {
   margin: 0px auto;
 }
 
@@ -499,79 +499,29 @@ transform: rotate(45deg);
   text-transform: uppercase;
 }
 
-/* custom inclusion of left tabs */
-
-.tabs-left > .nav-tabs {
-  border-bottom: 0;
+.notables_menu_class {
+  text-align: right;
 }
 
-.tab-content > .tab-pane,
-.pill-content > .pill-pane {
-  display: none;
+.notables_menu_class ul {
+  list-style-type: none;
 }
 
-.tab-content > .active,
-.pill-content > .active {
-  display: block;
+.notables_menu_class ul li {
+  line-height: 1.2em;
+  padding: 1em 1em 1em .5em;
+  margin-right: -1em;
 }
 
-.tabs-left > .nav-tabs > li {
-  float: none;
+.notables_menu_class ul li.current-menu-item {
+  background-color: #efefef;
 }
 
-.tabs-left > .nav-tabs > li > a {
-  min-width: 74px;
-  margin-right: 0;
-  margin-bottom: 3px;
+.notables-content {
+  background-color: #efefef;
+  padding: 2em;
 }
 
-.tabs-left > .nav-tabs {
-  float: left;
-  margin-right: 19px;
-  width: 20%;
-  /*border-right: 1px solid #ddd;*/
-}
-
-.tabs-left > .nav-tabs > li > a {
-  margin-right: -1px;
-  -webkit-border-radius: 4px 0 0 4px;
-     -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
-}
-
-.tabs-left > .nav-tabs > li > a:hover,
-.tabs-left > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
-}
-
-.tabs-left > .nav-tabs .active > a,
-.tabs-left > .nav-tabs .active > a:hover,
-.tabs-left > .nav-tabs .active > a:focus {
-  border-color: #ddd transparent #ddd #ddd;
-  *border-right-color: #ffffff;
-}
-.tab-pane {
-  border: 1px solid #ddd;
-  background-color: #f2f2f2;
-  padding: 0 1.5em .2em 1.5em;
-}
-
-div.tab-content {
-  width: 80%;
-  margin-left: 20%;
-}
-/*ul.nav-tabs {
-  width: 20%;
-}
-*/
-/*.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-  color: #e0e0e0;
-  background-color: #f2f2f2;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
-  cursor: default;
-}
-*/
 /*8888888*****************8888888*/
 
 /****** ---------------------- ******/

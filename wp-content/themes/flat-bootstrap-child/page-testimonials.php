@@ -18,7 +18,6 @@ get_header(); ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class( 'testimonial_loop' ); ?>>
 
             <div class="entry-content">
-                <?php the_content(); ?>
                 <?php 
 
                 $testimonial_query = new WP_Query( 'category_name=testimonials');
