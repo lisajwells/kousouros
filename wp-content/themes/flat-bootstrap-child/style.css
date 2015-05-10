@@ -513,7 +513,7 @@ transform: rotate(45deg);
   margin-right: -1em;
 }
 
-.notables_menu_class ul li.current-menu-item {
+#menu-notables-menu .current_page_item {
   background-color: #efefef;
 }
 
