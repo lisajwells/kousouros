@@ -77,6 +77,13 @@ $xsbf_theme_options = array(
 	'testimonials'			=> false
 );
 
+// add notables menu 
+function register_my_menu() {
+  register_nav_menu('notables-menu',__( 'Notables Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+
 // function wpb_add_google_fonts() {
 
 

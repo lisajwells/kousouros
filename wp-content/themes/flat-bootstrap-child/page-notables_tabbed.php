@@ -21,8 +21,6 @@ get_header(); ?>
 
 <!-- /***********************/ -->
 
-<?php wp_nav_menu( array( 'theme_location' => 'notables-menu', 'container_class' => 'notables_menu_class' ) ); ?>
-
 			<div class="row">
 				<div class="col-md-12" id="notables-panel">
 
