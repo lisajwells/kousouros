@@ -67,7 +67,7 @@
 					</a>
 
 					<div class="col-md-3 col-sm-12">
-						<p class="color-darkblue" id="header-contact">contact: <br>212-532-1934 <br><a href="#">james@kousouroslaw.com</a></p>
+						<p class="color-darkblue" id="header-contact">212-532-1934 <br><a href="#">james@kousouroslaw.com</a></p>
 					</div>
 
 				</div><!-- row -->

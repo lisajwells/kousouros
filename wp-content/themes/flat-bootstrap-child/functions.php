@@ -95,7 +95,7 @@ $xsbf_theme_options = array(
 	wp_enqueue_script( 'jquery1101_script', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js');
 	wp_enqueue_script( 'jquery1103_script', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
 
-	/* kousouros.js */
+	/* kousouros.js (still in footer for now) */
 
 
 
