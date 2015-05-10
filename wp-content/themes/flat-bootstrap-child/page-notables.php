@@ -10,7 +10,7 @@ get_header(); ?>
 
 <!-- //* <img src="<?php bloginfo('template_url'); ?>/../images/sketch_court_1170x393.jpg"/> */ -->
 <div class="container">
-  <div id="main-grid" class="row">
+  <div id="main-grid">
     <div id="primary" class="content-area">
       <main id="main" class="site-main" role="main">
 		<img src="<?php echo content_url(); ?>/images/sketch_court_1170x393.jpg">
