@@ -88,11 +88,20 @@ $xsbf_theme_options = array(
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700',array(), null, 'screen' );	
 
 	/* LOAD AVVO JAVASCRIPT */
+	/* avvo badge */
 	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js');
+
+	/* jquery that makes video modal work */
+	wp_enqueue_script( 'jquery1101_script', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js');
+	wp_enqueue_script( 'jquery1103_script', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
+
+
 
 // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
 
 add_action( 'wp_enqueue_scripts', 'avvo_badge_script' );
+add_action( 'wp_enqueue_scripts', 'jquery1101_script' );
+add_action( 'wp_enqueue_scripts', 'jquery1103_script' );
 
 
 /*
