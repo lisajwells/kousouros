@@ -91,9 +91,11 @@ $xsbf_theme_options = array(
 	/* avvo badge */
 	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js');
 
-	/* jquery that makes video modal work */
+	/* jquery that makes the bootstrap video modal work */
 	wp_enqueue_script( 'jquery1101_script', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js');
 	wp_enqueue_script( 'jquery1103_script', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
+
+	/* kousouros.js */
 
 
 
