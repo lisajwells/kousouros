@@ -32,17 +32,21 @@
     <div class="row">
     <h2><?php the_field('home_press_title'); ?></h2>    
       <p><?php the_field('home_press_subhed'); ?><p>
+
       <div class="col-md-3">
         <figure class="video" id="home-press-1-group">
 
           <?php $video_id = get_field( 'home_press_video_id_1' ); ?>
 
-          <img class="youtube" rel="<?php echo $video_id?>" src="http://img.youtube.com/vi/<?php echo $video_id?>/mqdefault.jpg" />
+<a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s">
+
+          <img class="youtube" rel="<?php echo $video_id?>" src="http://img.youtube.com/vi/<?php echo $video_id?>/mqdefault.jpg" /></a>
 
           <figcaption><?php the_field('home_press_video_cap_1'); ?></figcaption>
           
         </figure>
       </div>
+      
       <div class="col-md-3">
         <figure>
               <?php
