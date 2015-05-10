@@ -22,10 +22,11 @@
         <div id="home-represents-box">
           <div class="row">
             <div class="col-md-4">
-              <?php
-              global $wp_embed;
-              $video_url = get_field( 'home_represents_video_link' );
-              echo $wp_embed->run_shortcode( '[embed]' . $video_url . '[/embed]' );?>
+                <figure class="video" id="home-represents-group">
+                    <?php $video_id = get_field( 'home_represents_video_id' ); ?>
+                    <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/<?php echo $video_id?>">
+                    <img class="youtube" rel="<?php echo $video_id?>" src="http://img.youtube.com/vi/<?php echo $video_id?>/mqdefault.jpg" /></a>
+                </figure>
               <p style="text-align: center;"><a class="btn btn-hollow-blackborder" href="#">Watch More Videos</a></p>
             </div>
             <div class="col-md-8">

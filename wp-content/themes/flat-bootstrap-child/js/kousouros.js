@@ -46,4 +46,14 @@
 
   /////////
 
+
+  // this is stashed for cookie experiment for opener modal
+//   $(document).ready(function() {
+//     if ($.cookie('modal_shown') == null) {
+//         $.cookie('modal_shown', 'yes', { expires: 1, path: '/' });
+//         $('#myModal').reveal();
+//     }
+// });
+
+
 } )( jQuery );
