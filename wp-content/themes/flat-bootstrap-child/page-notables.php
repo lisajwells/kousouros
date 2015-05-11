@@ -17,6 +17,7 @@ get_header(); ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
 
+          <!-- add id of page id and class of .notables_loop -->
           <article id="post-<?php the_ID(); ?>" <?php post_class( 'notables_loop' ); ?>>
 
             <div class="entry-content">
@@ -26,21 +27,32 @@ get_header(); ?>
 					</div><!-- col-md-2 -->
 	            	<div class="col-md-6 notables-content">
 
-<!-- /***********************/ -->
-                <?php 
+		                <?php  
+						if ( is_page( 1414 )) {    
+						    $notables_cat = 'white-collar';
+						} elseif ( is_page( 1416 )) {	
+						    $notables_cat = 'healthcare-and-pharmaceutical';
+						} elseif ( is_page( 2245 )) {	
+						    $notables_cat = 'homicide';
+						} elseif ( is_page( 1418 )) {	
+						    $notables_cat = 'racketeering-and-bribery';
+						} elseif ( is_page( 1420 )) {	
+						    $notables_cat = 'narcotics';
+						} elseif ( is_page( 1422 )) {	
+						    $notables_cat = 'appeals-and-extradition';
+						};
+						?>
 
-                $notables_query = new WP_Query( 'category_name=notable-cases');
+						<?php  
+		                $notables_query = new WP_Query( "category_name=$notables_cat" ); ?>
 
-                while ( $notables_query->have_posts() ) : $notables_query->the_post(); ?>
+						<?php while ( $notables_query->have_posts() ) : $notables_query->the_post(); ?>
 
-                    <h3><?php  the_title();  ?></h3>
-                    <p><?php the_content(); ?></p>
+		                    <h3><?php  the_title();  ?></h3>
+		                    <?php the_content(); ?>
 
-                <?php endwhile; // end of the loop. ?>
+	                	<?php endwhile; // end of the loop. ?>
 
-
-
-<!-- /***********************/ -->
 	            	</div><!-- col-md-6 -->
 
 				</div><!-- row -->
