@@ -103,14 +103,14 @@ add_action( 'init', 'register_my_menu' );
 	wp_enqueue_script( 'jquery1103_script', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
 
 	/* kousouros.js (still in footer for now) */
-
-
+	wp_enqueue_script( 'kousouros_script', get_template_directory_uri() . '-child/js/kousouros.js');
 
 // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
 
 add_action( 'wp_enqueue_scripts', 'avvo_badge_script' );
 add_action( 'wp_enqueue_scripts', 'jquery1101_script' );
 add_action( 'wp_enqueue_scripts', 'jquery1103_script' );
+add_action( 'wp_enqueue_scripts', 'kousouros_script' );
 
 
 /*
