@@ -1,14 +1,3 @@
-<?php
-/**
- * Theme: Flat Bootstrap
- * 
- * The template used for displaying page content for the home page. It contains 
- * everything after the_content()
- *
- * @package flat-bootstrap
- */
-?>
-
 <!-- /* Most of this content is generated through Custom Fields added through Home Page edit. */ -->
 
 <!-- HOME CONSULTATION SECTION -->

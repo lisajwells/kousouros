@@ -12,24 +12,26 @@ get_header(); ?>
         <div id="primary" class="content-area col-md-8 col-md-offset-2">
             <main id="main" class="site-main" role="main">
 
-                <?php while ( have_posts() ) : the_post(); ?>
+                <!-- <?php //while ( have_posts() ) : the_post(); ?> --><!-- i don't know why we had this loop within a loop -->
 
                     <!-- add id of page id and class of .testimonial_loop -->
                     <article id="post-<?php the_ID(); ?>" <?php post_class( 'testimonial_loop' ); ?>>
                         <div class="entry-content">
                         <?php 
 
-                            $testimonial_query = new WP_Query( 'category_name=testimonials');
+                            $testimonial_query = new WP_Query( 'category_name=xxx');
 
-                            while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
+                            if ( $testimonial_query->have_posts() ) : while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
                                 <blockquote><?php the_content(); ?>
                                 <footer><?php  the_title();  ?></footer></blockquote>
-                            <?php endwhile; // end of the loop. ?>
+                            <?php endwhile; else : ?>
+                                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                            <?php endif; ?>
 
                         </div><!-- .entry-content -->
                     </article><!-- #post-## -->
 
-                <?php endwhile; // end of the loop. ?>
+                <?php //endwhile; // end of the loop. ?>
 
             </main><!-- #main -->
         </div><!-- #primary -->

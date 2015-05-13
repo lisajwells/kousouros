@@ -1,17 +1,12 @@
 <?php
 /**
  * Theme: Flat Bootstrap
- * 
  * The template for displaying the footer.
- *
  * Contains the closing of the #content div and all content after
- *
  * @package flat-bootstrap
  */
 ?>
 	</div><!-- #content -->
-
-<!-- /** deleeting out the sidebar-pagebottom */ -->
 
 	<?php // Start the footer area ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
@@ -111,6 +106,7 @@
 
 <script>
     //function to get and autoplay youtube video from datatag:
+    // STILL NEEDS TO TURN OFF VIDEO WHEN MODAL CLOSES !!!!!!!!!!!!!!!!! //////
     function autoPlayYouTubeModal(){
         var trigger = $("body").find('[data-toggle="modal"]');
         trigger.click(function() {
@@ -128,11 +124,6 @@
             $(document).ready(function(){
                 autoPlayYouTubeModal();
             });
-
-/////////
-
-
-            /////////
 </script>
 
 </body>
