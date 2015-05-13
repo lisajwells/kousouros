@@ -33,6 +33,10 @@ html {
   box-sizing: inherit;
 }
 
+#page, .navbar, .after-footer {
+  max-width: none;
+}
+
 body {
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     color: #000;
@@ -520,6 +524,12 @@ transform: rotate(45deg);
 .notables-content {
   background-color: #efefef;
   padding: 2em;
+}
+
+#back-to-top-notables {
+  text-align: center;
+  margin-top: 2em;
+  font-weight: 400;
 }
 
 /*8888888*****************8888888*/

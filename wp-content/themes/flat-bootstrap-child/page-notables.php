@@ -3,7 +3,6 @@
 Template Name: Notables
 */
 
-
 get_header(); ?>
 
 <?php get_template_part( 'content', 'header' ); ?>
@@ -52,6 +51,8 @@ get_header(); ?>
 		                    <?php the_content(); ?>
 
 	                	<?php endwhile; // end of the loop. ?>
+
+						<div id="back-to-top-notables"><a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a></div>
 
 	            	</div><!-- col-md-6 -->
 

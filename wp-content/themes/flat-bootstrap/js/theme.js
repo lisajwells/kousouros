@@ -31,7 +31,7 @@
 		  if (target.length) {
 			$('html,body').animate({
 			  scrollTop: ( target.offset().top - offset )
-			}, 1000);
+			}, 500);
 			return false;
 		  }
 	});
