@@ -19,13 +19,14 @@ get_header(); ?>
                         <div class="entry-content">
                         <?php 
 
-                            $testimonial_query = new WP_Query( 'category_name=xxx');
+                            $testimonial_query = new WP_Query( 'category_name=testimonials');
 
                             if ( $testimonial_query->have_posts() ) : while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
                                 <blockquote><?php the_content(); ?>
                                 <footer><?php  the_title();  ?></footer></blockquote>
                             <?php endwhile; else : ?>
-                                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                            <?php get_template_part( 'no-results' ) ?>
+                                <!-- <p><?php //_e( 'Sorry, no posts matched your criteria.' ); ?></p> -->
                             <?php endif; ?>
 
                         </div><!-- .entry-content -->

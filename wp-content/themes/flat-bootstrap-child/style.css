@@ -257,6 +257,58 @@ div.textwidget blockquote footer {
 .bg-darkgray h2 {
   color: #fff;
 }
+.lightgreen, 
+.bg-lightgreen {
+    background-color: #8caab4;
+  color: #fff;
+}
+.color-lightgreen {
+    color: #8caab4;
+}
+button,
+html input[type="button"],
+input[type="submit"] {
+    background-color: #8caab4;
+    border-color: #8caab4;
+}
+button:hover, 
+button:focus,
+html input[type="button"]:hover, 
+html input[type="button"]:focus,
+input[type="submit"]:hover, 
+input[type="submit"]:focus {
+    background-color: #6d93a0;
+    border-color: #6d93a0;
+}
+.sticky .entry-title:after {
+  background-color: #8caab4;
+  color: #fff;
+}
+.white button.btn.btn-hollow, 
+.white .btn.btn-hollow, 
+.bg-white button.btn.btn-hollow, 
+.bg-white .btn.btn-hollow, 
+.offwhite button.btn.btn-hollow, 
+.offwhite .btn.btn-hollow, 
+.bg-offwhite button.btn.btn-hollow, 
+.bg-offwhite .btn.btn-hollow, 
+.lightgray button.btn.btn-hollow, 
+.lightgray .btn.btn-hollow, 
+.bg-lightgray button.btn.btn-hollow, 
+.bg-lightgray .btn.btn-hollow, 
+.gray button.btn.btn-hollow, 
+.gray .btn.btn-hollow, 
+.bg-gray button.btn.btn-hollow, 
+.bg-gray .btn.btn-hollow, 
+.darkgray button.btn.btn-hollow, 
+.darkgray .btn.btn-hollow,
+.bg-darkgray button.btn.btn-hollow, 
+.bg-darkgray .btn.btn-hollow {
+  color: #8caab4;
+  border: 2px solid #8caab4;
+    background-color: transparent;
+}
+
 
 /****** ---------------------- ******/
 /* BUTTONS                          */
