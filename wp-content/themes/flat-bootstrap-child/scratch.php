@@ -1,3 +1,29 @@
+Firm Overview DKK edit
+<p class="intro-graph"><b>Located in midtown Manhattan,</b> the Law Office of James Kousouros handles all types of criminal prosecutions under state and federal laws. These cases include prosecutions for white-collar crimes such as complex securities violations, Medicaid, Medicare and healthcare fraud, pharmaceutical industry fraud, and tax fraud.  They also include charges for racketeering, homicide, narcotics violations, DWI, and simple assault, among many others. (See, Notable Cases).</p>  
+<h3>All Stages of Representation</h3>
+<p>As a full service criminal practice, we represent clients in all stages of the criminal process:</p> 
+<ul>
+<li>pre-arrest investigatory stage</li>
+<li>grand jury proceedings</li>
+<li>indictment</li>
+<li>plea negotiations</li> 
+<li>trial</li> 
+<li>all levels of the appellate process—including post conviction litigation and appeals.</li>
+</ul> 
+<p>We also represent clients before various regulatory review boards.</p>
+<h3>National and International Presence</h3>
+<p>Mr. Kousouros appears in state and federal courts throughout the country, as well as in international courts.</p>
+<h3>A Commitment to Every Client</h3>
+<p>James Kousouros’ clients have come from every walk of life, and their cases have been of both high notoriety and of little notice. In either case, Mr. Kousouros has demonstrated his strong commitment to providing an equally vigorous, aggressive and effective defense for each and every one of his clients.</p>
+<h3>Frequent Client Contact</h3> 
+<p>Mr. Kousouros not only believes in frequent client contact, he insists on it. This insistence comes from his firm belief that a client’s participation in his or her own defense is crucial —not only to ensure that every case is properly and thoroughly investigated, but to ensure that his client fully understands and considers all of the options available. For Mr. Kousouros, the benefits of full client participation are essential to his firm’s goal of achieving the best resolution possible.</p>
+
+
+
+
+
+
+
 <!-- LIST BY SUBCATEGORY -->
 <div id="job-listings">
 <?php $cat = 'Jobs';
@@ -17,108 +43,4 @@ $subcats = get_categories('child_of=' . $catID);
   echo '</ul>';
   } ?>
  </div>
-
-
-<!-- TABBED PANES -->
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h3>Tabs</h3>
-        <!-- tabs -->
-        <div class="tabbable">
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#one" data-toggle="tab">One</a></li>
-            <li><a href="#two" data-toggle="tab">Two</a></li>
-            <li><a href="#twee" data-toggle="tab">Twee</a></li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane active" id="one">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate. 
-            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
-            <div class="tab-pane" id="two">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-            Aliquam in felis sit amet augue.</div>
-            <div class="tab-pane" id="twee">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-            Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
-           </div>
-        </div>
-        <!-- /tabs -->
-
-    </div>
-    <div class="col-md-6"><h3>Tabs -below</h3>
-    
-          	
-      <!-- tabs bottom -->
-      <div class="tabbable tabs-below">
-        <div class="tab-content">
-         <div class="tab-pane active" id="one_">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate. 
-         Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
-         <div class="tab-pane" id="two_">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-         Aliquam in felis sit amet augue.</div>
-         <div class="tab-pane" id="twee_">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-         Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
-        </div>
-        <ul class="nav nav-tabs">
-          <li><a href="#one_" data-toggle="tab">One</a></li>
-          <li><a href="#two_" data-toggle="tab">Two</a></li>
-          <li><a href="#twee_" data-toggle="tab">Twee</a></li>
-        </ul>
-      </div>
-      <!-- /tabs -->
-      
-    
-    </div>
-  </div><!-- /row -->
-  <div class="row">
-    <div class="col-md-6"><h3>Tabs -left</h3>
-          	
-      <!-- tabs left -->
-      <div class="tabbable tabs-left">
-        <ul class="nav nav-tabs">
-          <li><a href="#a" data-toggle="tab">One</a></li>
-          <li class="active"><a href="#b" data-toggle="tab">Two</a></li>
-          <li><a href="#c" data-toggle="tab">Twee</a></li>
-        </ul>
-        <div class="tab-content">
-         <div class="tab-pane active" id="a">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate. 
-         Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
-         <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-         Aliquam in felis sit amet augue.</div>
-         <div class="tab-pane" id="c">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-         Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
-        </div>
-      </div>
-      <!-- /tabs -->
-      
-    </div>
-  </row>
-    
-     <div class="col-md-6"><h3>Tabs -right</h3>
-          	
-      <!-- tabs right -->
-      <div class="tabbable tabs-right">
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#1" data-toggle="tab">One</a></li>
-          <li><a href="#2" data-toggle="tab">Two</a></li>
-          <li><a href="#3" data-toggle="tab">Twee</a></li>
-        </ul>
-        <div class="tab-content">
-         <div class="tab-pane active" id="1">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate. 
-         Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
-         <div class="tab-pane" id="2">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-         Aliquam in felis sit amet augue.</div>
-         <div class="tab-pane" id="3">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-         Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
-        </div>
-      </div>
-      <!-- /tabs -->
-      
-    </div>
-    
-  </div><!-- /row -->
-</div>
-  
-  
-  
-
-<hr>
 

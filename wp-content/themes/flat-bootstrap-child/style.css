@@ -72,7 +72,7 @@ h3 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.3em;
-  margin-bottom: .4em;
+  margin-bottom: .1em;
   margin-top: 0;
 }
 
@@ -124,6 +124,11 @@ p.intro-graph {
 header.content-header {
   min-height: 10px;
   }
+
+.nav-previous a,
+.nav-next a {
+  color: #6d93a0;
+}
 
 /***** MODAL PROPERTIES *****/
 .modal-content {
@@ -519,11 +524,13 @@ p.process1 strong {
   color: #d9ce4d;
 }
 
+.page-id-1404 p a,
 .page-id-1411 p a,
 .page-id-1077 p a {
-  color: #8caab4;
+  color: #6d93a0;
 }
 
+.page-id-1404 p a:hover, 
 .page-id-1411 p a:hover, 
 .page-id-1077 p a:hover {
   color: #000;
