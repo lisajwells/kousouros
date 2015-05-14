@@ -22,7 +22,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-  	            <!-- add id of page id and class of .press_loop -->
+        <!-- add id of page id and class of .press_loop -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'press_loop' ); ?>>
 
 					<div class="row">

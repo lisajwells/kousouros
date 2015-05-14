@@ -25,8 +25,7 @@ get_header(); ?>
                                 <blockquote><?php the_content(); ?>
                                 <footer><?php  the_title();  ?></footer></blockquote>
                             <?php endwhile; else : ?>
-                            <?php get_template_part( 'no-results' ) ?>
-                                <!-- <p><?php //_e( 'Sorry, no posts matched your criteria.' ); ?></p> -->
+                                <?php get_template_part( 'no-results' ) ?>
                             <?php endif; ?>
 
                         </div><!-- .entry-content -->

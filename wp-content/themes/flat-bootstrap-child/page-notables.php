@@ -12,9 +12,9 @@ get_header(); ?>
   <div id="main-grid">
     <div id="primary" class="content-area">
       <main id="main" class="site-main" role="main">
-		<img src="<?php echo content_url(); ?>/images/sketch_court_1170x393.jpg">
+    		<img src="<?php echo content_url(); ?>/images/sketch_court_1170x393.jpg">
 
-        <?php while ( have_posts() ) : the_post(); ?>
+         <?php //while ( have_posts() ) : the_post(); ?>
 
           <!-- add id of page id and class of .notables_loop -->
           <article id="post-<?php the_ID(); ?>" <?php post_class( 'notables_loop' ); ?>>
@@ -22,46 +22,47 @@ get_header(); ?>
             <div class="entry-content">
 	            <div class="row">
 	            	<div class="col-md-2 col-md-offset-1">
-					<?php wp_nav_menu( array( 'theme_location' => 'notables-menu', 'container_class' => 'notables_menu_class' ) ); ?>
-					</div><!-- col-md-2 -->
+        					<?php wp_nav_menu( array( 'theme_location' => 'notables-menu', 'container_class' => 'notables_menu_class' ) ); ?>
+      					</div><!-- col-md-2 -->
 	            	<div class="col-md-6 notables-content">
 
-		                <?php  
-						if ( is_page( 1414 )) {    
-						    $notables_cat = 'white-collar';
-						} elseif ( is_page( 1416 )) {	
-						    $notables_cat = 'healthcare-and-pharmaceutical';
-						} elseif ( is_page( 2245 )) {	
-						    $notables_cat = 'homicide';
-						} elseif ( is_page( 1418 )) {	
-						    $notables_cat = 'racketeering-and-bribery';
-						} elseif ( is_page( 1420 )) {	
-						    $notables_cat = 'narcotics';
-						} elseif ( is_page( 1422 )) {	
-						    $notables_cat = 'appeals-and-extradition';
-						};
-						?>
+	                <?php  
+        						if ( is_page( 1414 )) {    
+        						    $notables_cat = 'white-collar';
+        						} elseif ( is_page( 1416 )) {	
+        						    $notables_cat = 'healthcare-and-pharmaceutical';
+        						} elseif ( is_page( 2245 )) {	
+        						    $notables_cat = 'homicide';
+        						} elseif ( is_page( 1418 )) {	
+        						    $notables_cat = 'racketeering-and-bribery';
+        						} elseif ( is_page( 1420 )) {	
+        						    $notables_cat = 'narcotics';
+        						} elseif ( is_page( 1422 )) {	
+        						    $notables_cat = 'appeals-and-extradition';
+        						};
+      						?>
 
-						<?php  
+      						<?php  
 		                $notables_query = new WP_Query( "category_name=$notables_cat" ); ?>
 
-						<?php while ( $notables_query->have_posts() ) : $notables_query->the_post(); ?>
+      						<?php if ( $notables_query->have_posts() ) : while ( $notables_query->have_posts() ) : $notables_query->the_post(); ?>
+                    <h3><?php  the_title();  ?></h3>
+                    <?php the_content(); ?>
+                  <?php endwhile; else : ?>
+                    <?php get_template_part( 'no-results' ) ?>
+                  <?php endif; ?>
 
-		                    <h3><?php  the_title();  ?></h3>
-		                    <?php the_content(); ?>
-
-	                	<?php endwhile; // end of the loop. ?>
-
-						<div id="back-to-top-notables"><a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a></div>
+      						<div id="back-to-top-notables"><a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a>
+                  </div>
 
 	            	</div><!-- col-md-6 -->
 
-				</div><!-- row -->
+      				</div><!-- row -->
             </div><!-- .entry-content -->
 
           </article><!-- #post-## -->
 
-        <?php endwhile; // end of the loop. ?>
+        <?php //endwhile; // end of the loop. ?>
 
       </main><!-- #main -->
     </div><!-- #primary -->

@@ -64,38 +64,38 @@
 
 	<?php // If either footer nav or site credits, display them
 	if ( $nav_menu OR $site_credits ) : ?>	  
-	<div class="after-footer">
-	<div class="container">
-		<div id="back-to-top"><a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a></div>
+		<div class="after-footer">
+			<div class="container">
+				<div id="back-to-top"><a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a>
+				</div>
 
-<div class="row footer-content">
-		<?php // Footer nav menu
-		if ( $nav_menu ) : ?>
-			<div class="footer-nav-menu pull-left col-md-4">
-			<nav id="footer-navigation" class="secondary-navigation" role="navigation">
-				<h1 class="menu-toggle sr-only"><?php _e( 'Footer Menu', 'flat-bootstrap' ); ?></h1>
-				<?php echo $nav_menu; ?>
-			</nav>
-			</div><!-- .footer-nav-menu -->
-		<?php endif; ?>
+				<div class="row footer-content">
+					<?php // Footer nav menu
+					if ( $nav_menu ) : ?>
+						<div class="footer-nav-menu pull-left col-md-4">
+							<nav id="footer-navigation" class="secondary-navigation" role="navigation">
+								<h1 class="menu-toggle sr-only"><?php _e( 'Footer Menu', 'flat-bootstrap' ); ?></h1>
+								<?php echo $nav_menu; ?>
+							</nav>
+						</div><!-- .footer-nav-menu -->
+					<?php endif; ?>
 
-		<div id="contact-footer" class="col-md-4">
-			<p>260 Madison Avenue, 22nd floor, <br>New York, New York 10018</p>
-			<p>212-000-0000 Fax 212-000-0000</p>
-			<p><a href="#">james@kousouroslaw.com</a></p>
-		</div>
+					<div id="contact-footer" class="col-md-4">
+						<p>260 Madison Avenue, 22nd floor, <br>New York, New York 10018</p>
+						<p>212-000-0000 Fax 212-000-0000</p>
+						<p><a href="#">james@kousouroslaw.com</a></p>
+					</div><!-- contact-footer -->
 
-		<div id="social-footer" class="col-md-4">
-			<p id="social-links"><a href="#"><i class="fa fa-facebook-square"></i></a>&nbsp;<a href="#"><i class="fa fa-linkedin-square"></i></a></p>
-			<p>&copy; <?php echo date ( 'Y' ); ?> Kousouros Law</p>
-			<p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
-		</div>
-</div><!-- row -->
+					<div id="social-footer" class="col-md-4">
+						<p id="social-links"><a href="#"><i class="fa fa-facebook-square"></i></a>&nbsp;<a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+						<p>&copy; <?php echo date ( 'Y' ); ?> Kousouros Law</p>
+						<p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
+					</div><!-- social-footer -->
 
-<!-- removed dynamic site credits -->
+				</div><!-- row footer-content -->
 
-	</div><!-- .container -->
-	</div><!-- .after-footer -->
+			</div><!-- .container -->
+		</div><!-- .after-footer -->
 	<?php endif; ?>
 		
 	</footer><!-- #colophon -->
@@ -103,8 +103,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
-
 
 </body>
 </html>
