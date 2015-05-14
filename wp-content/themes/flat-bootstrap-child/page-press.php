@@ -42,7 +42,7 @@ get_header(); ?>
 							<img class="press-logo" id="dailynews-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-dailynews.png">
 
 							<?php while ( $press_print1_query->have_posts() ) : $press_print1_query->the_post(); ?>
-								<!-- get content-print-press.php template part -->
+								<!-- get content-press-print.php template part -->
 								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
 
