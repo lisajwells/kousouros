@@ -18,7 +18,7 @@ get_header(); ?>
 
 <div class="section" id="home-slider">
 	<?php 
-    echo do_shortcode("[metaslider id=1471]"); // slideshow ID
+    echo do_shortcode("[metaslider id=2384]"); // slideshow ID
 	?>
 </div>
 

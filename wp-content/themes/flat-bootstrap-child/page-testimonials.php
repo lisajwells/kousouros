@@ -24,9 +24,11 @@ get_header(); ?>
                             if ( $testimonial_query->have_posts() ) : while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
                                 <blockquote><?php the_content(); ?>
                                 <footer><?php  the_title();  ?></footer></blockquote>
-                            <?php endwhile; else : ?>
-                                <?php get_template_part( 'no-results' ) ?>
-                            <?php endif; ?>
+                            <?php endwhile; 
+                                wp_reset_postdata(); 
+                            else :
+                                get_template_part( 'no-results' );
+                            endif; ?>
 
                         </div><!-- .entry-content -->
                     </article><!-- #post-## -->

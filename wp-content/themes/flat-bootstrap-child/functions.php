@@ -77,6 +77,19 @@ $xsbf_theme_options = array(
 	'testimonials'			=> false
 );
 
+/* Getting php to show up in the sidebar text widgets
+ */
+add_filter('widget_text','execute_php',100);
+function execute_php($html){
+     if(strpos($html,"<"."?php")!==false){
+          ob_start();
+          eval("?".">".$html);
+          $html=ob_get_contents();
+          ob_end_clean();
+     }
+     return $html;
+}
+
 // add notables menu 
 function register_my_menu() {
   register_nav_menu('notables-menu',__( 'Notables Menu' ));
@@ -94,24 +107,40 @@ add_action( 'init', 'register_my_menu' );
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic',array(), null, 'screen' );	
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700',array(), null, 'screen' );	
 
+function klaw_scripts() {
 	/* LOAD AVVO JAVASCRIPT */
 	/* avvo badge */
-	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js');
+	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js', array(), '1.0.0', true );
 
 	/* jquery that makes the bootstrap video modal work */
-	wp_enqueue_script( 'jquery1101_script', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js');
-	wp_enqueue_script( 'jquery1103_script', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
+	wp_enqueue_script( 'jquery1101_script', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'jquery1103_script', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array(), '1.0.0', true );
 
 	/* kousouros.js (still in footer for now) */
-	wp_enqueue_script( 'kousouros_script', get_template_directory_uri() . '-child/js/kousouros.js');
+	wp_enqueue_script( 'kousouros_script', get_template_directory_uri() . '-child/js/kousouros.js', array(), '1.0.0', true );
+	}
 
 // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
 
-add_action( 'wp_enqueue_scripts', 'avvo_badge_script' );
-add_action( 'wp_enqueue_scripts', 'jquery1101_script' );
-add_action( 'wp_enqueue_scripts', 'jquery1103_script' );
-add_action( 'wp_enqueue_scripts', 'kousouros_script' );
+//**
+// add_action( 'wp_enqueue_scripts', 'avvo_badge_script' );
+// add_action( 'wp_enqueue_scripts', 'jquery1101_script' );
+// add_action( 'wp_enqueue_scripts', 'jquery1103_script' );
+// add_action( 'wp_enqueue_scripts', 'kousouros_script' );
+//**//
+add_action( 'wp_enqueue_scripts', 'klaw_scripts' );
 
+/**
+ * Proper way to enqueue scripts and styles
+ */
+/**
+*function theme_name_scripts() {
+*	wp_enqueue_style( 'style-name', get_stylesheet_uri() );
+*	wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+*}
+*
+*add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+*/
 
 /*
  * OVERRIDE THE SITE CREDITS TO GET RID OF THE "THEME BY XTREMELYSOCIAL" AND JUST LEAVE
@@ -140,4 +169,3 @@ function xsbf_get_the_excerpt( $excerpt ) {
 	return $excerpt;
 }
 endif; // end ! function_exists
-

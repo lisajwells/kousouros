@@ -57,6 +57,9 @@
             <?php endwhile; // end of the loop. ?>
           </div>
           
+          <!-- /* Restore original Post Data */ -->
+          <?php  wp_reset_postdata();  ?>
+
         </div><!-- carousel inner -->
 
         <!-- Controls -->
@@ -71,11 +74,7 @@
       </div><!-- home-testimonials-carousel -->
       <!-- THE TEXT CAROUSEL -->
 
-    <!-- /* Restore original Post Data */ -->
-    <?php  wp_reset_postdata();  ?>
-
     </div><!-- carousel .row -->
-
-    <p><a class="btn btn-hollow" href="#">Read More Testimonials</a></p>
+    <p><a class="btn btn-hollow" href="<?php bloginfo('url'); ?>/testimonials">Read More Testimonials</a></p>
   </div><!-- .container -->
-</div><!-- section testimonials -->
+</div><!-- section testimonials

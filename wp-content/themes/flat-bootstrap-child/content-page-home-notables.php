@@ -8,7 +8,7 @@
       <div class="col-md-6">
         <h2><?php the_field('home_notables_title'); ?></h2>    
         <p><?php the_field('home_notables_body'); ?></p>
-        <p class="center"><a class="btn btn-hollow" href="#">Read more notable cases</a></p>
+        <p class="center"><a class="btn btn-hollow" href="<?php bloginfo('url'); ?>/notable-cases/white-collar">Read more notable cases</a></p>
       </div><!-- col-6 -->
 
       <div class="col-md-6 home-notables-blurbs center"><!-- big six -->

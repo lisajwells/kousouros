@@ -22,106 +22,99 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+	<div id="page" class="hfeed site">
 
-<!-- video modal for entire site	 -->
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <div>
-                    <iframe width="100%" height="350" src=""></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><!-- video modal for entire site	 -->
-
+		<!-- video modal for entire site	 -->
+		<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-body">
+		                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                <div>
+		                    <iframe width="100%" height="350" src=""></iframe>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div><!-- video modal for entire site	 -->
 
 	<?php do_action( 'before' ); ?>
 	
-	<header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header" role="banner">
 
-		<?php
-		/**
-		  * CUSTOM HEADER IMAGE DISPLAYS HERE FOR THIS THEME, BUT CHILD THEMES MAY DISPLAY
-		  * IT BELOW THE NAV BAR (VIA CONTENT-HEADER.PHP)
-		  */
-		global $xsbf_theme_options;
-		$custom_header_location = isset ( $xsbf_theme_options['custom_header_location'] ) ? $xsbf_theme_options['custom_header_location'] : 'content-header';
-		if ( $custom_header_location == 'header' ) :
-		?>
-			<div id="site-branding" class="site-branding">
-				<div class="container site-branding-container">
-		
-				<div class="row">
+			<?php
+			/**
+			  * CUSTOM HEADER IMAGE DISPLAYS HERE FOR THIS THEME, BUT CHILD THEMES MAY DISPLAY
+			  * IT BELOW THE NAV BAR (VIA CONTENT-HEADER.PHP)
+			  */
+			global $xsbf_theme_options;
+			$custom_header_location = isset ( $xsbf_theme_options['custom_header_location'] ) ? $xsbf_theme_options['custom_header_location'] : 'content-header';
+			if ( $custom_header_location == 'header' ) :
+			?>
+				<div id="site-branding" class="site-branding">
+					<div class="container site-branding-container">
 
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<div class="col-md-9 col-sm-12" id="header-image">
-						<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-					</div>
-					</a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<div id="header-image">
+								<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+							</div>
+							</a>
 
-					<div class="col-md-3 col-sm-12">
-						<p class="color-darkblue" id="header-contact">212-532-1934 <br><a href="#">james@kousouroslaw.com</a></p>
-					</div>
+							<div id="header-contact">
+								<p class="color-darkblue">212-532-1934 <br><a href="mailto:james@kousouroslaw.com">james@kousouroslaw.com</a></p>
+							</div>
 
-				</div><!-- row -->
+					</div><!-- container -->
+				</div><!-- .site-branding -->
 
-				</div><!-- container -->
+			<?php			
+			endif; // $custom_header_location
+			?>			
 
-			</div><!-- .site-branding -->
+			<?php
+			/**
+			  * ALWAYS DISPLAY THE NAV BAR
+			  */
+	 		?>	
+			<nav id="site-navigation" class="main-navigation" role="navigation">
 
-		<?php			
-		endif; // $custom_header_location
-		?>			
+				<h1 class="menu-toggle sr-only screen-reader-text"><?php _e( 'Primary Menu', 'flat-bootstrap' ); ?></h1>
+				<div class="skip-link"><a class="screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'flat-bootstrap' ); ?></a></div>
 
+			<?php
+			// Collapsed navbar menu toggle
+			global $xsbf_theme_options;
+			$navbar = '<div class="navbar ' . $xsbf_theme_options['navbar_classes'] . '">'
+				.'<div class="container">'
+	        	.'<div class="navbar-header">'
+	          	.'<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">'
+	            .'<span class="icon-bar"></span>'
+	            .'<span class="icon-bar"></span>'
+	            .'<span class="icon-bar"></span>'
+	          	.'</button>';
 
-		<?php
-		/**
-		  * ALWAYS DISPLAY THE NAV BAR
-		  */
- 		?>	
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+			// Site title (Bootstrap "brand") in navbar. Hidden by default. Customizer will
+			// display it if user turns of the main site title and tagline.
+			$navbar .= '<a class="navbar-brand" href="'
+				.esc_url( home_url( '/' ) )
+				.'" rel="home">'
+				.get_bloginfo( 'name' )
+				.'</a>';
+			
+	        $navbar .= '</div><!-- navbar-header -->';
 
-			<h1 class="menu-toggle sr-only screen-reader-text"><?php _e( 'Primary Menu', 'flat-bootstrap' ); ?></h1>
-			<div class="skip-link"><a class="screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'flat-bootstrap' ); ?></a></div>
-
-		<?php
-		// Collapsed navbar menu toggle
-		global $xsbf_theme_options;
-		$navbar = '<div class="navbar ' . $xsbf_theme_options['navbar_classes'] . '">'
-			.'<div class="container">'
-        	.'<div class="navbar-header">'
-          	.'<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">'
-            .'<span class="icon-bar"></span>'
-            .'<span class="icon-bar"></span>'
-            .'<span class="icon-bar"></span>'
-          	.'</button>';
-
-		// Site title (Bootstrap "brand") in navbar. Hidden by default. Customizer will
-		// display it if user turns of the main site title and tagline.
-		$navbar .= '<a class="navbar-brand" href="'
-			.esc_url( home_url( '/' ) )
-			.'" rel="home">'
-			.get_bloginfo( 'name' )
-			.'</a>';
-		
-        $navbar .= '</div><!-- navbar-header -->';
-
-		// Display the desktop navbar
-		$navbar .= wp_nav_menu( 
-			array(  'theme_location' => 'primary',
-			'container_class' => 'navbar-collapse collapse', //<nav> or <div> class
-			'menu_class' => 'nav navbar-nav', //<ul> class
-			'walker' => new wp_bootstrap_navwalker(),
-			'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-			'echo'	=> false
-			) 
-		);
-		echo apply_filters( 'xsbf_navbar', $navbar );
-		?>
+			// Display the desktop navbar
+			$navbar .= wp_nav_menu( 
+				array(  'theme_location' => 'primary',
+				'container_class' => 'navbar-collapse collapse', //<nav> or <div> class
+				'menu_class' => 'nav navbar-nav', //<ul> class
+				'walker' => new wp_bootstrap_navwalker(),
+				'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+				'echo'	=> false
+				) 
+			);
+			echo apply_filters( 'xsbf_navbar', $navbar );
+			?>
 
 		</div><!-- .container -->
 		</div><!-- .navbar -->

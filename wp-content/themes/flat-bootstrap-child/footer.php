@@ -72,7 +72,7 @@
 				<div class="row footer-content">
 					<?php // Footer nav menu
 					if ( $nav_menu ) : ?>
-						<div class="footer-nav-menu pull-left col-md-4">
+						<div class="footer-nav-menu pull-left col-md-4 col-sm-3 col-xs-12">
 							<nav id="footer-navigation" class="secondary-navigation" role="navigation">
 								<h1 class="menu-toggle sr-only"><?php _e( 'Footer Menu', 'flat-bootstrap' ); ?></h1>
 								<?php echo $nav_menu; ?>
@@ -80,14 +80,14 @@
 						</div><!-- .footer-nav-menu -->
 					<?php endif; ?>
 
-					<div id="contact-footer" class="col-md-4">
-						<p>260 Madison Avenue, 22nd floor, <br>New York, New York 10018</p>
-						<p>212-000-0000 Fax 212-000-0000</p>
-						<p><a href="#">james@kousouroslaw.com</a></p>
+					<div id="contact-footer" class="col-md-4 col-sm-5 col-xs-12">
+						<p>260 Madison Avenue, 22nd floor, <br>New York, New York 10016-2404</p>
+						<p>Phone 212-532-1934 <br>Fax 212-532-1939</p>
+						<!-- <p><a href="mailto:james@kousouroslaw.com">james@kousouroslaw.com</a></p> -->
 					</div><!-- contact-footer -->
 
-					<div id="social-footer" class="col-md-4">
-						<p id="social-links"><a href="#"><i class="fa fa-facebook-square"></i></a>&nbsp;<a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+					<div id="social-footer" class="col-md-4 col-sm-4 col-xs-12">
+						<p id="social-links"><a target="_blank" href="https://www.facebook.com/kousouroslawoffice?fref=ts"><i class="fa fa-facebook-square"></i></a>&nbsp;<a target="_blank" href="https://www.linkedin.com/pub/james-kousouros/29/72/a66"><i class="fa fa-linkedin-square"></i></a>&nbsp;<a target="_blank" href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ"><i class="fa fa-youtube-square"></i></a></p>
 						<p>&copy; <?php echo date ( 'Y' ); ?> Kousouros Law</p>
 						<p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
 					</div><!-- social-footer -->

@@ -12,8 +12,7 @@ get_header(); ?>
   <div id="main-grid">
     <div id="primary" class="content-area">
       <main id="main" class="site-main" role="main">
-    		<img src="<?php echo content_url(); ?>/images/sketch_court_1170x393.jpg">
-
+    		<img id="notables-img" src="<?php echo content_url(); ?>/images/sketch_court_1170x279.jpg">
          <?php //while ( have_posts() ) : the_post(); ?>
 
           <!-- add id of page id and class of .notables_loop -->
@@ -34,7 +33,9 @@ get_header(); ?>
         						} elseif ( is_page( 2245 )) {	
         						    $notables_cat = 'homicide';
         						} elseif ( is_page( 1418 )) {	
-        						    $notables_cat = 'racketeering-and-bribery';
+        						    $notables_cat = 'racketeering';
+                    } elseif ( is_page( 2468 )) { 
+                        $notables_cat = 'bribery';
         						} elseif ( is_page( 1420 )) {	
         						    $notables_cat = 'narcotics';
         						} elseif ( is_page( 1422 )) {	
@@ -46,11 +47,21 @@ get_header(); ?>
 		                $notables_query = new WP_Query( "category_name=$notables_cat" ); ?>
 
       						<?php if ( $notables_query->have_posts() ) : while ( $notables_query->have_posts() ) : $notables_query->the_post(); ?>
+
                     <h3><?php  the_title();  ?></h3>
-                    <?php the_content(); ?>
+
+                        <?php if ( has_tag( 'explanation-notables' )) { ?>
+                          <div class="explanation">
+                            <?php the_content(); ?>
+                          </div>
+                        <?php } else { ?>
+                        <?php the_content(); ?>
+                        <?php } ?>
+
                   <?php endwhile; else : ?>
                     <?php get_template_part( 'no-results' ) ?>
                   <?php endif; ?>
+
 
       						<div id="back-to-top-notables"><a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a>
                   </div>

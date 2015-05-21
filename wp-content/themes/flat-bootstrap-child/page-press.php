@@ -1,13 +1,7 @@
 <?php
 /**
 * Theme: Flat Bootstrap
-* 
 * Template Name: Page - Press (based on No Sidebar)
-*
-* Page with no sidebar, but still contained within the page margins
-*
-* This is the template that displays full width pages with no sidebar.
-*
 * @package flat-bootstrap
 */
 
@@ -26,8 +20,9 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'press_loop' ); ?>>
 
 					<div class="row">
-						<div class="col-md-10 col-md-offset-1 press-subhed">
+						<div class="col-md-12 press-subhed">
 							<h3>Print</h3>
+							<p class="intro-graph">These articles relate to cases Mr. Kousouros has handled or is currently handling, as well as articles for which he was sought out as an expert in criminal law.</p>
 						</div>
 					</div>
 
@@ -38,25 +33,32 @@ get_header(); ?>
 								$press_print2_query = new WP_Query( 'category_name=new-york-times');
 								$press_print3_query = new WP_Query( 'category_name=journal-news');
 							?>
-
-							<img class="press-logo" id="dailynews-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-dailynews.png">
-
+							<figure class="press-logo">
+								<img class="press-logo" id="dailynews-logo" src="<?php echo get_site_url(); ?>/wp-content/images/press-dailynews.png">
+							</figure>
 							<?php while ( $press_print1_query->have_posts() ) : $press_print1_query->the_post(); ?>
 								<!-- get content-press-print.php template part -->
 								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
+              <?php wp_reset_postdata(); ?>
 
-							<img class="press-logo" id="nyt-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-nytimes.png">
+							<figure class="press-logo border-above">
+								<img class="press-logo" id="nyt-logo" src="<?php echo get_site_url(); ?>/wp-content/images/press-nytimes.png">
+							</figure>
 
 							<?php while ( $press_print2_query->have_posts() ) : $press_print2_query->the_post(); ?>
 								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
+              <?php wp_reset_postdata(); ?>
 
-							<img class="press-logo" id="journalnews-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-journalnews.png">
+							<figure class="press-logo border-above">
+								<img class="press-logo" id="journalnews-logo" src="<?php echo get_site_url(); ?>/wp-content/images/press-journalnews.png">
+							</figure>
 
 							<?php while ( $press_print3_query->have_posts() ) : $press_print3_query->the_post(); ?>
 								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
+              <?php wp_reset_postdata(); ?>
 
 						</div><!-- .entry-content -->
 
@@ -66,24 +68,30 @@ get_header(); ?>
 								$press_print5_query = new WP_Query( 'category_name=times-of-smithtown');
 							?>
 
-							<img class="press-logo" id="newsday-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/press-newsday.png">
+							<figure class="press-logo">
+								<img class="press-logo" id="newsday-logo" src="<?php echo get_site_url(); ?>/wp-content/images/press-newsday.png">
+							</figure>
 
 							<?php while ( $press_print4_query->have_posts() ) : $press_print4_query->the_post(); ?>
 								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
+              <?php wp_reset_postdata(); ?>
 
-							<img class="press-logo" id="timessmithtown-logo" src="http://localhost:8888/kousouros_law/wp-content/uploads/2015/04/thetimes.png">
+							<figure class="press-logo border-above">
+								<img class="press-logo" id="timessmithtown-logo" src="<?php echo get_site_url(); ?>/wp-content/images/press-thetimes.png">
+							</figure>
 
 							<?php while ( $press_print5_query->have_posts() ) : $press_print5_query->the_post(); ?>
 								<?php get_template_part( 'content', 'press-print' ); ?>
 							<?php endwhile; // end of the loop. ?>
+              <?php wp_reset_postdata(); ?>
 
 					</div><!-- .entry-content -->
 				</div><!-- .row Print -->
 
 
 				<div class="row"><!-- Here starts the TV section -->
-					<div class="col-md-10 col-md-offset-1 press-subhed">
+					<div class="col-md-12 press-subhed">
 						<h3>Cable and Network Appearances</h3>
 					</div>
 				</div>
@@ -98,6 +106,7 @@ get_header(); ?>
 						<?php while ( $press_tv1_query->have_posts() ) : $press_tv1_query->the_post(); ?>
 								<?php get_template_part( 'content', 'press-tv' ); ?>
 						<?php endwhile; // end of the loop. ?>
+            <?php wp_reset_postdata(); ?>
 
 					</div><!-- .entry-content-press3 -->
 
@@ -107,11 +116,12 @@ get_header(); ?>
 							$press_tv2_intro = new WP_Query( 'category_name=tv&tag=tv-column-2-intro');
 						?>
 						<?php while ( $press_tv2_intro->have_posts() ) : $press_tv2_intro->the_post(); ?>
-							<div class="press-tv-post">
+							<div class="press-tv-post press-tv-text">
 								<p class="press-title"><?php  the_title();  ?></p>
 								<p class="press-content"><?php echo get_the_content(); ?></p>
 							</div>
 						<?php endwhile; // end of the loop. ?>
+            <?php wp_reset_postdata(); ?>
 
 						<?php 
 							$press_tv2_query = new WP_Query( 'category_name=tv&tag=tv-column-2');
@@ -120,6 +130,7 @@ get_header(); ?>
 						<?php while ( $press_tv2_query->have_posts() ) : $press_tv2_query->the_post(); ?>
 								<?php get_template_part( 'content', 'press-tv' ); ?>
 						<?php endwhile; // end of the loop. ?>
+            <?php wp_reset_postdata(); ?>
 
 					</div><!-- .entry-content-press3 -->
 				</div><!-- .row TV -->

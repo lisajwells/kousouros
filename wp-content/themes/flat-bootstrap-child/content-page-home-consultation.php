@@ -17,6 +17,6 @@
               <?php the_field('home_consultation_text_4'); ?>
       </div>
     </div><!-- row -->
-    <p style="text-align: center;"><a class="btn btn-hollow" href="#">Free Consultation</a></p>
+    <p style="text-align: center;"><a class="btn btn-hollow" href="<?php bloginfo('url'); ?>/contact">Free Consultation</a></p>
   </div><!-- container -->
 </div><!-- section home-consulation -->

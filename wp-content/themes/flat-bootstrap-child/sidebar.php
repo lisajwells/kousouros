@@ -23,10 +23,10 @@
 				</ul>
 			</aside>
 
-			<aside id="tag_cloud" class="widget widget_tag_cloud">
-				<h2 class="widget-title"><?php _e( 'Categories', 'flat-bootstrap' ); ?></h2>
-					<?php wp_tag_cloud( array( 'separator' => ' ', 'taxonomy' => 'category' ) ); ?>
-			</aside>
+<!-- 			<aside id="tag_cloud" class="widget widget_tag_cloud">
+				<h2 class="widget-title"><?php// _e( 'Categories', 'flat-bootstrap' ); ?></h2>
+					<?php// wp_tag_cloud( array( 'separator' => ' ', 'taxonomy' => 'category' ) ); ?>
+			</aside> -->
 
 		<?php endif; // end sidebar widget area ?>
 	</div><!-- #secondary -->
