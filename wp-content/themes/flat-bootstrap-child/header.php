@@ -60,10 +60,6 @@
 							</div>
 							</a>
 
-							<div id="header-contact">
-								<p class="color-darkblue">212-532-1934 <br><a href="mailto:james@kousouroslaw.com">james@kousouroslaw.com</a></p>
-							</div>
-
 					</div><!-- container -->
 				</div><!-- .site-branding -->
 

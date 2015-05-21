@@ -202,6 +202,7 @@ header.content-header {
     height: 80%;
     z-index: 100;
     background: transparent url(http://krankygirl.com/klaw2/wp-content/uploads/2015/05/play-overlay-blue.png) no-repeat center;
+    background-size: 25%;
     pointer-events: none;
 }
 .video:hover:after {
@@ -215,6 +216,7 @@ header.content-header {
     height: 80%;
     z-index: 100;
     background: transparent url(http://krankygirl.com/klaw2/wp-content/uploads/2015/05/play-overlay-blue-light.png) no-repeat center;
+    background-size: 25%;
     pointer-events: none;
 }
 
@@ -431,6 +433,27 @@ div#header-image {
 .site-branding-container {
   position: relative;
 }
+/* contact info in header */
+#header-contact {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-indent: 0;
+  padding: 0 15px 1em 0;
+  text-align: right;
+}
+
+#header-contact p {
+  margin-bottom: 0;
+}
+
+#header-contact a {
+  color: #8caab4;
+}
+
+#header-contact a:hover {
+  color: #fff;
+}
 
 @media screen and (max-width: 694px) {
   div#site-branding {
@@ -438,6 +461,11 @@ div#header-image {
   }
   div#header-image {
     width: 100%;
+  }
+  #header-contact {
+    position: static;
+    font-size: .8em;
+    padding: 0 8px 0 0;
   }
 }
 
@@ -488,16 +516,16 @@ div#avvo2 {
   padding-top: 0;
   margin-bottom: -2em;
 }
+#home-represents-box h2 {
+  font-size: 24px;
+  margin-left: -.5em;
+}
 #home-represents-box {
   border: 2px solid;
   padding: 1em 1em .5em 1em;
   position: relative;
   top: -2em;
   background-color: #fff;
-}
-#home-represents-box h2 {
-  font-size: 24px;
-  margin-left: -.5em;
 }
 #home-consultation-row div:nth-child(2n+1) h3 {
   color: #000;
@@ -596,12 +624,6 @@ transform: rotate(45deg);
   text-transform: uppercase;
 }
 
-.explanation {
-  font-style: italic;
-  font-weight: 400;
-  margin-top: 2em;
-}
-
 .notables_menu_class {
   text-align: right;
 }
@@ -662,12 +684,10 @@ h4.press-print {
   margin-bottom: 0;
   text-transform: uppercase;
 }
-
 .entry-content-press1 img,
 .entry-content-press2 img {
   margin: 0;
 }
-
 .press-date {
   margin-bottom: 0;
   margin-top: 5px;
