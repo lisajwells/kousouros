@@ -30,7 +30,12 @@ Small devices Tablets (≥768px)
 Medium devices Desktops (≥992px)  
 Large devices Desktops (≥1200px)
 */
-
+/*@media screen and (max-width: 500px) { 
+  div#main-grid {
+    margin: 0 -15px;
+  }
+}
+*/
 html {
   box-sizing: border-box;
 }
@@ -121,6 +126,12 @@ iframe {
   text-transform: uppercase;
   font-weight: 700;
 }
+/*@media screen and (max-width: 500px) { 
+  .content-header h1 {
+    font-size: 16px;
+  }
+}
+*/
 .content-header h3 {
   color: #000;
   font-size: 1.4em;
@@ -604,10 +615,14 @@ transform: rotate(45deg);
 
 .notables_menu_class {
   text-align: right;
+  min-width: 8em;
+  float: left;
+  background-color: transparent;
 }
 
 .notables_menu_class ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .notables_menu_class ul li {
@@ -627,6 +642,7 @@ transform: rotate(45deg);
 .notables-content {
   background-color: #efefef;
   padding: 2em;
+  margin-left: 9em;
 }
 
 #back-to-top-notables {
@@ -635,7 +651,30 @@ transform: rotate(45deg);
   font-weight: 400;
 }
 
-/*8888888*****************8888888*/
+/*@media screen and (max-width: 710px) { 
+  .notables_menu_class, 
+  .notables-content {
+    font-size: .9em;
+  }
+  .notables-content h3 {
+    font-size: .97em;
+  }
+}
+@media screen and (max-width: 500px) { 
+  .notables_menu_class, 
+  .notables-content {
+    font-size: .75em;
+  }
+}
+@media screen and (max-width: 400px) { 
+  .notables_menu_class {
+    font-size: .7em;
+  }
+  .notables-content {
+    padding: 1em;
+    margin-left: 8em;
+}
+*/
 
 /****** ---------------------- ******/
 /* PRESS/MEDIA PAGE                 */
@@ -737,6 +776,19 @@ div.press-tv-text {
 }
 
 /****** ---------------------- ******/
+/* CONTACT                          */
+/****** ---------------------- ******/
+
+input.wpcf7-text,
+textarea.wpcf7-form-control {
+  width: 100%;
+}
+
+#contact-page-info b {
+  font-weight: 500;
+}
+
+/****** ---------------------- ******/
 /* FOOTER                           */
 /****** ---------------------- ******/
 
@@ -835,12 +887,12 @@ div#social-footer p:last-child {
 }
 
 @media screen and (max-width: 992px) { /* bootstrap sm */
-  div#contact-footer {
+ div#contact-footer {
     left: 25%;
   }
 }
 @media screen and (max-width: 768px) { /* bootstrap xs */
-  div#contact-footer, 
+div#contact-footer, 
   div#social-footer {
     font-size: .8em;
     margin-top: 2em;
@@ -851,9 +903,10 @@ div#social-footer p:last-child {
   display: none;
   }
 }
-/*Extra small devices Phones (<768px) 
-Small devices Tablets (≥768px)  
-Medium devices Desktops (≥992px)  
-Large devices Desktops (≥1200px)
-*/
+
+/************** just for @media *****/
+
+
+
+
 
