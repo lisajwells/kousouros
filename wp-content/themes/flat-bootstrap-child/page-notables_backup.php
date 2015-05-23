@@ -24,32 +24,44 @@ get_header(); ?>
                   <div id="notables-menu">
           					<?php wp_nav_menu( array( 'theme_location' => 'notables-menu', 'container_class' => 'notables_menu_class' ) ); ?>
                   </div>
-
   	            	<div class="notables-content">
 
+  	                <?php  
+          						if ( is_page( 1414 )) {    
+          						    $notables_cat = 'white-collar-general';
+          						} elseif ( is_page( 1416 )) {	
+          						    $notables_cat = 'healthcare-and-pharmaceutical';
+          						} elseif ( is_page( 2245 )) {	
+          						    $notables_cat = 'homicide';
+          						} elseif ( is_page( 1418 )) {	
+          						    $notables_cat = 'racketeering';
+                      } elseif ( is_page( 2468 )) { 
+                          $notables_cat = 'bribery';
+          						} elseif ( is_page( 1420 )) {	
+          						    $notables_cat = 'narcotics';
+          						} elseif ( is_page( 1422 )) {	
+          						    $notables_cat = 'appeals-and-extradition';
+          						};
+        						?>
 
         						<?php  
-  		                $appeals_query        = new WP_Query( 'category_name=appeals'); 
-                      $bribery_query        = new WP_Query( 'category_name=bribery'); 
-                      $extradition_query    = new WP_Query( 'category_name=extradition'); 
-                      $healthcare_query     = new WP_Query( 'category_name=healthcare-and-pharmaceutical'); 
-                      $homicide_query       = new WP_Query( 'category_name=homicide'); 
-                      $miscellaneous_query  = new WP_Query( 'category_name=miscellaneous'); 
-                      $narcotics_query      = new WP_Query( 'category_name=narcotics'); 
-                      $racketeering_query   = new WP_Query( 'category_name=racketeering'); 
-                      $whitecollar_query    = new WP_Query( 'category_name=white-collar-general'); ?>
+  		                $notables_query = new WP_Query( "category_name=$notables_cat" ); ?>
 
-                    <?php  
-                      if ( is_page( 1414 )) {    
+        						<?php if ( $notables_query->have_posts() ) : while ( $notables_query->have_posts() ) : $notables_query->the_post(); ?>
 
-                          if ( $whitecollar_query->have_posts() ) : while ( $whitecollar_query->have_posts() ) : $whitecollar_query->the_post(); ?>
+                      <h3><?php  the_title();  ?></h3>
 
-                            <h3><?php  the_title();  ?></h3>
+                          <?php if ( has_tag( 'explanation-notables' )) { ?>
+                            <div class="explanation">
+                              <?php the_content(); ?>
+                            </div>
+                          <?php } else { ?>
+                          <?php the_content(); ?>
+                          <?php } ?>
 
-                          <?php endwhile; else : ?>
-                            <?php get_template_part( 'no-results' ) ?>
-                          <?php endif; 
-                      }?>
+                    <?php endwhile; else : ?>
+                      <?php get_template_part( 'no-results' ) ?>
+                    <?php endif; ?>
 
         						<div id="back-to-top-notables">
                       <a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a>
