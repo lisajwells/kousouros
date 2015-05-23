@@ -373,17 +373,6 @@ button.btn.btn-hollow-blackborder {
     text-transform: uppercase;
 }
 
-#home-consultation .btn {
-  font-size: 1.1em;
-  color: #fff;
-  text-transform: none;
-  font-weight: 500;
-}
-
-#home-consultation .btn:hover {
-  color: #000;
-}
-
 /*.btn-hollow:hover, a.btn.btn-hollow:hover {*/
 .btn-hollow:hover, 
 btn.btn-hollow:hover,
@@ -481,6 +470,7 @@ div#avvo2 {
 
 .carousel-control {
   width: 6%;
+  text-shadow: none;
 }
 
 #home-testimonials {
@@ -510,11 +500,16 @@ div#avvo2 {
   font-size: 24px;
   margin-left: -.5em;
 }
-#home-consultation-row div:nth-child(2n+1) h3 {
+#home-spectrum-row div:nth-child(2n+1) h3 {
   color: #000;
 }
-#home-consultation-row p {
+#home-spectrum-row p {
   color: #fff;
+}
+
+#home-spectrum-row a:hover, 
+#home-spectrum-row a:focus {
+  color: #d9ce4d;
 }
 
 #home-press figcaption {
@@ -526,18 +521,22 @@ div#avvo2 {
   font-weight: 500;
 }
 
-.home-notables-blurbs {
+#home-notable {
   color: #fff;
-  font-size: .9em;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
-#home-national h3 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #000;
+#home-notable h2.yellowfont { 
+  color: #d9ce4d; 
 }
+
+#home-notables-1 p:nth-child(2n+1) {
+  color: #d9ce4d; 
+}
+
+#home-notables-2 p:nth-child(2n) {
+  color: #d9ce4d; 
+}
+
 
 /****** ---------------------- ******/
 /* THE PRACTICE PAGES, PROFILE PAGE */
@@ -599,6 +598,17 @@ p.process1 strong {
 transform: rotate(45deg);
 }
 
+.notables-content {
+  background-color: #efefef;
+  padding: 2em;
+  margin-left: 9em;
+}
+
+.notables-content h3 {
+  font-size: 18px;
+  color: #000;
+}
+
 .notables-title {
   font-size: .9em;
   font-weight: 500;
@@ -637,12 +647,6 @@ transform: rotate(45deg);
 
 #menu-notables-menu .current_page_item {
   background-color: #efefef;
-}
-
-.notables-content {
-  background-color: #efefef;
-  padding: 2em;
-  margin-left: 9em;
 }
 
 #back-to-top-notables {

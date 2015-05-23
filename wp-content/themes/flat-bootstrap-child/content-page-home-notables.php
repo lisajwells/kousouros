@@ -5,55 +5,20 @@
   <div class="container">
     <div class="row">
       
-      <div class="col-md-6">
-        <h2><?php the_field('home_notables_title'); ?></h2>    
-        <p><?php the_field('home_notables_body'); ?></p>
-        <p class="center"><a class="btn btn-hollow" href="<?php bloginfo('url'); ?>/notable-cases/white-collar">Read more notable cases</a></p>
+      <div class="col-md-5 col-md-offset-1" id="home-notables-1">
+        <h2><?php the_field('home_notables_title_1'); ?></h2>    
+        <p><?php the_field('home_notables_body_1'); ?></p>
       </div><!-- col-6 -->
 
-      <div class="col-md-6 home-notables-blurbs center"><!-- big six -->
-
-        <div class="row">
-          <div class="col-md-6">
-            <p class="yellowfont"><?php the_field('home_notables_blurb_1'); ?></p>
-          </div>
-          <div class="col-md-6">
-            <p><?php the_field('home_notables_blurb_2'); ?></p>
-          </div>
-        </div><!-- row -->
-
-        <div class="row">
-          <div class="col-md-6">
-            <p><?php the_field('home_notables_blurb_3'); ?></p>
-          </div>
-          <div class="col-md-6">
-            <p class="yellowfont"><?php the_field('home_notables_blurb_4'); ?></p>
-          </div>
-        </div><!-- row -->
-
-      </div><!-- col-6 big six-->
+      <div class="col-md-5" id="home-notables-2">
+        <h2 class="yellowfont"><?php the_field('home_notables_title_2'); ?></h2>    
+        <p><?php the_field('home_notables_body_2'); ?></p>
+      </div><!-- col-6 -->
 
     </div><!-- row -->
+        <p class="center"><a class="btn btn-hollow" href="<?php bloginfo('url'); ?>/notable-cases/white-collar">Read more notable cases</a></p>
   </div><!-- container-->
 </div><!-- section home-notable-->
-
-<!-- HOME NATIONAL AND INTERNATIONAL SECTION -->
-<div class="section" id="home-national"><!-- home-national -->
-  <div class="container">
-  <h3><?php the_field('home_national_title'); ?></h3>    
-
-    <div class="row">
-      <div class="col-md-4 col-md-offset-2">
-          <img class="alignnone size-full wp-image-904 aligncenter" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-150x150.jpg" alt="Image Alignment 150x150" width="150" height="150" />
-      </div>
-      <div class="col-md-4">
-          <img class="alignnone size-full wp-image-904 aligncenter" src="http://localhost:8888/kousouros_law/wp-content/uploads/2013/03/image-alignment-150x150.jpg" alt="Image Alignment 150x150" width="150" height="150" />
-      </div>
-    </div><!-- row -->
-    <p class="center">Successful representation all across the Untied States and Internationally</p>
-  </div><!-- container -->
-</div><!-- section home-national -->
-
     
 </div><!-- .entry-content -->
   

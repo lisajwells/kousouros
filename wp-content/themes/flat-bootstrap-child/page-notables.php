@@ -28,7 +28,7 @@ get_header(); ?>
 
   	                <?php  
           						if ( is_page( 1414 )) {    
-          						    $notables_cat = 'white-collar';
+          						    $notables_cat = 'white-collar-general';
           						} elseif ( is_page( 1416 )) {	
           						    $notables_cat = 'healthcare-and-pharmaceutical';
           						} elseif ( is_page( 2245 )) {	

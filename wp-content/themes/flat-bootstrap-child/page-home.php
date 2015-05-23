@@ -22,13 +22,13 @@ get_header(); ?>
 	?>
 </div>
 
+<p id="specializing" style="text-align: center;"><strong>Specializing in state and federal criminal defense in New York and throughout the country</strong></p>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'page-home-specializing' ); ?>
         <?php get_template_part( 'content', 'page-home-testimonials' ); ?>
         <?php get_template_part( 'content', 'page-home-represents' ); ?>
-        <?php get_template_part( 'content', 'page-home-consultation' ); ?>
+        <?php get_template_part( 'content', 'page-home-spectrum' ); ?>
         <?php get_template_part( 'content', 'page-home-press' ); ?>
         <?php get_template_part( 'content', 'page-home-notables' ); ?>
 
