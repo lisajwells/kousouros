@@ -608,6 +608,10 @@ transform: rotate(45deg);
   color: #000;
 }
 
+.notables-content h4 {
+  color: #d9ce4d;
+}
+
 .notables-title {
   font-size: .9em;
   font-weight: 500;
