@@ -31,6 +31,7 @@ get_header(); ?>
         <?php get_template_part( 'content', 'page-home-spectrum' ); ?>
         <?php get_template_part( 'content', 'page-home-press' ); ?>
         <?php get_template_part( 'content', 'page-home-notables' ); ?>
+        <?php get_template_part( 'content', 'page-home-profile' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 

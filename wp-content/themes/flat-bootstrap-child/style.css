@@ -450,10 +450,6 @@ div#header-image {
 float: right;
 }
 
-#specializing {
-  text-transform: uppercase;
-}
-
 div#avvo2 {
   margin-top: 3em;
 }
@@ -537,6 +533,9 @@ div#avvo2 {
   color: #d9ce4d; 
 }
 
+#home-badges {
+  background-color: #efefef;
+}
 
 /****** ---------------------- ******/
 /* THE PRACTICE PAGES, PROFILE PAGE */
