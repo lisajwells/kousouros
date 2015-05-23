@@ -26,30 +26,111 @@ get_header(); ?>
                   </div>
 
   	            	<div class="notables-content">
-
-
         						<?php  
-  		                $appeals_query        = new WP_Query( 'category_name=appeals'); 
-                      $bribery_query        = new WP_Query( 'category_name=bribery'); 
-                      $extradition_query    = new WP_Query( 'category_name=extradition'); 
+                      $whitecollar_query    = new WP_Query( 'category_name=white-collar-general'); 
                       $healthcare_query     = new WP_Query( 'category_name=healthcare-and-pharmaceutical'); 
                       $homicide_query       = new WP_Query( 'category_name=homicide'); 
+                      $racketeering_query   = new WP_Query( 'category_name=racketeering'); 
+                      $bribery_query        = new WP_Query( 'category_name=bribery'); 
+
+                      $appeals_query        = new WP_Query( 'category_name=appeals'); 
+                      $extradition_query    = new WP_Query( 'category_name=extradition'); 
                       $miscellaneous_query  = new WP_Query( 'category_name=miscellaneous'); 
                       $narcotics_query      = new WP_Query( 'category_name=narcotics'); 
-                      $racketeering_query   = new WP_Query( 'category_name=racketeering'); 
-                      $whitecollar_query    = new WP_Query( 'category_name=white-collar-general'); ?>
+                    ?>
 
-                    <?php  
-                      if ( is_page( 1414 )) {    
+                    <?php if ( is_page( 'white-collar-general' )) {  // White Collar has one category  
+                      if ( $whitecollar_query->have_posts() ) : while ( $whitecollar_query->have_posts() ) : $whitecollar_query->the_post(); ?>
 
-                          if ( $whitecollar_query->have_posts() ) : while ( $whitecollar_query->have_posts() ) : $whitecollar_query->the_post(); ?>
+                        <h3><?php  the_title();  ?></h3>
 
-                            <h3><?php  the_title();  ?></h3>
+                        <?php if ( has_tag( 'explanation-notables' )) { ?>
+                          <div class="explanation">
+                          <?php the_content(); ?>
+                          </div>
+                        <?php } else { 
+                          the_content(); 
+                        } ?>
 
-                          <?php endwhile; else : ?>
-                            <?php get_template_part( 'no-results' ) ?>
-                          <?php endif; 
-                      }?>
+                      <?php endwhile; else : ?>
+                        <?php get_template_part( 'no-results' ) ?>
+                      <?php endif; 
+                    }?>
+
+                    <?php if ( is_page( 'white-collar-healthcare-pharmaceutical' )) {  // Healthcare has one category  
+                      if ( $healthcare_query->have_posts() ) : while ( $healthcare_query->have_posts() ) : $healthcare_query->the_post(); ?>
+
+                        <h3><?php  the_title();  ?></h3>
+
+                        <?php if ( has_tag( 'explanation-notables' )) { ?>
+                          <div class="explanation">
+                          <?php the_content(); ?>
+                          </div>
+                        <?php } else { 
+                          the_content(); 
+                        } ?>
+
+                      <?php endwhile; else : ?>
+                        <?php get_template_part( 'no-results' ) ?>
+                      <?php endif; 
+                    }?>
+
+                    <?php if ( is_page( 'homicide' )) { // Homicide has one category   
+                      if ( $homicide_query->have_posts() ) : while ( $homicide_query->have_posts() ) : $homicide_query->the_post(); ?>
+
+                        <h3><?php  the_title();  ?></h3>
+
+                        <?php if ( has_tag( 'explanation-notables' )) { ?>
+                          <div class="explanation">
+                          <?php the_content(); ?>
+                          </div>
+                        <?php } else { 
+                          the_content(); 
+                        } ?>
+
+                      <?php endwhile; else : ?>
+                        <?php get_template_part( 'no-results' ) ?>
+                      <?php endif; 
+                    }?>
+
+                    <?php if ( is_page( 'racketeering-bribery' )) {  // Bribery and Racketeering 2 categories ?>
+
+                      <h4>Racketeering</h4>
+
+                      <?php
+                        if ( $racketeering_query->have_posts() ) : while ( $racketeering_query->have_posts() ) : $racketeering_query->the_post(); ?>
+
+                        <h3><?php  the_title();  ?></h3>
+
+                        <?php if ( has_tag( 'explanation-notables' )) { ?>
+                          <div class="explanation">
+                          <?php the_content(); ?>
+                          </div>
+                        <?php } else { 
+                          the_content(); 
+                        } ?>
+                      <?php endwhile; else : ?>
+                        <?php get_template_part( 'no-results' ) ?>
+                      <?php endif; ?>
+
+                      <h4>Bribery</h4>
+
+                      <?php if ( $bribery_query->have_posts() ) : while ( $bribery_query->have_posts() ) : $bribery_query->the_post(); ?>
+
+                        <h3><?php  the_title();  ?></h3>
+
+                        <?php if ( has_tag( 'explanation-notables' )) { ?>
+                          <div class="explanation">
+                          <?php the_content(); ?>
+                          </div>
+                        <?php } else { 
+                          the_content(); 
+                        } ?>
+
+                      <?php endwhile; else : ?>
+                        <?php get_template_part( 'no-results' ) ?>
+                      <?php endif; 
+                    }?>
 
         						<div id="back-to-top-notables">
                       <a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a>
