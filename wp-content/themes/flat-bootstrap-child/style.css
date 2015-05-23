@@ -889,6 +889,11 @@ div#social-footer p:last-child {
   margin-bottom: -2px;
 }
 
+img#avvo_badge {
+  display: inline-block;
+  margin: 0 0 3px 4px;
+}
+
 @media screen and (max-width: 992px) { /* bootstrap sm */
  div#contact-footer {
     left: 25%;

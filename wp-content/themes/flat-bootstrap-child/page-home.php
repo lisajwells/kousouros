@@ -26,12 +26,12 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-        <?php get_template_part( 'content', 'page-home-testimonials' ); ?>
-        <?php get_template_part( 'content', 'page-home-represents' ); ?>
-        <?php get_template_part( 'content', 'page-home-spectrum' ); ?>
-        <?php get_template_part( 'content', 'page-home-press' ); ?>
-        <?php get_template_part( 'content', 'page-home-notables' ); ?>
-        <?php get_template_part( 'content', 'page-home-profile' ); ?>
+                <?php get_template_part( 'content', 'page-home-testimonials' ); ?>
+                <?php get_template_part( 'content', 'page-home-represents' ); ?>
+                <?php get_template_part( 'content', 'page-home-spectrum' ); ?>
+                <?php get_template_part( 'content', 'page-home-press' ); ?>
+                <?php get_template_part( 'content', 'page-home-notables' ); ?>
+                <?php get_template_part( 'content', 'page-home-profile' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 

@@ -87,7 +87,14 @@
 					</div><!-- contact-footer -->
 
 					<div id="social-footer" class="col-md-4 col-sm-4 col-xs-12">
-						<p id="social-links"><a target="_blank" href="https://www.facebook.com/kousouroslawoffice?fref=ts"><i class="fa fa-facebook-square"></i></a>&nbsp;<a target="_blank" href="https://www.linkedin.com/pub/james-kousouros/29/72/a66"><i class="fa fa-linkedin-square"></i></a>&nbsp;<a target="_blank" href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ"><i class="fa fa-youtube-square"></i></a></p>
+						<p id="social-links">
+						<a target="_blank" href="https://www.facebook.com/kousouroslawoffice?fref=ts"><i class="fa fa-facebook-square"></i></a>&nbsp;
+						<a target="_blank" href="https://www.linkedin.com/pub/james-kousouros/29/72/a66"><i class="fa fa-linkedin-square"></i></a>&nbsp;
+						<a target="_blank" href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ"><i class="fa fa-youtube-square"></i></a>
+						<a rel="me" target="blank" href="http://www.avvo.com/attorneys/10016-ny-james-kousouros-868249.html?cm_mmc=Avvo-_-Avvo_Badge-_-Micro-_-868249"><img alt="Avvo - Rate your Lawyer. Get Free Legal Advice." id="avvo_badge" src="http://www.avvo.com/assets/microbadge.png" /></a>
+						</p>
+		                        
+
 						<p>&copy; <?php echo date ( 'Y' ); ?> Kousouros Law</p>
 						<p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
 					</div><!-- social-footer -->
