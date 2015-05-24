@@ -219,8 +219,6 @@ get_header(); ?>
 
           </article><!-- #post-## -->
 
-        <?php //endwhile; // end of the loop. ?>
-
       </main><!-- #main -->
     </div><!-- #primary -->
   </div><!-- .row -->

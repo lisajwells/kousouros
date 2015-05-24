@@ -605,13 +605,24 @@ p.process1 strong {
 /****** ---------------------- ******/
 
 /* to make diamond shape */
-.fa-rotate-45 {
+/*.fa-rotate-45 {
   font-size: .6em;
   margin-right: .5em;
   margin-left: -1.5em;
 -webkit-transform: rotate(45deg);
 -moz-transform: rotate(45deg);
 transform: rotate(45deg);
+}
+*/
+.parent-pageid-1075 h1 {
+  text-transform: capitalize;
+  color: #d9ce4d;
+}
+.parent-pageid-1075 h1:before {
+  content: 'Notable Cases ';
+  text-transform: uppercase;
+  color: #8caab4;
+  margin-right: .3em;
 }
 
 .notables-content {
@@ -642,7 +653,8 @@ div.explanation {
   font-weight: 400;
   margin-top: 2em;
 }
-
+/* if it's at the top of the column (there's an empty h3 before explanation)
+*/
 div.explanation:nth-child(2) {
   margin-top: 0;
 }
