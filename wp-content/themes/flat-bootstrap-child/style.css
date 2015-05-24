@@ -470,8 +470,8 @@ float: right;
 
 .home-slider-img {
   float: left;
-  width: calc(98/3 * 100%);
-  width: 32.6666667%;
+  width: 32.6666667%; /* for opera */
+  width: calc(98% / 3); /* not working */
   margin: 0 1% 3em 0;
 }
 .home-slider-img:last-of-type {
