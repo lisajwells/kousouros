@@ -45,7 +45,7 @@ get_header(); ?>
 
                         <?php if ( has_tag( 'explanation-notables' )) { ?>
                           <div class="explanation">
-                          <?php the_content(); ?>
+                            <?php the_content(); ?>
                           </div>
                         <?php } else { 
                           the_content(); 
@@ -54,7 +54,7 @@ get_header(); ?>
                       <?php endwhile; else : ?>
                         <?php get_template_part( 'no-results' ) ?>
                       <?php endif; 
-                    }?>
+                    }?><!-- is_page -->
 
                     <?php if ( is_page( 'white-collar-healthcare-pharmaceutical' )) {  // Healthcare has one category  
                       if ( $healthcare_query->have_posts() ) : while ( $healthcare_query->have_posts() ) : $healthcare_query->the_post(); ?>
@@ -63,7 +63,7 @@ get_header(); ?>
 
                         <?php if ( has_tag( 'explanation-notables' )) { ?>
                           <div class="explanation">
-                          <?php the_content(); ?>
+                            <?php the_content(); ?>
                           </div>
                         <?php } else { 
                           the_content(); 
@@ -72,7 +72,7 @@ get_header(); ?>
                       <?php endwhile; else : ?>
                         <?php get_template_part( 'no-results' ) ?>
                       <?php endif; 
-                    }?>
+                    }?><!-- is_page -->
 
                     <?php if ( is_page( 'homicide' )) { // Homicide has one category   
                       if ( $homicide_query->have_posts() ) : while ( $homicide_query->have_posts() ) : $homicide_query->the_post(); ?>
@@ -81,7 +81,7 @@ get_header(); ?>
 
                         <?php if ( has_tag( 'explanation-notables' )) { ?>
                           <div class="explanation">
-                          <?php the_content(); ?>
+                            <?php the_content(); ?>
                           </div>
                         <?php } else { 
                           the_content(); 
@@ -90,7 +90,7 @@ get_header(); ?>
                       <?php endwhile; else : ?>
                         <?php get_template_part( 'no-results' ) ?>
                       <?php endif; 
-                    }?>
+                    }?><!-- is_page -->
 
                     <?php if ( is_page( 'racketeering-bribery' )) {  // Bribery and Racketeering 2 categories ?>
 
@@ -103,7 +103,7 @@ get_header(); ?>
 
                         <?php if ( has_tag( 'explanation-notables' )) { ?>
                           <div class="explanation">
-                          <?php the_content(); ?>
+                            <?php the_content(); ?>
                           </div>
                         <?php } else { 
                           the_content(); 
@@ -120,7 +120,7 @@ get_header(); ?>
 
                         <?php if ( has_tag( 'explanation-notables' )) { ?>
                           <div class="explanation">
-                          <?php the_content(); ?>
+                            <?php the_content(); ?>
                           </div>
                         <?php } else { 
                           the_content(); 
@@ -129,7 +129,7 @@ get_header(); ?>
                       <?php endwhile; else : ?>
                         <?php get_template_part( 'no-results' ) ?>
                       <?php endif; 
-                    }?>
+                    }?><!-- is_page -->
 
                     <?php if ( is_page( 'narcotics' )) {  // Narcotics has one category  
                       if ( $narcotics_query->have_posts() ) : while ( $narcotics_query->have_posts() ) : $narcotics_query->the_post(); ?>
@@ -138,7 +138,7 @@ get_header(); ?>
 
                         <?php if ( has_tag( 'explanation-notables' )) { ?>
                           <div class="explanation">
-                          <?php the_content(); ?>
+                            <?php the_content(); ?>
                           </div>
                         <?php } else { 
                           the_content(); 
@@ -147,7 +147,7 @@ get_header(); ?>
                       <?php endwhile; else : ?>
                         <?php get_template_part( 'no-results' ) ?>
                       <?php endif; 
-                    }?>
+                    }?><!-- is_page -->
 
                     <?php if ( is_page( 'miscellaneous-appeals-extradition' )) {  // Miscellaneous Appeals Exradition 3 categories ?>
 
@@ -160,7 +160,7 @@ get_header(); ?>
 
                         <?php if ( has_tag( 'explanation-notables' )) { ?>
                           <div class="explanation">
-                          <?php the_content(); ?>
+                            <?php the_content(); ?>
                           </div>
                         <?php } else { 
                           the_content(); 
@@ -177,7 +177,7 @@ get_header(); ?>
 
                         <?php if ( has_tag( 'explanation-notables' )) { ?>
                           <div class="explanation">
-                          <?php the_content(); ?>
+                            <?php the_content(); ?>
                           </div>
                         <?php } else { 
                           the_content(); 
@@ -195,7 +195,7 @@ get_header(); ?>
 
                         <?php if ( has_tag( 'explanation-notables' )) { ?>
                           <div class="explanation">
-                          <?php the_content(); ?>
+                            <?php the_content(); ?>
                           </div>
                         <?php } else { 
                           the_content(); 
@@ -205,9 +205,7 @@ get_header(); ?>
                         <?php get_template_part( 'no-results' ) ?>
                       <?php endif; 
 
-                    }?>
-
-
+                    }?><!-- is_page -->
 
         						<div id="back-to-top-notables">
                       <a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a>
