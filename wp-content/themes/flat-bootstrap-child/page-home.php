@@ -1,15 +1,6 @@
 <?php
 /**
- * Theme: Flat Bootstrap
- * 
  * Template Name: Home
- *
- * Full-width page with no sidebar or container.
- *
- * This is the template for full width pages with no sidebar and no container. This 
- * page truly stretches the full width of the browser window. You should set a 
- * <div class="container"> before your content to keep it in line with the rest of 
- * the site content.
  *
  * @package flat-bootstrap
  */
@@ -17,13 +8,22 @@
 get_header(); ?>
 
 <div class="section" id="home-slider">
+    <div class="container">
+        <div class="row home-images">
+            <img class="home-slider-img" id="home-slider-img-1" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-1.png">
+            <img class="home-slider-img" id="home-slider-img-2" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-2.png">
+            <img class="home-slider-img" id="home-slider-img-3" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-3.png">
+        </div>
+    </div>    
+
 	<?php 
-    echo do_shortcode("[metaslider id=2384]"); // slideshow ID
+    //echo do_shortcode("[metaslider id=2384]"); // slideshow ID
 	?>
+    <p id="specializing" style="text-align: center;"><strong>Specializing in state and federal criminal defense in New York and throughout the country</strong></p>
 </div>
 
-<p id="specializing" style="text-align: center;"><strong>Specializing in state and federal criminal defense in New York and throughout the country</strong></p>
-
+    <div><!-- #primary -->
+        <main><!-- #main -->
 			<?php while ( have_posts() ) : the_post(); ?>
 
                 <?php get_template_part( 'content', 'page-home-testimonials' ); ?>

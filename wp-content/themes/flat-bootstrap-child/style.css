@@ -445,8 +445,14 @@ div#header-image {
   float: left;
   margin-right: 13em;
 }
+
 .site-branding-container {
   position: relative;
+}
+
+/* main navigation */
+#menu-main-menu {
+float: right;
 }
 
 @media screen and (max-width: 694px) {
@@ -462,13 +468,14 @@ div#header-image {
 /* HOME PAGE                        */
 /****** ---------------------- ******/
 
-/* main navigation */
-#menu-main-menu {
-float: right;
+.home-slider-img {
+  float: left;
+  width: calc(98/3 * 100%);
+  width: 32.6666667%;
+  margin: 0 1% 3em 0;
 }
-
-div#avvo2 {
-  margin-top: 3em;
+.home-slider-img:last-of-type {
+  margin: 0 0 3em 0;
 }
 
 /* the bootstrap text carousel for home-testimonials */
