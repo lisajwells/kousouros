@@ -4,16 +4,16 @@
 <div class="section bg-darkgray center" id="home-spectrum"><!-- home spectrum -->
   <div class="container">
     <div class="row" id="home-spectrum-row">
-      <div class="col-md-3">
+      <div class="col-md-3 home-spectrum">
               <?php the_field('home_spectrum_text_1'); ?>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 home-spectrum">
               <?php the_field('home_spectrum_text_2'); ?>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 home-spectrum">
               <?php the_field('home_spectrum_text_3'); ?>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 home-spectrum">
               <?php the_field('home_spectrum_text_4'); ?>
       </div>
     </div><!-- row -->

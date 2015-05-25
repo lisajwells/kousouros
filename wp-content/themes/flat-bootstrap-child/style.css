@@ -471,7 +471,7 @@ float: right;
 .home-slider-img {
   float: left;
   width: 32.6666667%; /* for opera */
-  width: calc(98% / 3); /* not working */
+  width: calc(98% / 3); /**/
   margin: 0 1% 3em 0;
 }
 .home-slider-img:last-of-type {
@@ -518,11 +518,19 @@ float: right;
 }
 #home-represents-box h2 {
   font-size: 24px;
-  margin-left: -.5em;
 }
+#home-represents-box .col-md-5 {
+  margin-right: -.5em;
+}
+
+.home-spectrum h3 {
+  margin-top: 1em;
+}
+
 #home-spectrum-row div:nth-child(2n+1) h3 {
   color: #000;
 }
+
 #home-spectrum-row p {
   color: #fff;
 }
