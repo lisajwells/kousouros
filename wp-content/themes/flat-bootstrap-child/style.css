@@ -49,10 +49,6 @@ Large devices Desktops (≥1200px)
   }
 }
 */
-.diamond {
-  font-family: 'dingbatsregular';
-}
-
 html {
   box-sizing: border-box;
 }
@@ -119,6 +115,11 @@ p.intro-graph {
   font-size: 1.1em;
 }
 
+.diamond { /*uppercase F*/
+  color: #6d93a0;
+  font-family: 'dingbatsregular';
+}
+
 /* center videos in their columns */
 .video iframe,
 img,
@@ -180,8 +181,10 @@ header.content-header {
   margin:0;
 }
 .close {
+  color: #d9ce4d;
   font-size: 80px;
   margin:-20px 0 0 0;
+  opacity: .6;
 }
 
 /***** MODAL MEDIA QUERIES *****/
@@ -258,9 +261,10 @@ blockquote p {
 
 blockquote footer, blockquote small, blockquote .small {
   color: #000;
-  text-align: right;
+  font-size: 87%;
   font-style: italic;
   font-weight: 500;
+  text-align: right;
 }
 
 div.textwidget blockquote {
@@ -270,8 +274,9 @@ div.textwidget blockquote {
 }
 div.textwidget blockquote footer {
   color: #6d93a0;
-  font-size: .8em;
+  font-size: 80%;
   font-style: normal;
+  margin-top: .3em;
 }
 
 /****** ---------------------- ******/
@@ -472,10 +477,27 @@ float: right;
   float: left;
   width: 32.6666667%; /* for opera */
   width: calc(98% / 3); /**/
-  margin: 0 1% 3em 0;
+  margin: 0 1% 0 0;
 }
 .home-slider-img:last-of-type {
-  margin: 0 0 3em 0;
+  margin: 0 0 0 0;
+}
+.row.home-images {
+  position: relative;
+}
+.home-blurb {
+  position: absolute;
+  left: 5em;
+  right: 5em;
+  bottom: 1em;
+  color: #444;
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+.home-blurb p {
+  line-height: 1em;
 }
 
 /* the bootstrap text carousel for home-testimonials */
@@ -828,6 +850,21 @@ div.press-tv-video {
 div.press-tv-text {
   font-size: .8em;
   line-height: 1em;
+}
+
+/****** ---------------------- ******/
+/* TESTIMONIALS                     */
+/****** ---------------------- ******/
+
+blockquote.testimonial-entry p:before {
+  content: 'F ';
+  color: #6d93a0;
+  font-family: 'dingbatsregular';
+}
+
+blockquote.testimonial-entry strong {
+  color: #6d93a0;
+  font-size: 1.2em;
 }
 
 /****** ---------------------- ******/

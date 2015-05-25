@@ -7,6 +7,8 @@
 
 get_header(); ?>
 
+<?php get_template_part( 'content', 'video-modal' ); ?>
+
 <?php get_template_part( 'content', 'header' ); ?>
 
 <div class="container">

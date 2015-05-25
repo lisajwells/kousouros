@@ -7,12 +7,20 @@
 
 get_header(); ?>
 
+<?php get_template_part( 'content', 'video-modal' ); ?>
+
 <div class="section" id="home-slider">
     <div class="container">
         <div class="row home-images">
             <img class="home-slider-img" id="home-slider-img-1" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-1.png">
             <img class="home-slider-img" id="home-slider-img-2" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-2.png">
             <img class="home-slider-img" id="home-slider-img-3" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-3.png">
+        <aside class="home-blurb" id="home-blurb-1">
+            <p>He has the trust and respect of judges and prosecutors alike.</p>
+        </aside>
+        <aside class="home-blurb" id="home-blurb-2">
+            <p>Some more fine words of praise for a fine man you should hire.</p>
+        </aside>
         </div>
     </div>    
 
@@ -26,12 +34,12 @@ get_header(); ?>
         <main><!-- #main -->
 			<?php while ( have_posts() ) : the_post(); ?>
 
-                <?php get_template_part( 'content', 'page-home-testimonials' ); ?>
-                <?php get_template_part( 'content', 'page-home-represents' ); ?>
-                <?php get_template_part( 'content', 'page-home-spectrum' ); ?>
-                <?php get_template_part( 'content', 'page-home-press' ); ?>
-                <?php get_template_part( 'content', 'page-home-notables' ); ?>
-                <?php get_template_part( 'content', 'page-home-profile' ); ?>
+                <?php get_template_part( 'content', 'home-testimonials' ); ?>
+                <?php get_template_part( 'content', 'home-represents' ); ?>
+                <?php get_template_part( 'content', 'home-spectrum' ); ?>
+                <?php get_template_part( 'content', 'home-press' ); ?>
+                <?php get_template_part( 'content', 'home-notables' ); ?>
+                <?php get_template_part( 'content', 'home-profile' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
