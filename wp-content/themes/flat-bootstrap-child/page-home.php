@@ -12,9 +12,9 @@ get_header(); ?>
 <div class="section" id="home-slider">
     <div class="container">
         <div class="row home-images">
-            <img class="home-slider-img" id="home-slider-img-1" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-1.png">
-            <img class="home-slider-img" id="home-slider-img-2" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-2.png">
-            <img class="home-slider-img" id="home-slider-img-3" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-3.png">
+            <img class="home-slider-img fade-in" id="home-slider-img-1" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-1.png">
+            <img class="home-slider-img fade-in" id="home-slider-img-2" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-2.png">
+            <img class="home-slider-img fade-in" id="home-slider-img-3" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-3.png">
         <aside class="home-blurb" id="home-blurb-1">
             <p>He has the trust and respect of judges and prosecutors alike.</p>
         </aside>
