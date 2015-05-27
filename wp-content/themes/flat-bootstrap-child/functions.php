@@ -109,6 +109,9 @@ function klaw_scripts() {
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic',array(), null, 'screen' );	
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700',array(), null, 'screen' );	
 
+	/* animate.css */
+	// wp_enqueue_style( 'animate_klaw', get_stylesheet_directory_uri() . '/css/animate.css' );	
+	
 	/* LOAD AVVO JAVASCRIPT */
 	/* avvo badge */
 	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js', array(), '1.0.0', true );

@@ -482,46 +482,6 @@ float: right;
 .home-slider-img:last-of-type {
   margin: 0 0 0 0;
 }
-/******* make 3 images fade in *****/ 
-/* make keyframes that tell the start state and the end state of our object */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-.fade-in {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
-}
-
-.fade-in#home-slider-img-1 {
--webkit-animation-delay: 0.5s;
--moz-animation-delay: 0.5s;
-animation-delay: 0.5s;
-}
-
-.fade-in#home-slider-img-2 {
-/*-webkit-animation-delay: 1.2s;*/
-/*-moz-animation-delay:1.2s;*/
-/*animation-delay: 1.2s;*/
-}
-
-.fade-in#home-slider-img-3 {
--webkit-animation-delay: 1s;
--moz-animation-delay: 1s;
-animation-delay: 1s;
-}
-
-/*******************/
 
 .row.home-images {
   position: relative;
@@ -539,6 +499,84 @@ animation-delay: 1s;
 }
 .home-blurb p {
   line-height: 1em;
+}
+
+/******* make 3 images fade in *****/ 
+/* make keyframes that tell the start state and the end state */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible on start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  -o-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in#home-slider-img-1 {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+
+.fade-in#home-slider-img-3 {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+/******* make 2 quotes fade in up and out *****/ 
+/* make keyframes that tell the start state and the end state */
+@-webkit-keyframes fadeInUpOutUp { 
+  0% { 
+    opacity: 0; 
+    bottom: -100px;
+  } 
+  12%, 52% { 
+    opacity: 1; 
+    bottom: 1em;
+  } 
+  58% { 
+    opacity: 0; 
+    bottom: 100px;
+  } 
+  100% { 
+    opacity: 0; 
+    bottom: 100px;
+  } 
+}
+
+.fadeInUpOutUp {
+ opacity:0;  /* make things invisible on start */
+  -webkit-animation:fadeInUpOutUp ease-in infinite; 
+
+  -webkit-animation-duration:26s;
+}
+
+.fadeInUpOutUp#home-blurb-2 {
+  -webkit-animation-delay: 13s;
+}
+
+#home-slider .container {
+  overflow: hidden;
+}
+
+
+/*******************/
+
+#specializing {
+  margin-top: 1.5em;
+  text-transform: uppercase;
 }
 
 /* the bootstrap text carousel for home-testimonials */

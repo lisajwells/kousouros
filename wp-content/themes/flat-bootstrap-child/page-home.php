@@ -15,10 +15,11 @@ get_header(); ?>
             <img class="home-slider-img fade-in" id="home-slider-img-1" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-1.png">
             <img class="home-slider-img fade-in" id="home-slider-img-2" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-2.png">
             <img class="home-slider-img fade-in" id="home-slider-img-3" src="<?php echo content_url(); ?>/uploads/2015/05/Container-wide-divBy3-3.png">
-        <aside class="home-blurb" id="home-blurb-1">
+            
+        <aside class="home-blurb fadeInUpOutUp" id="home-blurb-1">
             <p>He has the trust and respect of judges and prosecutors alike.</p>
         </aside>
-        <aside class="home-blurb" id="home-blurb-2">
+        <aside class="home-blurb fadeInUpOutUp" id="home-blurb-2">
             <p>Some more fine words of praise for a fine man you should hire.</p>
         </aside>
         </div>
