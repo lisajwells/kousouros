@@ -15,7 +15,7 @@ $(document).ready(function(){
 
         // Get YouTube URL from data-theVideo attribute from page
         var videoSRC = $(this).attr( "data-theVideo" );
-        var iFrameCode = '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><div><iframe width="100%" height="350" src="' + videoSRC + '?autoplay=1"></iframe></div>';
+        var iFrameCode = '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><div><iframe width="100%" height="350" style="border:12px solid #14343a;" src="' + videoSRC + '?autoplay=1"></iframe></div>';
 
         // Replace Modal HTML with iFrame Embed
         $('#videoModal .modal-body').html(iFrameCode);

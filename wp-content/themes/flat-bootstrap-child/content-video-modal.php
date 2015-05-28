@@ -7,7 +7,8 @@
                     <div>
                         <iframe width="100%" height="350" src=""></iframe>
                     </div>
- -->                </div>
+ -->                
+                </div>
             </div>
         </div>
     </div><!-- video modal for entire site   -->
