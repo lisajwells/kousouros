@@ -94,7 +94,7 @@ get_header(); ?>
 
 				<div class="row"><!-- Here starts the TV section -->
 					<div class="col-md-12 press-subhed">
-						<h3>Cable and Network Appearances</h3>
+						<h3>Cable and Network Appearances </h3><a href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ" target="_blank">Visit the Kousouros YouTube channel</a>
 					</div>
 				</div>
 
@@ -108,7 +108,7 @@ get_header(); ?>
 						<?php while ( $press_tv1_query->have_posts() ) : $press_tv1_query->the_post(); ?>
 								<?php get_template_part( 'content', 'press-tv' ); ?>
 						<?php endwhile; // end of the loop. ?>
-            <?php wp_reset_postdata(); ?>
+            			<?php wp_reset_postdata(); ?>
 
 					</div><!-- .entry-content-press3 -->
 
@@ -123,7 +123,7 @@ get_header(); ?>
 								<p class="press-content"><?php echo get_the_content(); ?></p>
 							</div>
 						<?php endwhile; // end of the loop. ?>
-            <?php wp_reset_postdata(); ?>
+            			<?php wp_reset_postdata(); ?>
 
 						<?php 
 							$press_tv2_query = new WP_Query( 'category_name=tv&tag=tv-column-2');
@@ -132,7 +132,7 @@ get_header(); ?>
 						<?php while ( $press_tv2_query->have_posts() ) : $press_tv2_query->the_post(); ?>
 								<?php get_template_part( 'content', 'press-tv' ); ?>
 						<?php endwhile; // end of the loop. ?>
-            <?php wp_reset_postdata(); ?>
+            			<?php wp_reset_postdata(); ?>
 
 					</div><!-- .entry-content-press3 -->
 				</div><!-- .row TV -->

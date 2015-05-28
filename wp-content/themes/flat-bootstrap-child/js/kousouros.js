@@ -31,10 +31,15 @@ function autoPlayYouTubeModal(){
             $(theModal+' iframe').attr('src', videoSRC);
         });
     });
-    // this code turns off video when modal closes, but then it won't open again
+    // either of these turn off video when modal closes, but then it won't open again
 // $('#videoModal').on('hidden.bs.modal', function () {
 //     $('#videoModal .modal-body').html('');
 // });
+
+        // $('#videoModal').on('hide.bs.modal', function (e) {
+        //     $('div.modal-body div').html('');
+        // }); 
+
 
 }
 

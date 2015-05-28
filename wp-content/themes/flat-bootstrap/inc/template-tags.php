@@ -50,9 +50,22 @@ function xsbf_excerpt_more( $more ) {
 }
 endif; // end ! function_exists
 
-/**
- * Add the read more link to excerpts, except for image attachment pages
- */
+// /**
+//  * Add the read more link to excerpts, except for image attachment pages
+//  */
+// if ( ! function_exists( 'xsbf_get_the_excerpt' ) ) :
+// add_filter( 'get_the_excerpt', 'xsbf_get_the_excerpt' );
+// function xsbf_get_the_excerpt( $excerpt ) {
+
+// 	if ( ! is_attachment() ) {
+// 		if ( $excerpt ) {
+// 			$excerpt .= '&hellip; ';
+// 		}
+// 		$excerpt .= '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
+// 	}
+// 	return $excerpt;
+// }
+// endif; // end ! function_exists
 
 
 /**

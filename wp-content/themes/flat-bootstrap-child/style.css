@@ -485,16 +485,19 @@ float: right;
 
 .row.home-images {
   position: relative;
+  overflow: hidden;
+
 }
 .home-blurb {
   position: absolute;
   left: 5em;
   right: 5em;
   bottom: 1em;
-  color: #444;
+  color: #fff;
   font-size: 2em;
   font-weight: 900;
   text-align: center;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
 .home-blurb p {
@@ -504,35 +507,35 @@ float: right;
 /******* make 3 images fade in *****/ 
 /* make keyframes that tell the start state and the end state */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+/*@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }*/
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
   opacity:0;  /* make things invisible on start */
   -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
+/*  -moz-animation:fadeIn ease-in 1;
   -o-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+*/      animation:fadeIn ease-in 1;
 
   -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
+  /*-moz-animation-fill-mode:forwards;*/
+          animation-fill-mode:forwards;
 
   -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  /*-moz-animation-duration:1s;*/
+          animation-duration:1s;
 }
 
 .fade-in#home-slider-img-1 {
 -webkit-animation-delay: 0.5s;
--moz-animation-delay: 0.5s;
-animation-delay: 0.5s;
+/*-moz-animation-delay: 0.5s;*/
+        animation-delay: 0.5s;
 }
 
 .fade-in#home-slider-img-3 {
 -webkit-animation-delay: 1s;
--moz-animation-delay: 1s;
-animation-delay: 1s;
+/*-moz-animation-delay: 1s;*/
+        animation-delay: 1s;
 }
 
 /******* make 2 quotes fade in up and out *****/ 
@@ -555,22 +558,37 @@ animation-delay: 1s;
     bottom: 100px;
   } 
 }
+@keyframes fadeInUpOutUp { 
+  0% { 
+    opacity: 0; 
+    bottom: -100px;
+  } 
+  12%, 52% { 
+    opacity: 1; 
+    bottom: 1em;
+  } 
+  58% { 
+    opacity: 0; 
+    bottom: 100px;
+  } 
+  100% { 
+    opacity: 0; 
+    bottom: 100px;
+  } 
+}
 
 .fadeInUpOutUp {
  opacity:0;  /* make things invisible on start */
   -webkit-animation:fadeInUpOutUp ease-in infinite; 
-
+          animation:fadeInUpOutUp ease-in infinite; 
   -webkit-animation-duration:26s;
+          animation-duration:26s;
 }
 
 .fadeInUpOutUp#home-blurb-2 {
   -webkit-animation-delay: 13s;
+          animation-delay: 13s;
 }
-
-#home-slider .container {
-  overflow: hidden;
-}
-
 
 /*******************/
 
@@ -604,6 +622,16 @@ animation-delay: 1s;
 
 #home-testimonials blockquote footer {
   font-style: normal;
+}
+
+#home-testimonials a {
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+#home-testimonials a:hover {
+  color: #fff;
 }
 
 #home-represents {
@@ -868,11 +896,13 @@ h4.press-print {
   margin-top: 5px;
 }
 .press-tv-text p.press-content a,
-a.press-pdf {
+a.press-pdf,
+.press-subhed a {
   color: #6d93a0;
 }
 .press-tv-text p.press-content a:hover,
-a.press-pdf:hover {
+a.press-pdf:hover,
+.press-subhed a:hover {
   color: #000;
 }
 h4 a.press-pdf {

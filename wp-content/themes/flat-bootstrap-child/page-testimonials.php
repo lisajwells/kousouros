@@ -22,7 +22,7 @@ get_header(); ?>
                             $testimonial_query = new WP_Query( 'category_name=testimonials');
 
                             if ( $testimonial_query->have_posts() ) : while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
-                                <blockquote class="testimonial-entry"><?php the_content(); ?>
+                                <blockquote class="testimonial-entry"><a id="testimonial-<?php the_ID(); ?>"></a><?php the_content(); ?>
                                 <footer><?php  the_title();  ?></footer></blockquote>
                             <?php endwhile; 
                                 wp_reset_postdata(); 

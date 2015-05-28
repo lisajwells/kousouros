@@ -77,6 +77,8 @@ $xsbf_theme_options = array(
 	'testimonials'			=> false
 );
 
+include( get_stylesheet_directory() . '/inc/template-tags.php' );
+
 /* Getting php to show up in the sidebar text widgets
  */
 add_filter('widget_text','execute_php',100);
@@ -97,12 +99,8 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 
-// function wpb_add_google_fonts() {
-
-
-/* Load google fonts CSS Style
- */
-
+/* Load google fonts, CSS Style, scripts
+*/
 function klaw_scripts() {
 	/* LOAD STYLESHEETS */
 	/* google fonts */
@@ -122,7 +120,7 @@ function klaw_scripts() {
 
 	/* kousouros.js  */
 	wp_enqueue_script( 'kousouros_script', get_template_directory_uri() . '-child/js/kousouros.js', array(), '1.0.0', true );
-	}
+}
 
 add_action( 'wp_enqueue_scripts', 'klaw_scripts' );
 
@@ -144,12 +142,22 @@ function xsbf_child_credits ( $site_credits ) {
 	return $site_credits;
 }
 
- // * This came from template-tags.php, but I'm altering to remove read more link to excerpts *//
+//  // * This came from template-tags.php, but I'm altering link destination *//
 
-if ( ! function_exists( 'xsbf_get_the_excerpt' ) ) :
-add_filter( 'get_the_excerpt', 'xsbf_get_the_excerpt' );
-function xsbf_get_the_excerpt( $excerpt ) {
+// /**
+//  * Add the read more link to excerpts, except for image attachment pages
+//  */
+// if ( ! function_exists( 'xsbf_get_the_excerpt' ) ) :
+// add_filter( 'get_the_excerpt', 'xsbf_get_the_excerpt' );
+// function xsbf_get_the_excerpt( $excerpt ) {
 
-	return $excerpt;
-}
-endif; // end ! function_exists
+// 	if ( ! is_attachment() ) {
+// 		if ( $excerpt ) {
+// 			$excerpt .= '&hellip; ';
+// 		}
+// 		$excerpt .= '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
+// 	}
+// 	return $excerpt;
+// }
+// endif; // end ! function_exists
+
