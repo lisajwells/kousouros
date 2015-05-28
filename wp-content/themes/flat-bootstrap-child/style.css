@@ -1049,6 +1049,7 @@ ul#menu-footer-menu {
 }
 
 div#contact-footer {
+  font-weight: 400;
   position: absolute;
   left: 30%;
   bottom: 0;
@@ -1068,7 +1069,10 @@ div#contact-footer a:hover {
 
 div#social-footer {
   color: #000;
+  font-size: .8em;
+  font-weight: 700;
   position: absolute;
+  text-transform: uppercase;
   right: 0;
   bottom: 0;
 }
