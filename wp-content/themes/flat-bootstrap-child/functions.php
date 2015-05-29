@@ -141,3 +141,4 @@ function xsbf_child_credits ( $site_credits ) {
 	);
 	return $site_credits;
 }
+

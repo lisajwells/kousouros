@@ -31,4 +31,8 @@ $(document).ready(function(){
         $('#videoModal .modal-body').html('');
     });
 
+    // Prevent parent pages of Site Content sidebar menu (search pages) from linking to non-existent pages //
+    $(".page_item_has_children > a").removeAttr("href");
+
+
 }); 

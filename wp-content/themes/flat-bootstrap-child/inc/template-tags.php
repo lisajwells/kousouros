@@ -22,7 +22,11 @@ function xsbf_get_the_excerpt( $excerpt ) {
 		if ( $excerpt ) {
 			$excerpt .= '&hellip; ';
 		}
+		if ( in_category( 'testimonials' )) {
 		$excerpt .= '<a class="read-more" href="index.php?page_id=1083#testimonial-'.( get_the_ID() ) . '">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
+		} else {
+		$excerpt .= '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
+		}
 	}
 	return $excerpt;
 }

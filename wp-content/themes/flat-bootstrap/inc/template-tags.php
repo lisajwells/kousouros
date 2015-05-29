@@ -51,7 +51,7 @@ function xsbf_excerpt_more( $more ) {
 endif; // end ! function_exists
 
 // /**
-//  * Add the read more link to excerpts, except for image attachment pages
+//  * Add the read more link to excerpts, except for image attachment pages  // I put this in child theme to edit
 //  */
 // if ( ! function_exists( 'xsbf_get_the_excerpt' ) ) :
 // add_filter( 'get_the_excerpt', 'xsbf_get_the_excerpt' );

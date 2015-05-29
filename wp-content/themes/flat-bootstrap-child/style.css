@@ -56,6 +56,47 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+/************/
+.search-form {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.search-field {
+  background-color: transparent;
+  background-image: url(http://api.ning.com:80/files/dr2jDpSXWFhyuoGJ4YR5Fu-PwuqLz70YxRaUcpdKNxf2HI5ECzddyx3NHuPz-MB4ujGS4rEtdtS-aQoFlQrtv*XwVOu*AvC8/searchicon.png);
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+  cursor: pointer;
+  height: 37px;
+  margin: 3px 0;
+  padding: 0 0 0 34px;
+  position: relative;
+  -webkit-transition: width 400ms ease, background 400ms ease;
+  transition:         width 400ms ease, background 400ms ease;
+  width: 0;
+}
+
+.search-field:hover {
+  background-color: #8caab4;
+  border: 2px solid black;
+  cursor: text;
+  outline: 0;
+  width: 230px;
+}
+
+.search-submit {
+  display: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+/************/
 
 #page, .navbar, .after-footer {
   max-width: none;
@@ -257,7 +298,7 @@ blockquote {
 }
 
 blockquote p {
-  margin-bottom: 0;
+  margin-bottom: 11px;
 }
 
 blockquote footer, blockquote small, blockquote .small {
@@ -265,6 +306,7 @@ blockquote footer, blockquote small, blockquote .small {
   font-size: 87%;
   font-style: italic;
   font-weight: 500;
+  margin-top: -11px;
   text-align: right;
 }
 
@@ -278,6 +320,10 @@ div.textwidget blockquote footer {
   font-size: 80%;
   font-style: normal;
   margin-top: .3em;
+}
+/* this is because parent menu items href if disabled */
+.page_item_has_children > a:hover {
+  color: #000;
 }
 
 /****** ---------------------- ******/
@@ -966,7 +1012,7 @@ div.press-tv-text {
 /* TESTIMONIALS                     */
 /****** ---------------------- ******/
 
-blockquote.testimonial-entry p:before {
+blockquote.testimonial-entry p:first-of-type:before {
   content: 'F ';
   color: #6d93a0;
   font-family: 'dingbatsregular';
