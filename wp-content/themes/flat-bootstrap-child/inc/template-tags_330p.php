@@ -34,8 +34,6 @@ function xsbf_get_the_excerpt( $excerpt ) {
 		$page_to_go_to = 'index.php?page_id=1420'; // notables: narcotics 
 	} elseif ( in_category ( array( 'miscellaneous-notables', 'appeals', 'extradition' ))) {
 		$page_to_go_to = 'index.php?page_id=1422'; // notables: miscellaneous-appeals-extradition 
-	} elseif ( in_category ( array( 'press', 'print', 'daily-news', 'journal-news', 'new-york-times', 'newsday', 'times-of-smithtown', 'tv' ))) {
-		$page_to_go_to = 'index.php?page_id=1080'; // press 
 	} else {
 		$page_to_go_to = ''; // default calls page (good) or individual post (dont really desire this) 
 	}
@@ -53,6 +51,16 @@ function xsbf_get_the_excerpt( $excerpt ) {
 	return $excerpt;
 }
 
-// wp_reset_postdata();
+wp_reset_postdata();
 
 endif; // end ! function_exists
+
+// if ( is_front_page() && is_home() ) {
+//   // Default homepage
+// } elseif ( is_front_page() ) {
+//   // static homepage
+// } elseif ( is_home() ) {
+//   // blog page
+// } else {
+//   //everything else
+// }

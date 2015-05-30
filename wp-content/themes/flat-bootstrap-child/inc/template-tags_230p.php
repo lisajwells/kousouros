@@ -34,25 +34,31 @@ function xsbf_get_the_excerpt( $excerpt ) {
 		$page_to_go_to = 'index.php?page_id=1420'; // notables: narcotics 
 	} elseif ( in_category ( array( 'miscellaneous-notables', 'appeals', 'extradition' ))) {
 		$page_to_go_to = 'index.php?page_id=1422'; // notables: miscellaneous-appeals-extradition 
-	} elseif ( in_category ( array( 'press', 'print', 'daily-news', 'journal-news', 'new-york-times', 'newsday', 'times-of-smithtown', 'tv' ))) {
-		$page_to_go_to = 'index.php?page_id=1080'; // press 
 	} else {
-		$page_to_go_to = ''; // default calls page (good) or individual post (dont really desire this) 
+		$page_to_go_to = 'get_permalink( get_the_ID() )'; // default calls page (good) or individual post (dont really desire this) 
 	}
 
 	if ( ! is_attachment() ) {
 		if ( $excerpt ) {
 			$excerpt .= '&hellip; ';
 		}
-		if ( $page_to_go_to == '' ) {
-			$excerpt .= '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
-		} else {
-			$excerpt .= '<a class="read-more" href="'.$page_to_go_to.'">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
-		}
+		// this works for 'index.php?page_id=XXXX' but not for get_permalind( get_the_ID() )
+		$excerpt .= '<a class="read-more" href="'.$page_to_go_to.'">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
+		// $excerpt .= '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
 	}
 	return $excerpt;
 }
 
-// wp_reset_postdata();
+wp_reset_postdata();
 
 endif; // end ! function_exists
+
+// if ( is_front_page() && is_home() ) {
+//   // Default homepage
+// } elseif ( is_front_page() ) {
+//   // static homepage
+// } elseif ( is_home() ) {
+//   // blog page
+// } else {
+//   //everything else
+// }
