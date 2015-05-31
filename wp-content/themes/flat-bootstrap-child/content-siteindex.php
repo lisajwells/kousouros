@@ -9,7 +9,7 @@
 ?>
 
 <?php // If you have search in the sidebar, you can comment this out ?>
-<?php get_search_form(); ?>
+<?php // get_search_form(); ?>
 
 <?php // List all pages on the site. Be sure to order them in page admin. ?>
 <div class="widget widget_pages">

@@ -11,10 +11,10 @@
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'Sidebar' ) ) : ?>
 
-			<aside id="search" class="widget widget_search">
+			<!-- <aside id="search" class="widget widget_search">
 				<br />
-				<?php get_search_form(); ?>
-			</aside>
+				<?php //get_search_form(); ?>
+			</aside> -->
 
 			<aside id="pages" class="widget widget_pages">
 				<h2 class="widget-title"><?php _e( 'Site Content', 'flat-bootstrap' ); ?></h2>
