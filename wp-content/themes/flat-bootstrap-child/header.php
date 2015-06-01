@@ -24,31 +24,6 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
 
-	<!-- Contact modal -->
-<!-- <button type="button" id="main-menu-contact" class="btn btn-primary">Large modal</button> -->
-
-<!-- <div class="modal fade bs-example-modal-lg" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-        <div class="modal-body">
-	        <p>Why does this modal have no nothing?</p>
-        </div>
-    </div>
-  </div>
-</div>
- -->
-    <!-- video modal for entire site   -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-					<p>is this going to work now?</p>
-                </div>
-            </div>
-        </div>
-    </div><!-- video modal for entire site   -->
-
-
 	<?php do_action( 'before' ); ?>
 	
 		<header id="masthead" class="site-header" role="banner">
@@ -152,6 +127,8 @@
             <span class="searchbox-icon"><span class="glyphicon glyphicon-search"></span></span>
         </form>
     </div>
+
+    <?php get_template_part( 'content', 'contact-modal' ); ?>
 
 	<?php // Set up the content area (but don't put it in a container) ?>	
 	<div id="content" class="site-content">

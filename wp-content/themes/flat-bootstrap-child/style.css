@@ -265,11 +265,19 @@ header.content-header {
   border:none;
   outline:none;
 }
+iframe {
+  background-color: #14343a;
+}
 .close {
   color: #d9ce4d;
   font-size: 80px;
   margin:-20px 0 0 0;
-  opacity: .6;
+  opacity: 1;
+  position: relative;
+  text-shadow: 0 1px 0 #aaa;
+}
+button.close:hover {
+  background-color: transparent;
 }
 
 /***** MODAL MEDIA QUERIES *****/
@@ -295,7 +303,10 @@ header.content-header {
 @media only screen and (min-width: 768px) {
   .close {
     font-size: 80px;
-    margin:30px -43px -20px 100px;
+    margin: 30px -21px -32px 100px;
+    }
+  #contactModal .close {
+    margin: -20px 0px 0px 100px;
   }
 }
 /***** end MODAL PROPERTIES *****/

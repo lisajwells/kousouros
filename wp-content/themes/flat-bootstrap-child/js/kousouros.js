@@ -4,6 +4,10 @@
  */
  
 $(document).ready(function(){
+       $('body').on('hidden.bs.modal', '.modal', function() {
+       $(this).removeData('bs.modal');
+      });
+
     
     // BOOTSTRAP 3.0 - Open YouTube Video Dynamicaly in Modal Window
     // Modal Window for dynamically opening videos
@@ -69,10 +73,6 @@ $(document).ready(function(){
 
         $('#contactModal').modal('toggle');
     });
-    //
-    //     $('#main-menu-contact').click(function(){
-    //     $('#contactModal').modal('show');
-    // });
 
 
 
