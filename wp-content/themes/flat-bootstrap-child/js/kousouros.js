@@ -31,10 +31,10 @@ $(document).ready(function(){
         $('#videoModal .modal-body').html('');
     });
 
-    // Prevent parent pages of Site Content sidebar menu (search pages) from linking to non-existent pages //
+    ///////////// Prevent parent pages of Site Content sidebar menu (search pages) from linking to non-existent pages //
     $(".page_item_has_children > a").removeAttr("href");
 
-    // Search bar from TheCodeBlock
+    ///////////// Search bar from TheCodeBlock
             var submitIcon = $('.searchbox-icon'); // the button span
             var inputBox = $('.searchbox-input'); // the text field with get_search_query
             var searchBox = $('.searchbox'); // the form
@@ -52,16 +52,29 @@ $(document).ready(function(){
             });  
             submitIcon.mouseup(function(){
                     return false;
-                });
+            });
             searchBox.mouseup(function(){
                     return false;
-                });
+            });
             $(document).mouseup(function(){
                     if(isOpen == true){
                         $('.searchbox-icon').css('display','block');
                         submitIcon.click();
                     }
-                });
+            });
+
+    ///// click on menu item to bring up contact modal
+    $('.main-menu-contact').on("click", function(e){
+        e.preventDefault();
+
+        $('#contactModal').modal('toggle');
+    });
+    //
+    //     $('#main-menu-contact').click(function(){
+    //     $('#contactModal').modal('show');
+    // });
+
+
 
 }); // document.ready
 
