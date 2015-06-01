@@ -34,13 +34,10 @@ $(document).ready(function(){
     // Prevent parent pages of Site Content sidebar menu (search pages) from linking to non-existent pages //
     $(".page_item_has_children > a").removeAttr("href");
 
-
-}); 
-
-  $(document).ready(function(){
-            var submitIcon = $('.searchbox-icon');
-            var inputBox = $('.searchbox-input');
-            var searchBox = $('.searchbox');
+    // Search bar from TheCodeBlock
+            var submitIcon = $('.searchbox-icon'); // the button span
+            var inputBox = $('.searchbox-input'); // the text field with get_search_query
+            var searchBox = $('.searchbox'); // the form
             var isOpen = false;
             submitIcon.click(function(){
                 if(isOpen == false){
@@ -53,7 +50,7 @@ $(document).ready(function(){
                     isOpen = false;
                 }
             });  
-             submitIcon.mouseup(function(){
+            submitIcon.mouseup(function(){
                     return false;
                 });
             searchBox.mouseup(function(){
@@ -65,7 +62,9 @@ $(document).ready(function(){
                         submitIcon.click();
                     }
                 });
-        });
+
+}); // document.ready
+
             function buttonUp(){
                 var inputVal = $('.searchbox-input').val();
                 inputVal = $.trim(inputVal).length;

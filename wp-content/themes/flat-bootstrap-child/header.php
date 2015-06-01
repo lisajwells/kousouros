@@ -121,9 +121,9 @@
     <div class="container" id="search-container">
 	    <form class="searchbox" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<span class="screen-reader-text sr-only"><?php _ex( 'Search for:', 'label', 'flat-bootstrap' ); ?></span>
-            <input type="search" placeholder="" class="searchbox-input" onkeyup="buttonUp();" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" required >
-            <input type="submit" value="">
+            <input type="search" placeholder="Search..." class="searchbox-input" onkeyup="buttonUp();" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" required >
             <span class="searchbox-submit"><span class="glyphicon glyphicon-search"></span></span>
+            <input type="submit" value="">
             <span class="searchbox-icon"><span class="glyphicon glyphicon-search"></span></span>
         </form>
     </div>
