@@ -77,11 +77,12 @@ $xsbf_theme_options = array(
 	'testimonials'			=> false
 );
 
-// including child theme template-tags
+///// including child theme template-tags
 include( get_stylesheet_directory() . '/inc/template-tags.php' );
 
-// set cookie for splash modal
-function encryptCookie($value){
+///// set cookie for splash modal
+function encryptCookie($value){ //but this encryption puts the same value every time
+	// do i need to generate a random key each time?
    if(!$value){return false;}
    $key = '7b7be2cf9f5d2981';
    $text = $value;
@@ -101,21 +102,23 @@ function decryptCookie($value){
    return trim($decrypttext);
 }
 
-function set_newday_cookie() {
+function set_newday_cookie($splashModal) {
+	$newCookie = false;
 	if ( !isset($_COOKIE['splashmodal_newday'])) {
-		setcookie('splashmodal_newday', encryptCookie(1), time()+3600*24); // 3600=1 hour; *24=1 day
-	}
+//		$splashModal .= '<div id="splashModal"><img src="'.content_url().'/uploads/2015/05/Container-wide-divBy3-1.png"></div>';
+// 		echo $splashModal;
+		setcookie('splashmodal_newday', encryptCookie(1), time()+3600*24); 
+		$newCookie = true;
+	} 
+	return $newCookie;
 }
+
 add_action( 'init', 'set_newday_cookie');
 
-// Set encrypted cookie:
-$time = time()+60*60*24*30*12; //store cookie for one year
-// setcookie('cookie_name', encryptCookie('cookie_value'),$time,'/');
-
-// Get encrypted cookie value:
+//example: Get encrypted cookie value:
 // $cookie_value = decryptCookie($_COOKIE['cookie_name']);
 
-//* Getting php to show up in the sidebar text widgets *//
+/////* Getting php to show up in the sidebar text widgets *//
 add_filter('widget_text','execute_php',100);
 function execute_php($html){
      if(strpos($html,"<"."?php")!==false){
@@ -149,6 +152,9 @@ function klaw_scripts() {
 	/* jquery that makes the bootstrap video modal work */
 	wp_enqueue_script( 'jquery1101_script', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'jquery1103_script', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array(), '1.0.0', true );
+
+	/* js-cookie.js */
+	// wp_enqueue_script( 'js-cookie', get_template_directory_uri() . '-child/js/js-cookie.js', array(), '1.0.0', true );
 
 	/* kousouros.js  */
 	wp_enqueue_script( 'kousouros_script', get_template_directory_uri() . '-child/js/kousouros.js', array(), '1.0.0', true );

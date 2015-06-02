@@ -18,6 +18,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <?php get_template_part( 'content', 'splash-modal' ); ?><!-- This modal once a day -->
+
+
 	<div id="page" class="hfeed site">
 
 	<?php do_action( 'before' ); ?>
