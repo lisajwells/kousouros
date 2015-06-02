@@ -81,12 +81,39 @@ $xsbf_theme_options = array(
 include( get_stylesheet_directory() . '/inc/template-tags.php' );
 
 // set cookie for splash modal
+function encryptCookie($value){
+   if(!$value){return false;}
+   $key = '7b7be2cf9f5d2981';
+   $text = $value;
+   $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB);
+   $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+   $crypttext = mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $key, $text, MCRYPT_MODE_ECB, $iv);
+   return trim(base64_encode($crypttext)); //encode for cookie
+}
+
+function decryptCookie($value){
+   if(!$value){return false;}
+   $key = '7b7be2cf9f5d2981';
+   $crypttext = base64_decode($value); //decode cookie
+   $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB);
+   $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+   $decrypttext = mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $key, $crypttext, MCRYPT_MODE_ECB, $iv);
+   return trim($decrypttext);
+}
+
 function set_newday_cookie() {
 	if ( !isset($_COOKIE['splashmodal_newday'])) {
-		setcookie('splashmodal_newday', 1, time()+3600*24, COOKIEPATH, COOKIE_DOMAIN, false); // 3600=1 hour; *24=1 day
+		setcookie('splashmodal_newday', encryptCookie(1), time()+3600*24); // 3600=1 hour; *24=1 day
 	}
 }
 add_action( 'init', 'set_newday_cookie');
+
+// Set encrypted cookie:
+$time = time()+60*60*24*30*12; //store cookie for one year
+// setcookie('cookie_name', encryptCookie('cookie_value'),$time,'/');
+
+// Get encrypted cookie value:
+// $cookie_value = decryptCookie($_COOKIE['cookie_name']);
 
 //* Getting php to show up in the sidebar text widgets *//
 add_filter('widget_text','execute_php',100);
