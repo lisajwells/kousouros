@@ -292,8 +292,6 @@ button.close:hover {
   margin-top: 8%;
   padding: 1.2em;
 }
-#splashModal img {
-}
 
 /***** MODAL MEDIA QUERIES *****/
 @media only screen and (max-width: 641px) {
