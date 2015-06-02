@@ -25,9 +25,6 @@ get_header(); ?>
         </div>
     </div>    
 
-	<?php 
-    //echo do_shortcode("[metaslider id=2384]"); // slideshow ID
-	?>
     <p id="specializing" style="text-align: center;"><strong>Specializing in state and federal criminal defense in New York and throughout the country</strong></p>
 </div>
 

@@ -13,10 +13,6 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<!-- moved to functions
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script type="text/javascript" src="http://www.avvo.com/assets/badges-v2.js"></script> -->
 
 <?php wp_head(); ?>
 </head>
@@ -45,20 +41,6 @@
 									<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
 								</div>
 							</a>
-
-							<!-- from the internets -->
-							<!-- <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-								<label>
-									<input type="search" 
-					                class="search-field form-control" 
-					                placeholder="Search"  
-					                value="" name="s" 
-					                title="Search efter:">
-								</label>
-								<input type="submit" class="search-submit" value="Search">
-							</form> -->
-
-
 
 					</div><!-- container -->
 				</div><!-- .site-branding -->
@@ -128,7 +110,7 @@
         </form>
     </div>
 
-    <?php get_template_part( 'content', 'contact-modal' ); ?>
+    <?php get_template_part( 'content', 'contact-modal' ); ?><!-- This modal available from clicking primary nav -->
 
 	<?php // Set up the content area (but don't put it in a container) ?>	
-	<div id="content" class="site-content">
+	<div id="content" class="site-content"><!-- this closes at the beginning of the footer -->

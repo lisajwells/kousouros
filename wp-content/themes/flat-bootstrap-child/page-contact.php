@@ -5,6 +5,8 @@ Template Name: Contact
 
 get_header(); ?>
 
+<!-- I'm actually using a modal for Contact now instead of this page -->
+
 <?php get_template_part( 'content', 'header' ); ?>
 
 <div class="container">

@@ -77,10 +77,18 @@ $xsbf_theme_options = array(
 	'testimonials'			=> false
 );
 
+// including child theme template-tags
 include( get_stylesheet_directory() . '/inc/template-tags.php' );
 
-/* Getting php to show up in the sidebar text widgets
- */
+// set cookie for splash modal
+function set_newday_cookie() {
+	if ( !isset($_COOKIE['splashmodal_newday'])) {
+		setcookie('splashmodal_newday', 1, time()+3600*24, COOKIEPATH, COOKIE_DOMAIN, false); // 3600=1 hour; *24=1 day
+	}
+}
+add_action( 'init', 'set_newday_cookie');
+
+//* Getting php to show up in the sidebar text widgets *//
 add_filter('widget_text','execute_php',100);
 function execute_php($html){
      if(strpos($html,"<"."?php")!==false){
@@ -107,9 +115,6 @@ function klaw_scripts() {
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic',array(), null, 'screen' );	
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700',array(), null, 'screen' );	
 
-	/* animate.css */
-	// wp_enqueue_style( 'animate_klaw', get_stylesheet_directory_uri() . '/css/animate.css' );	
-	
 	/* LOAD AVVO JAVASCRIPT */
 	/* avvo badge */
 	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js', array(), '1.0.0', true );
@@ -144,6 +149,7 @@ function xsbf_child_credits ( $site_credits ) {
 
 /** This came from codex: in_category
  * Tests if any of a post's assigned categories are descendants of target categories
+ * Used in child-theme template tags to direct links from search results to page instead of to single post
  *
  * @param int|array $cats The target categories. Integer ID or array of integer IDs
  * @param int|object $_post The post. Omit to test the current post in the Loop or main query

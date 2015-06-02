@@ -32,7 +32,7 @@ get_header(); ?>
                                     $racketeering_query   = new WP_Query( 'category_name=racketeering'); 
                                     $bribery_query        = new WP_Query( 'category_name=bribery'); 
                                     $narcotics_query      = new WP_Query( 'category_name=narcotics'); 
-                                    $miscellaneous_query  = new WP_Query( 'category_name=miscellaneous'); 
+                                    $miscellaneous_query  = new WP_Query( 'category_name=miscellaneous-notables'); 
                                     $appeals_query        = new WP_Query( 'category_name=appeals'); 
                                     $extradition_query    = new WP_Query( 'category_name=extradition'); 
                                     ?>
