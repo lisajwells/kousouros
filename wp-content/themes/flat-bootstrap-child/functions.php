@@ -103,16 +103,12 @@ function decryptCookie($value){
 }
 
 function set_newday_cookie($newCookie) {
-	$newCookie = false;
 	if ( !isset($_COOKIE['splashmodal_newday'])) {
-//		$splashModal .= '<div id="splashModal"><img src="'.content_url().'/uploads/2015/05/Container-wide-divBy3-1.png"></div>';
-// 		echo $splashModal;
 		setcookie('splashmodal_newday', encryptCookie(1), time()+3600*24); 
 		displaySplashModal(true);
 	} else {
 		displaySplashModal(false);
 	}
-	return $newCookie;
 }
 
 add_action( 'init', 'set_newday_cookie');
@@ -120,18 +116,10 @@ add_action( 'init', 'set_newday_cookie');
 function displaySplashModal($splash) {
 
 	if(!$splash || $splash == false) {
-		print_r('not time for splash now');
+	    echo '<style type="text/css">div#splashModal {display: none;}</style>';
+		// print_r('not time for splash now');
 		// $("div#splashModal").css('display', 'none'); // !!!!!!!!!!!!!!! yes i know this is jquery right now !!!!!!!!!!!
-	} else {
-		print_r('yes splash');
-
-		// $("div#splashModal").animate({ opacity: 1 }, 1200, "swing", function(){
-		// 	setTimeout(function(){$("div#splashModal").fadeOut(800,
-		// 		function(){}
-		// 	);}, 2000);
-		// }); // 
 	} // else
-
 } // end function displaySplashModal
 
 //example: Get encrypted cookie value:

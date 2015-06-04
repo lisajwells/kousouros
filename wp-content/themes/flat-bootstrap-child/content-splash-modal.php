@@ -1,6 +1,6 @@
     <!-- splash modal -->
-    <div id="splashModal" >
+    <div id="splashModal" class="splashOut">
         <div class="splashModal-content">
-                <img src="http://krankygirl.com/klaw2/wp-content/images/klawbanner3.png">
+            <img src="<?php echo content_url(); ?>/images/klawbanner3.png">
         </div>
     </div><!-- splash modal -->
