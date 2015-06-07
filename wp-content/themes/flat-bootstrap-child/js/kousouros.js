@@ -4,6 +4,36 @@
  
 $(document).ready(function(){
 
+    //     <!-- splash modal -->
+    // <div id="splashModal" class="splashOut">
+    //     <div class="splashModal-content">
+    //         <img src="<?php echo content_url(); ?>/images/klawbanner3.png">
+    //     </div>
+    // </div><!-- splash modal -->
+
+    if( Cookies.get('kousouroslaw') == null ) {
+        Cookies.set('kousouroslaw', 'jklaw_cookie', { expires: 1 });
+        // console.log('The cookie is here');
+        console.log('there was no cookie');
+        displaySplashModal(true);
+    } else {
+        displaySplashModal(false);
+    }
+
+
+    function displaySplashModal(splashScreen) {
+
+        if(!splashScreen || splashScreen == false) {
+            console.log( 'No splash for you' );
+            // $("#splashModal").css("display", "none");
+            // $( "#splashModal" ).hide();
+        } else {
+            $( "#splashModal" ).css("display","block");
+            
+        }
+    }; // end function displaySplashModal
+
+
     // empty old stuff out of modals so it doesn't persist
     $('body').on('hidden.bs.modal', '.modal', function() {
         $(this).removeData('bs.modal');

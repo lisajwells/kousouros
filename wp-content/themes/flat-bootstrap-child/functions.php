@@ -80,50 +80,23 @@ $xsbf_theme_options = array(
 ///// including child theme template-tags
 include( get_stylesheet_directory() . '/inc/template-tags.php' );
 
-///// set cookie for splash modal
-function encryptCookie($value){ //but this encryption puts the same value every time
-	// do i need to generate a random key each time?
-   if(!$value){return false;}
-   $key = '7b7be2cf9f5d2981';
-   $text = $value;
-   $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB);
-   $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
-   $crypttext = mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $key, $text, MCRYPT_MODE_ECB, $iv);
-   return trim(base64_encode($crypttext)); //encode for cookie
-}
+// function set_newday_cookie($newCookie) {
+// 	if ( !isset($_COOKIE['splashmodal_newday'])) {
+// 		setcookie('splashmodal_newday', 'splashCookie', time()+3600*24); 
+// 		displaySplashModal(true);
+// 	} else {
+// 		displaySplashModal(false);
+// 	}
+// }
 
-function decryptCookie($value){
-   if(!$value){return false;}
-   $key = '7b7be2cf9f5d2981';
-   $crypttext = base64_decode($value); //decode cookie
-   $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB);
-   $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
-   $decrypttext = mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $key, $crypttext, MCRYPT_MODE_ECB, $iv);
-   return trim($decrypttext);
-}
+// add_action( 'init', 'set_newday_cookie');
 
-function set_newday_cookie($newCookie) {
-	if ( !isset($_COOKIE['splashmodal_newday'])) {
-		setcookie('splashmodal_newday', encryptCookie(1), time()+3600*24); 
-		displaySplashModal(true);
-	} else {
-		displaySplashModal(false);
-	}
-}
+// function displaySplashModal($splash) {
 
-add_action( 'init', 'set_newday_cookie');
-
-function displaySplashModal($splash) {
-
-	if(!$splash || $splash == false) {
-	    echo '<style type="text/css">div#splashModal {display: none;}</style>';
-		// print_r('not time for splash now');
-		// $("div#splashModal").css('display', 'none'); // !!!!!!!!!!!!!!! yes i know this is jquery right now !!!!!!!!!!!
-	} // else
-} // end function displaySplashModal
-
-//example: Get encrypted cookie value:
-// $cookie_value = decryptCookie($_COOKIE['cookie_name']);
+// 	if(!$splash || $splash == false) {
+	    // echo '<style type="text/css">div#splashModal {display: none;}</style>';
+	// } // else
+// } // end function displaySplashModal
 
 /////* Getting php to show up in the sidebar text widgets *//
 add_filter('widget_text','execute_php',100);
@@ -152,7 +125,7 @@ function klaw_scripts() {
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic',array(), null, 'screen' );	
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700',array(), null, 'screen' );	
 
-	/* LOAD AVVO JAVASCRIPT */
+	/* LOAD JAVASCRIPT */
 	/* avvo badge */
 	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js', array(), '1.0.0', true );
 
@@ -160,11 +133,10 @@ function klaw_scripts() {
 	wp_enqueue_script( 'jquery1101_script', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'jquery1103_script', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array(), '1.0.0', true );
 
-	/* js-cookie.js */
-	// wp_enqueue_script( 'js-cookie', get_template_directory_uri() . '-child/js/js-cookie.js', array(), '1.0.0', true );
-
 	/* kousouros.js  */
 	wp_enqueue_script( 'kousouros_script', get_template_directory_uri() . '-child/js/kousouros.js', array(), '1.0.0', true );
+	/* kousouros.js  */
+	wp_enqueue_script( 'cookie_script', get_template_directory_uri() . '-child/js/cookie.js', array(), '1.0.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'klaw_scripts' );

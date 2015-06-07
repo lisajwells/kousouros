@@ -7,6 +7,8 @@
 
 get_header(); ?>
 
+<?php get_template_part( 'content', 'splash-modal' ); ?><!-- This modal once a day if home page -->
+
 <?php get_template_part( 'content', 'video-modal' ); ?>
 
 <div class="section" id="home-slider">
