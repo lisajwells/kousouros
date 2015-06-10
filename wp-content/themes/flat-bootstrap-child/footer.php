@@ -66,7 +66,7 @@
 	if ( $nav_menu OR $site_credits ) : ?>	  
 		<div class="after-footer">
 			<div class="container">
-				<div id="back-to-top"><a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a>
+				<div id="back-to-top"><a class="smoothscroll" href="#page"><span class="fa fa-angle-double-up">&nbsp;</span></a>
 				</div>
 
 				<div class="row footer-content">

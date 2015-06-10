@@ -20,21 +20,21 @@ function xsbf_get_the_excerpt( $excerpt ) {
 
 
 	if ( in_category( 'testimonials' )) { 
-		$page_to_go_to = '1083#testimonial-'.( get_the_ID() ) . ''; 
+		$page_to_go_to = 'Testimonials'; 
 	} elseif ( in_category ( 'white-collar-general' )) {
-		$page_to_go_to = '1414'; // notables: white-collar-general 
+		$page_to_go_to = 'White Collar: General'; // notables: white-collar-general 
 	} elseif ( in_category ( 'healthcare-and-pharmaceutical' )) {
-		$page_to_go_to = '1416'; // notables: white-collar-healthcare-pharmaceutical 
+		$page_to_go_to = 'White Collar: Healthcare/Pharmaceutical'; // notables: white-collar-healthcare-pharmaceutical 
 	} elseif ( in_category ( 'homicide' )) {
-		$page_to_go_to = '2245'; // notables: homicide 
+		$page_to_go_to = 'Homicide'; // notables: homicide 
 	} elseif ( in_category ( array( 'racketeering', 'bribery' ))) {
-		$page_to_go_to = '1418'; // notables: racketeering-bribery 
+		$page_to_go_to = 'Racketeering/Bribery'; // notables: racketeering-bribery 
 	} elseif ( in_category ( 'narcotics' )) {
-		$page_to_go_to = '1420'; // notables: narcotics 
+		$page_to_go_to = 'Narcotics'; // notables: narcotics 
 	} elseif ( in_category ( array( 'miscellaneous-notables', 'appeals', 'extradition' ))) {
-		$page_to_go_to = '1422'; // notables: miscellaneous-appeals-extradition 
+		$page_to_go_to = 'Miscellaneous/Appeals/Extradition'; // notables: miscellaneous-appeals-extradition 
 	} elseif ( in_category( 'press' ) || post_is_in_descendant_category( 73 ) ) { // press: calling a function to check if a post is in a descendant category (so as not to list all subcats here. This won't work for notables, where the parent category is not the page 
-		$page_to_go_to = '1080'; // press 
+		$page_to_go_to = 'Press/Media'; // press 
 	} else {
 		$page_to_go_to = ''; // default calls page if page (good) or single post (dont really desire this but it's a fallback and a test for 2 conditions below) 
 	}
@@ -45,8 +45,11 @@ function xsbf_get_the_excerpt( $excerpt ) {
 		}
 		if ( $page_to_go_to == '' ) {
 			$excerpt .= '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
+		} elseif ( $page_to_go_to == 'Testimonials' ) {
+			// testimonials has its own condition because it goes to an anchor on the individual post
+			$excerpt .= '<a class="read-more" href="'. get_permalink( get_page_by_title( $page_to_go_to ) ) . '#testimonial-'.( get_the_ID() ).'">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
 		} else {
-			$excerpt .= '<a class="read-more" href="index.php?page_id='.$page_to_go_to.'">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
+			$excerpt .= '<a class="read-more" href="'. get_permalink( get_page_by_title( $page_to_go_to ) ) . '">' . __( 'Read More', 'flat-bootstrap' ) . '</a>';
 		}
 	}
 	return $excerpt;

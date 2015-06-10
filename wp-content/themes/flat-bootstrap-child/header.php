@@ -5,7 +5,9 @@
  * Displays all of the <head> section and everything up till <div id="content">
  * @package flat-bootstrap
  */
-?><!DOCTYPE html>
+?>
+<?php ob_start(); ?><!-- so the cookie set doesn't try to resend header info -->
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -13,11 +15,20 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+
+<!-- This modal once a day if home page -->
+    <!-- splash modal -->
+    <?php if ( is_front_page() && newday_cookie() ) : ?>
+	    <div id="splashModal">
+	        <div id="splashModal-content">
+	            <img id="splashModal-image" src="<?php echo content_url(); ?>/images/klawbanner3.png">
+	        </div>
+	    </div>
+	<?php endif; ?><!-- splash modal -->
 
 	<div id="page" class="hfeed site">
 
@@ -104,10 +115,16 @@
     <div class="container" id="search-container">
 	    <form class="searchbox" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<span class="screen-reader-text sr-only"><?php _ex( 'Search for:', 'label', 'flat-bootstrap' ); ?></span>
-            <input type="search" placeholder="Search..." class="searchbox-input" onkeyup="buttonUp();" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" required >
-            <span class="searchbox-submit"><span class="glyphicon glyphicon-search"></span></span>
-            <input type="submit" value="">
-            <span class="searchbox-icon"><span class="glyphicon glyphicon-search"></span></span>
+            <input type="search" placeholder="Search..." class="searchbox-input" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" required >
+
+            <span class="searchbox-submit">
+            	<span class="glyphicon glyphicon-search"></span>
+            	<input type="submit" value="">
+            </span>
+            
+            <span class="searchbox-icon">
+	            <span class="glyphicon glyphicon-search"></span>
+            </span>
         </form>
     </div>
 

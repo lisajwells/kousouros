@@ -44,33 +44,6 @@
 	</ul>
 </div><!-- .widget -->
 
-<?php // If this blog has more than one category, display them ?>
-<?php if ( ! function_exists( 'xsbf_categorized_blog' ) OR xsbf_categorized_blog() ) : ?>
-<div class="widget widget_categories">
-	<h2 class="widgettitle"><?php _e( 'Categories', 'flat-bootstrap' ); ?></h2>
-	<ul>
-	<?php
-	wp_list_categories( array(
-		'show_count' => 1,
-		'title_li'   => '',
-	) );
-	?>
-	</ul>
-</div><!-- .widget -->
-<?php endif; ?>
-
-<?php // Display a tag cloud
-// $tag_cloud = wp_tag_cloud( array ( 
-// 	'echo'		=> false, 
-// 	'separator'	=> ', ',
-// 	'smallest' 	=> 12,
-// 	'largest'	=> 26
-// ) ); 
-// if ( $tag_cloud ) {
-// 	echo '<h2>' . __( 'Tags', 'flat-bootstrap' ) . '</h2>';
-// 	echo $tag_cloud;
-// }
-?>
 
 <?php // If this blog has portfolio categories (types), display them ?>
 <?php 

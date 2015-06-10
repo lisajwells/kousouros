@@ -4,37 +4,13 @@
  
 $(document).ready(function(){
 
-    //     <!-- splash modal -->
-    // <div id="splashModal" class="splashOut">
-    //     <div class="splashModal-content">
-    //         <img src="<?php echo content_url(); ?>/images/klawbanner3.png">
-    //     </div>
-    // </div><!-- splash modal -->
+    if($('#splashModal').length) {
+        $("#splashModal-content").fadeIn(2000);
+        $("#splashModal-image").animate({left: "+=100%"}, 2000);
+        $("#splashModal").delay(3000).fadeOut(600);
+    };
 
-    if( Cookies.get('kousouroslaw') == null ) {
-        Cookies.set('kousouroslaw', 'jklaw_cookie', { expires: 1 });
-        // console.log('The cookie is here');
-        console.log('there was no cookie');
-        displaySplashModal(true);
-    } else {
-        displaySplashModal(false);
-    }
-
-
-    function displaySplashModal(splashScreen) {
-
-        if(!splashScreen || splashScreen == false) {
-            console.log( 'No splash for you' );
-            // $("#splashModal").css("display", "none");
-            // $( "#splashModal" ).hide();
-        } else {
-            $( "#splashModal" ).css("display","block");
-            
-        }
-    }; // end function displaySplashModal
-
-
-    // empty old stuff out of modals so it doesn't persist
+    // empty old stuff out of video modals so it doesn't persist
     $('body').on('hidden.bs.modal', '.modal', function() {
         $(this).removeData('bs.modal');
     });
@@ -67,33 +43,33 @@ $(document).ready(function(){
     $(".page_item_has_children > a").removeAttr("href");
 
     ///////////// Search bar from TheCodeBlock
-            var submitIcon = $('.searchbox-icon'); // the button span
-            var inputBox = $('.searchbox-input'); // the text field with get_search_query
-            var searchBox = $('.searchbox'); // the form
-            var isOpen = false;
-            submitIcon.click(function(){
-                if(isOpen == false){
-                    searchBox.addClass('searchbox-open');
-                    inputBox.focus();
-                    isOpen = true;
-                } else {
-                    searchBox.removeClass('searchbox-open');
-                    inputBox.focusout();
-                    isOpen = false;
-                }
-            });  
-            submitIcon.mouseup(function(){
-                    return false;
-            });
-            searchBox.mouseup(function(){
-                    return false;
-            });
-            $(document).mouseup(function(){
-                    if(isOpen == true){
-                        $('.searchbox-icon').css('display','block');
-                        submitIcon.click();
-                    }
-            });
+    var submitIcon = $('.searchbox-icon'); // the button span
+    var inputBox = $('.searchbox-input'); // the text field with get_search_query
+    var searchBox = $('.searchbox'); // the form
+    var isOpen = false;
+    submitIcon.click(function(){
+        if(isOpen == false){
+            searchBox.addClass('searchbox-open');
+            inputBox.focus();
+            isOpen = true;
+        } else {
+            searchBox.removeClass('searchbox-open');
+            inputBox.focusout();
+            isOpen = false;
+        }
+    });  
+    submitIcon.mouseup(function(){
+            return false;
+    });
+    searchBox.mouseup(function(){
+            return false;
+    });
+    $(document).mouseup(function(){
+            if(isOpen == true){
+                $('.searchbox-icon').css('display','block');
+                submitIcon.click();
+            }
+    });
 
     //////// click on primary nav menu item with this class to bring up contact modal
     $('.main-menu-contact').on("click", function(e){
@@ -101,6 +77,37 @@ $(document).ready(function(){
 
         $('#contactModal').modal('toggle');
     });
+
+    //////// event listener for search input
+    $('.searchbox-input').click(buttonUp);
+    $("input:text").focus(function() { $(this).select(); } );
+
+        // $('#back-to-top-testimonials').affix({
+    //     offset: {
+    //         top: $('#back-to-top-testimonials').offset().top
+    //     }
+    // });
+
+    //////// back-to-top for testimonials page
+    $('#back-to-top-testimonials').affix({
+        offset: {
+            top: 470,
+            bottom: function () {
+                return (this.bottom = $('.site-footer').outerHeight(true))
+            }
+        }
+    })
+
+    // $('#back-to-top-testimonials').on('affix.bs.affix', function () {
+    //     var divHeight = $('#back-to-top-testimonials').outerHeight(true);
+    //     $('#back-to-top-testimonials').css('margin-top', divHeight);
+    // });
+
+    // $('#back-to-top-testimonials').on('affix-top.bs.affix', function () {
+    //     var divHeight = $('#back-to-top-testimonials').outerHeight(true);
+    // $('#back-to-top-testimonials').css('margin-top', 0);
+    // });
+
 
 }); // document.ready
 

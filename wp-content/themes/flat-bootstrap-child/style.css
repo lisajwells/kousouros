@@ -145,6 +145,7 @@ iframe {
 .searchbox{ /* the form */
     position:relative;
     min-width:50px;
+    max-width: 350px;
     width:0%;
     height:50px;
     float:right;
@@ -164,6 +165,7 @@ iframe {
     outline:0;
     background:#e7e7e7;
     width:100%;
+    max-width: 350px;
     height:50px;
     margin:0;
     padding:0px 55px 0px 20px;
@@ -569,7 +571,7 @@ float: right;
 /****** ---------------------- ******/
 
 #splashModal {
-  display: none;
+  /*display: none;*/
   width: 100%;
   height: 100%;
   position: fixed;
@@ -580,10 +582,18 @@ float: right;
   background: #7c9eaa;
   z-index: 9999;
 }
-#splashModal div.splashModal-content {
+#splashModal-content {
+  display: none;
   background-color: #14343a;
   margin-top: 8%;
   padding: 1.2em;
+}
+#splashModal-image {
+  position: relative;
+  left: -100%;
+}
+.splashModal-image-in {
+  left: 0%;
 }
 
 /****** ---------------------- ******/
@@ -717,6 +727,9 @@ float: right;
 
 #home-testimonials-carousel i {
   font-size: 140px;
+}
+#home-testimonials-carousel a:hover {
+  color: white;
 }
 
 .carousel-inner {
@@ -1074,6 +1087,17 @@ blockquote.testimonial-entry strong {
   font-size: 1.2em;
 }
 
+#contain-fixed-thing {
+  padding-top: 35px;
+}
+#back-to-top-testimonials {
+  height: 30px;
+}
+.affix-top {
+  position: absolute;
+  top: 500px;
+}
+
 /****** ---------------------- ******/
 /* CONTACT                          */
 /****** ---------------------- ******/
@@ -1106,13 +1130,15 @@ textarea.wpcf7-form-control {
 }
 
 #back-to-top {
-  margin-bottom: 2em;
+  margin-bottom: 0em;
+  font-size: 3em;
+  text-align: center;
 }
 #back-to-top a {
-  color: #000;
+  color: #efefef;
 }
 #back-to-top a:hover {
-  color: #fff;
+  color: #000;
 }
 
 #footer-navigation li {

@@ -80,23 +80,17 @@ $xsbf_theme_options = array(
 ///// including child theme template-tags
 include( get_stylesheet_directory() . '/inc/template-tags.php' );
 
-// function set_newday_cookie($newCookie) {
-// 	if ( !isset($_COOKIE['splashmodal_newday'])) {
-// 		setcookie('splashmodal_newday', 'splashCookie', time()+3600*24); 
-// 		displaySplashModal(true);
-// 	} else {
-// 		displaySplashModal(false);
-// 	}
-// }
+///// setting 1-day cookie if it's not present
+function newday_cookie() {
+	if ( !isset($_COOKIE['kousouroslaw'])) {
+		setcookie('kousouroslaw', 'jklaw_cookie', time()+3600*24); 
+		return true;
+	} else {
+		return false;
+	}
+}
 
-// add_action( 'init', 'set_newday_cookie');
-
-// function displaySplashModal($splash) {
-
-// 	if(!$splash || $splash == false) {
-	    // echo '<style type="text/css">div#splashModal {display: none;}</style>';
-	// } // else
-// } // end function displaySplashModal
+add_action( 'init', 'newday_cookie');
 
 /////* Getting php to show up in the sidebar text widgets *//
 add_filter('widget_text','execute_php',100);
@@ -126,17 +120,19 @@ function klaw_scripts() {
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700',array(), null, 'screen' );	
 
 	/* LOAD JAVASCRIPT */
-	/* avvo badge */
-	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js', array(), '1.0.0', true );
-
 	/* jquery that makes the bootstrap video modal work */
 	wp_enqueue_script( 'jquery1101_script', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'jquery1103_script', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array(), '1.0.0', true );
 
-	/* kousouros.js  */
-	wp_enqueue_script( 'kousouros_script', get_template_directory_uri() . '-child/js/kousouros.js', array(), '1.0.0', true );
-	/* kousouros.js  */
+	/* cookie.js  */
 	wp_enqueue_script( 'cookie_script', get_template_directory_uri() . '-child/js/cookie.js', array(), '1.0.0', true );
+	/* kousouros.js  */
+	// wp_enqueue_script( 'splash_script', get_template_directory_uri() . '-child/js/splash.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'kousouros_script', get_template_directory_uri() . '-child/js/kousouros.js', array(), '1.0.0', true );
+
+	/* avvo badge */
+	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js', array(), '1.0.0', true );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'klaw_scripts' );

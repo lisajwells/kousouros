@@ -5,9 +5,8 @@ Template Name: Notables
 
 get_header(); ?>
 
-<?php get_template_part( 'content', 'header' ); ?>
+<a name="notables_top"></a><?php get_template_part( 'content', 'header' ); ?>
 
-<!-- //* <img src="<?php bloginfo('template_url'); ?>/../images/sketch_court_1170x393.jpg"/> */ -->
 <div class="container">
     <div id="main-grid">
         <div id="primary" class="content-area">
@@ -229,7 +228,7 @@ get_header(); ?>
                                     }?><!-- is_page -->
 
                 					<div id="back-to-top-notables">
-                                        <a class="smoothscroll" href="#page">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a>
+                                        <a class="smoothscroll" href="#notables_top">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a>
                                     </div>
 
               	            	</div><!-- notables content -->

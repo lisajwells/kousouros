@@ -5,11 +5,18 @@ Template Name: Testimonials
 
 get_header(); ?>
 
-<?php get_template_part( 'content', 'header' ); ?>
+<a name="testimonials_top"></a><?php get_template_part( 'content', 'header' ); ?>
 
 <div class="container">
     <div id="main-grid" class="row">
-        <div id="primary" class="content-area col-md-8 col-md-offset-2">
+        <div id="contain-fixed-thing" class="col-md-2" >            
+            <div id="back-to-top-testimonials" data-spy="affix">
+                <a class="smoothscroll" href="#testimonials_top">to top&nbsp;<span class="fa fa-angle-double-up">&nbsp;</span></a>
+            </div>
+        </div>
+
+        <div id="primary" class="content-area col-md-8">
+
             <main id="main" class="site-main" role="main">
 
                 <!-- <?php //while ( have_posts() ) : the_post(); ?> --><!-- i don't know why we had this loop within a loop -->
