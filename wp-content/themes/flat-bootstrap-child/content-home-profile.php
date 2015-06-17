@@ -5,7 +5,16 @@
 
         <div class="section" id="home-profile"><!-- profile -->
             <div class="container">
-                <p>Scamper rub face on owner damn that dog throwup on your pillow, and stick butt in face, for chase dog then run away. Eat a plant, kill a hand find empty spot in cupboard and sleep all day cat slap dog in face so jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Need to chase tail climb leg, so spit up on light gray carpet instead of adjacent linoleum. Leave hair everywhere knock dis off table head butt cant eat out of my own dish knock dis off table head butt cant eat out of my own dish chase laser for sun bathe. Flop over meow plan steps for world domination stretch, but hunt anything that moves, yet jump around on couch, meow constantly until given food, always hungry. Caticus cuteicus purr for no reason yet love to play with owner's hair tie.</p>
+                <div class="row">
+                    <div class="col-md-7">
+                        <img id="home-profile-img" src="<?php echo content_url(); ?>/uploads/2015/06/HomeProfile.jpg">
+                    </div>
+                    <div class="col-md-5">
+                        <h3>You have many choices...make the right one.</h3> 
+                        <h3>Consult with James Kousouros.</h3>
+                        <p style="text-align: left;"><a class="btn btn-hollow-blackborder main-menu-contact" href="<?php bloginfo('url'); ?>/press-media">CONTACT US FOR A FREE CONSULTATION</a></p>
+                    </div>
+                </div>
             </div><!-- .container -->
         </div><!-- section profile -->
 
@@ -26,6 +35,7 @@
                     </div>        
 
                     <div class="col-md-2 col-sm-3 col-xs-6">
+                        <img id="home-profile-img" src="<?php echo content_url(); ?>/uploads/2015/06/HomePageMHIcon.jpg">
                     </div>
 
                     <div class="col-md-2 col-sm-3 col-xs-6">

@@ -80,17 +80,19 @@
 						</div><!-- .footer-nav-menu -->
 					<?php endif; ?>
 
-					<div id="contact-footer" class="col-md-4 col-sm-5 col-xs-12">
+					<div id="contact-footer" class="col-md-4 col-sm-5 col-xs-6">
 						<p>260 Madison Avenue, 22nd floor, <br>New York, New York 10016-2404</p>
 						<p>Phone 212-532-1934 <br>Fax 212-532-1939</p>
 						<!-- <p><a href="mailto:james@kousouroslaw.com">james@kousouroslaw.com</a></p> -->
 					</div><!-- contact-footer -->
 
-					<div id="social-footer" class="col-md-4 col-sm-4 col-xs-12">
+					<div id="social-footer" class="col-md-4 col-sm-4 col-xs-6">
 						<p id="social-links">
 						<a target="_blank" href="https://www.facebook.com/kousouroslawoffice?fref=ts"><i class="fa fa-facebook-square"></i></a>&nbsp;
 						<a target="_blank" href="https://www.linkedin.com/pub/james-kousouros/29/72/a66"><i class="fa fa-linkedin-square"></i></a>&nbsp;
 						<a target="_blank" href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ"><i class="fa fa-youtube-square"></i></a>
+						</p>
+						<p id="footer-avvo">
 						<a rel="me" target="blank" href="http://www.avvo.com/attorneys/10016-ny-james-kousouros-868249.html?cm_mmc=Avvo-_-Avvo_Badge-_-Micro-_-868249"><img alt="Avvo - Rate your Lawyer. Get Free Legal Advice." id="avvo_badge" src="http://www.avvo.com/assets/microbadge.png" /></a>
 						</p>
 		                        

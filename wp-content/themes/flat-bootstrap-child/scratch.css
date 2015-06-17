@@ -1,0 +1,13 @@
+/*Extra small devices Phones (<768px) 
+Small devices Tablets (≥768px)  
+Medium devices Desktops (≥992px)  
+Large devices Desktops (≥1200px)
+*/
+
+@media screen and (max-width: 694px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
