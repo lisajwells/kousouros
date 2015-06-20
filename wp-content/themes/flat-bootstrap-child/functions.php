@@ -180,6 +180,7 @@ if ( ! function_exists( 'post_is_in_descendant_category' ) ) {
 	}
 }
 
+// remove tooltips from navigation
 function my_menu_notitle( $menu ){
   return $menu = preg_replace('/ title=\"(.*?)\"/', '', $menu );
 

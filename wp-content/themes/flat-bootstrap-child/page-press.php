@@ -94,7 +94,7 @@ get_header(); ?>
 
 				<div class="row"><!-- Here starts the TV section -->
 					<div class="col-md-12 press-subhed">
-						<h3>Cable and Network Appearances </h3><a href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ" target="_blank">Visit the Kousouros YouTube channel</a>
+						<h3>Cable and Network Appearances </h3>
 					</div>
 				</div>
 
@@ -133,6 +133,12 @@ get_header(); ?>
 								<?php get_template_part( 'content', 'press-tv' ); ?>
 						<?php endwhile; // end of the loop. ?>
             			<?php wp_reset_postdata(); ?>
+
+            			<!-- link to youtube channel -->
+            			<div id="youtube-link">
+							<a target="_blank" href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ"><i class="fa fa-youtube-play"></i></a>
+							<p class="press-title"><a href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ" target="_blank">Visit Mr. Kousouros’ YouTube channel for additional news coverage</a></p>
+            			</div>
 
 					</div><!-- .entry-content-press3 -->
 				</div><!-- .row TV -->

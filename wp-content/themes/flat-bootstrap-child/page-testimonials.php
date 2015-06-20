@@ -40,11 +40,24 @@ get_header(); ?>
                         </div><!-- .entry-content -->
                     </article><!-- #post-## -->
 
+                    <aside id="testimonials-badges">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>More reviews and testimonials available at Martindale-Hubbell and Avvo</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="testimonial-badge"><a rel="me" target="blank" href="http://www.avvo.com/attorneys/10016-ny-james-kousouros-868249.html?cm_mmc=Avvo-_-Avvo_Badge-_-Micro-_-868249"><img alt="Avvo - Rate your Lawyer. Get Free Legal Advice." id="avvo_badge" src="http://www.avvo.com/assets/microbadge.png" /></a></p>
+                                <p class="testimonial-badge"><a rel="me" target="blank" href="http://www.martindale.com/James-Kousouros/429638-lawyer.htm?view=cr"><img id="home-mh-img" src="<?php echo content_url(); ?>/uploads/2015/06/HomePageMHIcon.jpg"></a></p>
+
+                        </div>
+                    </aside>
+
                 <?php //endwhile; // end of the loop. ?>
 
             </main><!-- #main -->
         </div><!-- #primary -->
     </div><!-- .row -->
+
 </div><!-- .container -->
 
 <?php get_footer(); ?>

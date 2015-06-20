@@ -1140,6 +1140,26 @@ div.press-tv-text {
   line-height: 1em;
 }
 
+#youtube-link {
+  border: 1px solid #000;
+  font-size: .8em;
+  margin-top: 2em;
+  padding: 6px 6px 5px 6px;
+}
+
+a .fa-youtube-play {
+  color: #cd201f;
+  display: block;
+  font-size: 2.4em;
+  float: left;
+  margin-right: 6px;
+  margin-top: -2px;
+}
+
+a:hover .fa-youtube-play {
+  color: #14343a;
+}
+
 /****** ---------------------- ******/
 /* TESTIMONIALS                     */
 /****** ---------------------- ******/
@@ -1164,6 +1184,18 @@ blockquote.testimonial-entry strong {
 .affix-top {
   position: absolute;
   top: 500px;
+}
+
+#testimonials-badges {
+  border-top: 1px solid;
+  padding-top: 6px; 
+}
+
+p.testimonial-badge {
+  display: inline-block;
+  /*float: right;*/
+  margin: 0 0 3px 0;
+  padding-top: 9px;
 }
 
 /****** ---------------------- ******/
@@ -1275,22 +1307,26 @@ div#social-footer {
 }
 
 #social-footer p a {
-  color: #14343a;
   font-size: 2em;
   margin-right: .3em;
 }
 
-#social-footer p a:hover {
-  color: #d9ce4d;
+a .fa-facebook-square {
+  color: #3b5998;
 }
 
-div#social-footer p:last-child {
-  margin-bottom: -2px;
+a .fa-linkedin-square {
+  color: #0077b5;
 }
 
-img#avvo_badge {
-  display: inline-block;
-  margin: 0 0 3px 0;
+a .fa-youtube-square {
+  color: #cd201f;
+}
+
+a:hover .fa-facebook-square,
+a:hover .fa-linkedin-square,
+a:hover .fa-youtube-square {
+  color: #000;
 }
 
 @media screen and (max-width: 992px) { /* bootstrap sm */
@@ -1310,10 +1346,4 @@ div#contact-footer,
   display: none;
   }
 }
-
-/************** just for @media *****/
-
-
-
-
 
