@@ -6,7 +6,8 @@ $(document).ready(function(){
 
     if($('#splashModal').length) {
         $("#splashModal-content").fadeIn(2000);
-        $("#splashModal-image").animate({left: "+=100%"}, 2000);
+        // $("#splashModal-image").animate({left: "+=100%"}, 2000);
+        $("#splashModal-image").delay(500).fadeIn(1500);
         $("#splashModal").delay(3000).fadeOut(600);
     };
 

@@ -585,19 +585,22 @@ float: right;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #7c9eaa;
+  /*background: #7c9eaa; lighter*/
+  /*background: #293e47; original*/
+  background: #3b5a67; /*in between*/
   z-index: 9999;
 }
 #splashModal-content {
   display: none;
   background-color: #14343a;
+  height: 300px;
   margin-top: 8%;
   padding: 6em;
 }
 #splashModal-image {
-  position: relative;
-  left: -100%;
+  display: none;
 }
+
 /****** ---------------------- ******/
 /* HOME PAGE                        */
 /****** ---------------------- ******/
