@@ -229,7 +229,7 @@ function xsbf_scripts() {
 	wp_enqueue_style( 'theme-flat');
 
 	// Load Google Fonts: Lato and Raleway
-	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,700',array(), null, 'screen' );	
+	// wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,700',array(), null, 'screen' );	
 
 	// Add font-awesome support	
 	if ( isset ( $xsbf_theme_options['fontawesome'] ) AND $xsbf_theme_options['fontawesome'] ) {

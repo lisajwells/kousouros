@@ -119,6 +119,8 @@ function klaw_scripts() {
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic',array(), null, 'screen' );	
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700',array(), null, 'screen' );	
 
+wp_enqueue_style( 'klaw_media', get_template_directory_uri() . '-child/css/media.css' );
+
 	/* LOAD JAVASCRIPT */
 	/* jquery that makes the bootstrap video modal work */
 	wp_enqueue_script( 'jquery1101_script', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.0.0', true );
@@ -130,8 +132,8 @@ function klaw_scripts() {
 	// wp_enqueue_script( 'splash_script', get_template_directory_uri() . '-child/js/splash.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'kousouros_script', get_template_directory_uri() . '-child/js/kousouros.js', array(), '1.0.0', true );
 
-	/* avvo badge */
-	wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js', array(), '1.0.0', true );
+	/* avvo badge changing to static image instead of js */
+	// wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js', array(), '1.0.0', true );
 
 }
 

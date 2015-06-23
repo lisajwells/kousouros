@@ -71,47 +71,46 @@
 				<h1 class="menu-toggle sr-only screen-reader-text"><?php _e( 'Primary Menu', 'flat-bootstrap' ); ?></h1>
 				<div class="skip-link"><a class="screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'flat-bootstrap' ); ?></a></div>
 
-			<?php
-			// Collapsed navbar menu toggle
-			global $xsbf_theme_options;
-			$navbar = '<div class="navbar ' . $xsbf_theme_options['navbar_classes'] . '">'
-				.'<div class="container">'
-	        	.'<div class="navbar-header">'
-	        	// the button is the mobile hamburger menu
-	          	.'<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">'
-	            .'<span class="icon-bar"></span>'
-	            .'<span class="icon-bar"></span>'
-	            .'<span class="icon-bar"></span>'
-	          	.'</button>';
+				<?php
+				// Collapsed navbar menu toggle
+				global $xsbf_theme_options;
+				$navbar = '<div class="navbar ' . $xsbf_theme_options['navbar_classes'] . '">'
+					.'<div class="container">'
+		        	.'<div class="navbar-header">'
+		        	// the button is the mobile hamburger menu
+		          	.'<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">'
+		            .'<span class="icon-bar"></span>'
+		            .'<span class="icon-bar"></span>'
+		            .'<span class="icon-bar"></span>'
+		          	.'</button>';
 
-			// Site title (Bootstrap "brand") in navbar. Hidden by default. Customizer will
-			// display it if user turns of the main site title and tagline.
-			$navbar .= '<a class="navbar-brand" href="'
-				.esc_url( home_url( '/' ) )
-				.'" rel="home">'
-				.get_bloginfo( 'name' )
-				.'</a>';
-			
-	        $navbar .= '</div><!-- navbar-header -->';
+				// Site title (Bootstrap "brand") in navbar. Hidden by default. Customizer will
+				// display it if user turns of the main site title and tagline.
+				$navbar .= '<a class="navbar-brand" href="'
+					.esc_url( home_url( '/' ) )
+					.'" rel="home">'
+					.get_bloginfo( 'name' )
+					.'</a>';
+				
+		        $navbar .= '</div><!-- navbar-header -->';
 
-			// Display the desktop navbar
-			$navbar .= wp_nav_menu( 
-				array(  'theme_location' => 'primary',
-				'container_class' => 'navbar-collapse collapse', //<nav> or <div> class
-				'menu_class' => 'nav navbar-nav', //<ul> class
-				'walker' => new wp_bootstrap_navwalker(),
-				'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-				'echo'	=> false
-				) 
-			);
-			echo apply_filters( 'xsbf_navbar', $navbar );
-			?>
+				// Display the desktop navbar
+				$navbar .= wp_nav_menu( 
+					array(  'theme_location' => 'primary',
+					'container_class' => 'navbar-collapse collapse', //<nav> or <div> class
+					'menu_class' => 'nav navbar-nav', //<ul> class
+					'walker' => new wp_bootstrap_navwalker(),
+					'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+					'echo'	=> false
+					) 
+				);
+				echo apply_filters( 'xsbf_navbar', $navbar );
+				?>
 
-		</div><!-- .container -->
-		</div><!-- .navbar -->
-		</nav><!-- #site-navigation -->
+			</nav><!-- #site-navigation -->
 
 	</header><!-- #masthead -->
+	
     <div class="container" id="search-container">
 	    <form class="searchbox" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<span class="screen-reader-text sr-only"><?php _ex( 'Search for:', 'label', 'flat-bootstrap' ); ?></span>

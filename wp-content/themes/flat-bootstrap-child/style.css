@@ -150,10 +150,10 @@ iframe {
 
 .searchbox{ /* the form */
     position:relative;
-    min-width:50px;
+    min-width:45px;
     max-width: 350px;
     width:0%;
-    height:50px;
+    height:45px;
     float:right;
     overflow:hidden;
     
@@ -172,10 +172,10 @@ iframe {
     background:#e7e7e7;
     width:100%;
     max-width: 350px;
-    height:50px;
+    height:45px;
     margin:0;
-    padding:0px 55px 0px 20px;
-    font-size:20px;
+    padding:0px 45px 0px 15px;
+    font-size:15px;
     color:#555;
 }
 .searchbox-input::-webkit-input-placeholder {
@@ -193,18 +193,18 @@ iframe {
 
 .searchbox-icon,
 .searchbox-submit{ /* the square button */
-    width:50px;
-    height:50px;
+    width:45px;
+    height:45px;
     display:block;
     position:absolute;
     top:0;
-    font-size:22px;
+    font-size:17px;
     right:0;
     padding:0;
     margin:0;
     border:0;
     outline:0;
-    line-height:50px;
+    line-height:45px;
     text-align:center;
     cursor:pointer;
     color:#777;
@@ -869,6 +869,22 @@ float: right;
 }
 #home-profile h3:first-of-type {
   margin-top: 3em;
+}
+@media screen and (max-width: 992px) {
+  #home-profile h3 {
+    line-height: 1em;
+    margin-bottom: .4em;
+  }
+  #home-profile h3:first-of-type {
+    margin-top: .5em;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  #home-profile h3 {
+    font-size: 1.6em;
+    margin-bottom: .4em;
+  }
 }
 
 #home-profile-img {
