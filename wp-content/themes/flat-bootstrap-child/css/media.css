@@ -16,8 +16,7 @@ Large devices Desktops (≥1200px)
 
 }
 
-
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) { /* full width for tiny */
   div#main-grid {
     margin: 0 -15px;
   }
@@ -32,7 +31,6 @@ Large devices Desktops (≥1200px)
 @media screen and (max-width: 500px) { 
   .content-header h1 {
     font-size: 16px;
-    color: red;
   }
 }
 
@@ -65,7 +63,11 @@ Large devices Desktops (≥1200px)
     margin: -20px 0px 0px 100px;
   }
 }
-/*****/
+/** end MODAL ***/
+
+/****** ---------------------- ******/
+/* HEADER                           */
+/****** ---------------------- ******/
 
 @media screen and (max-width: 694px) {
   div#site-branding {
@@ -75,6 +77,10 @@ Large devices Desktops (≥1200px)
     width: 100%;
   }
 }
+
+/****** ---------------------- ******/
+/* HOME PAGE                        */
+/****** ---------------------- ******/
 
 @media screen and (max-width: 992px) { /* bootstrap sm */
   .home-blurb {
@@ -116,6 +122,10 @@ Large devices Desktops (≥1200px)
   }
 }
 
+/****** ---------------------- ******/
+/* NOTABLES                         */
+/****** ---------------------- ******/
+
 @media screen and (max-width: 710px) { 
   .notables_menu_class, 
   .notables-content {
@@ -138,7 +148,6 @@ Large devices Desktops (≥1200px)
 @media screen and (max-width: 400px) { 
   .notables_menu_class {
     font-size: 12px;
-    color: red;
   }
   .notables-content h3 {
     font-size: 14px;
@@ -148,6 +157,10 @@ Large devices Desktops (≥1200px)
     margin-left: 7em;
   }
 }
+
+/****** ---------------------- ******/
+/* FOOTER                           */
+/****** ---------------------- ******/
 
 @media screen and (max-width: 992px) { /* bootstrap sm */
  div#contact-footer {
@@ -166,5 +179,3 @@ div#contact-footer,
   display: none;
   }
 }
-
-
