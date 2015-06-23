@@ -119,7 +119,7 @@ function klaw_scripts() {
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic',array(), null, 'screen' );	
 	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700',array(), null, 'screen' );	
 
-wp_enqueue_style( 'klaw_media', get_template_directory_uri() . '-child/css/media.css' );
+	wp_enqueue_style( 'klaw_media', get_template_directory_uri() . '-child/css/media.css', array( 'bootstrap', 'theme-base', 'theme-flat', 'font-awesome', 'xtremelysocial-style') );
 
 	/* LOAD JAVASCRIPT */
 	/* jquery that makes the bootstrap video modal work */

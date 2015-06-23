@@ -42,12 +42,12 @@ Small devices Tablets (≥768px)
 Medium devices Desktops (≥992px)  
 Large devices Desktops (≥1200px)
 */
-@media screen and (max-width: 500px) { 
+/*@media screen and (max-width: 500px) { 
   div#main-grid {
     margin: 0 -15px;
   }
 }
-
+*/
 html {
   box-sizing: border-box;
 }
@@ -90,12 +90,12 @@ h2 {
   margin-top: 0;
 }
 
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
   h2 {
     font-size: 29px;
   }
 }
-
+*/
 h3 {
   color: #d9ce4d;
   font-size: 20px;
@@ -231,12 +231,12 @@ iframe {
   text-transform: uppercase;
   font-weight: 700;
 }
-@media screen and (max-width: 500px) { 
+/*@media screen and (max-width: 500px) { 
   .content-header h1 {
     font-size: 16px;
   }
 }
-
+*/
 .content-header h3 {
   color: #000;
   font-size: 1.4em;
@@ -285,7 +285,7 @@ button.close:hover {
 }
 
 /***** MODAL MEDIA QUERIES *****/
-@media only screen and (max-width: 641px) {
+/*@media only screen and (max-width: 641px) {
   .modal-body {
     height:100px;
     padding:0;
@@ -313,7 +313,7 @@ button.close:hover {
     margin: -20px 0px 0px 100px;
   }
 }
-/***** end MODAL PROPERTIES *****/
+*//***** end MODAL PROPERTIES *****/
 
 .video {
   position: relative;
@@ -563,7 +563,7 @@ div#header-image {
 float: right;
 }
 
-@media screen and (max-width: 694px) {
+/*@media screen and (max-width: 694px) {
   div#site-branding {
     padding: .5em 1em 1em 0;
   }
@@ -571,7 +571,7 @@ float: right;
     width: 100%;
   }
 }
-
+*/
 /****** ---------------------- ******/
 /* SPLASH MODAL                     */
 /****** ---------------------- ******/
@@ -750,7 +750,7 @@ float: right;
 #home-testimonials-carousel i {
   font-size: 140px;
 }
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   #home-testimonials-carousel {
     margin-bottom: 22px;
   }
@@ -761,7 +761,7 @@ float: right;
   margin: 10px;
   }
 }
-
+*/
 #home-testimonials-carousel a:hover {
   color: white;
 }
