@@ -5,11 +5,11 @@
 <div class="section" id="home-represents"><!-- home represents -->
     <div class="container">
 
-        <div class="row"><!-- the whole stripe-->
+        <div class="row no-neg-margin"><!-- the whole stripe-->
 
-            <div class="col-md-6 col-md-offset-6">
+            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" id="home-represents-box">
 
-                <div id="home-represents-box">
+                <div>
                     <div class="row">
                         <div class="col-md-5">
                             <figure class="video" id="home-represents-group">

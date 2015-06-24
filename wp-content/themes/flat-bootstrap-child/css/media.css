@@ -89,7 +89,27 @@ Large devices Desktops (≥1200px)
 }
 @media screen and (max-width: 768px) { /* bootstrap xs */
   .home-blurb {
+    font-size: 1.3em;
+    left: 4em;
+    right: 4em;
+  }
+  .home-blurb p {
+    margin-bottom: -4px;
+  }
+
+}
+@media screen and (max-width: 500px) { /* bootstrap xs */
+  .home-blurb {
     font-size: 1em;
+    left: 2em;
+    right: 2em;
+    bottom: .5em;
+  }
+  .home-blurb p {
+    margin-bottom: -4px;
+  }
+  #home-slider {
+    padding-bottom: 10px;
   }
 }
 
@@ -101,7 +121,23 @@ Large devices Desktops (≥1200px)
     font-size: 112px;
   }
   #home-testimonials blockquote {
-  margin: 10px;
+    margin: 10px;
+  }
+  #home-testimonials .testimonials-button {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #home-represents-box h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  #home-represents-box {
+    margin: 0 15px;
+    width: 100%;
+    left: -15px;
   }
 }
 

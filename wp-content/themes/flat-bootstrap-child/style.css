@@ -109,6 +109,11 @@ a:hover, a:focus {
   color: #8caab4;
 }
 
+.no-neg-margin { /*to reset bs negative margin*/
+  margin-right: 0;
+  margin-left: 0;
+}
+
 a.read-more {
   font-style: normal;
   text-transform: uppercase;
@@ -806,7 +811,11 @@ float: right;
 #home-badges {
   margin-bottom: -2em;
 }
-
+/*#home-mh-img {*/
+  /*width: 200px;*/
+/*  overflow: hidden;
+}
+*/
 /****** ---------------------- ******/
 /* THE PRACTICE PAGES, PROFILE PAGE */
 /****** ---------------------- ******/

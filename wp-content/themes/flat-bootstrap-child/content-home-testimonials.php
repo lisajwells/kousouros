@@ -75,6 +75,6 @@
             <!-- THE TEXT CAROUSEL -->
 
         </div><!-- carousel .row -->
-        <p><a class="btn btn-hollow" href="<?php bloginfo('url'); ?>/testimonials">Read More Testimonials</a></p>
+        <p class="testimonials-button"><a class="btn btn-hollow" href="<?php bloginfo('url'); ?>/testimonials">Read More Testimonials</a></p>
     </div><!-- .container -->
 </div><!-- section testimonials
