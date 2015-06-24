@@ -256,9 +256,6 @@ header.content-header {
   border:none;
   outline:none;
 }
-#videoModal iframe {
-  background-color: #14343a;
-}
 .close {
   color: #d9ce4d;
   font-size: 80px;
@@ -266,11 +263,15 @@ header.content-header {
   opacity: 1;
   position: relative;
   text-shadow: 0 1px 0 #aaa;
+  z-index: 2000;
 }
 button.close:hover {
   background-color: transparent;
 }
 
+#videoModal iframe {
+  background-color: #14343a;
+}
 .video {
   position: relative;
 }

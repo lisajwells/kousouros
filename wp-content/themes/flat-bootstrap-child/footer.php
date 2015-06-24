@@ -83,7 +83,6 @@
 					<div id="contact-footer" class="col-md-4 col-sm-5 col-xs-6">
 						<p>260 Madison Avenue, 22nd floor, <br>New York, New York 10016-2404</p>
 						<p>Phone 212-532-1934 <br>Fax 212-532-1939</p>
-						<!-- <p><a href="mailto:james@kousouroslaw.com">james@kousouroslaw.com</a></p> -->
 					</div><!-- contact-footer -->
 
 					<div id="social-footer" class="col-md-4 col-sm-4 col-xs-6">

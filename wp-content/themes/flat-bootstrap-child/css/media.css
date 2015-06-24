@@ -29,14 +29,19 @@ Large devices Desktops (≥1200px)
 }
 
 @media screen and (max-width: 500px) { 
+  .content-header {
+    padding-top: 25px;
+  }
   .content-header h1 {
     font-size: 16px;
+    margin-top: 0;
   }
 }
 
 /***** MODAL MEDIA QUERIES *****/
 @media only screen and (max-width: 641px) {
-  .modal-body {
+/*modal-dialog overflow problem at this size (rest of content is overflow instead of filling modal-dialog*/
+  .video .modal-body {
     height:100px;
     padding:0;
     margin: 0;
@@ -204,7 +209,7 @@ Large devices Desktops (≥1200px)
   }
 }
 @media screen and (max-width: 768px) { /* bootstrap xs */
-div#contact-footer, 
+  div#contact-footer, 
   div#social-footer {
     font-size: .8em;
     margin-top: 2em;
@@ -213,5 +218,14 @@ div#contact-footer,
   }
   ul#menu-footer-menu {
   display: none;
+  }
+}
+@media screen and (max-width: 500px) { 
+  div#contact-footer {
+    margin-top: 0;
+  }
+  div#contact-footer,
+  div#social-footer {
+    width: 100%;
   }
 }
