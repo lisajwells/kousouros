@@ -9,13 +9,13 @@ get_header(); ?>
 
 <div class="container">
     <div id="main-grid" class="row">
-        <div id="contain-fixed-thing" class="col-md-2" >            
+<!--         <div id="contain-fixed-thing" class="col-md-2" >            
             <div id="back-to-top-testimonials" data-spy="affix">
                 <a class="smoothscroll" href="#testimonials_top">to top&nbsp;<span class="fa fa-angle-double-up">&nbsp;</span></a>
             </div>
         </div>
-
-        <div id="primary" class="content-area col-md-8">
+ -->
+        <div id="primary" class="content-area col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 
             <main id="main" class="site-main" role="main">
 
@@ -38,6 +38,11 @@ get_header(); ?>
                             endif; ?>
 
                         </div><!-- .entry-content -->
+
+                        <div id="back-to-top-testimonials">
+                            <a class="smoothscroll" href="#testimonials_top">back to top&nbsp;<span class="fa fa-angle-double-up">&nbsp;</span></a>
+                        </div>
+
                     </article><!-- #post-## -->
 
                     <aside id="testimonials-badges">
@@ -46,9 +51,14 @@ get_header(); ?>
                                 <p>More reviews and testimonials available at Martindale-Hubbell and Avvo</p>
                             </div>
                             <div class="col-md-6">
-                                <p class="testimonial-badge"><a rel="me" target="blank" href="http://www.avvo.com/attorneys/10016-ny-james-kousouros-868249.html?cm_mmc=Avvo-_-Avvo_Badge-_-Micro-_-868249"><img alt="Avvo - Rate your Lawyer. Get Free Legal Advice." id="avvo_badge" src="http://www.avvo.com/assets/microbadge.png" /></a></p>
-                                <p class="testimonial-badge"><a rel="me" target="blank" href="http://www.martindale.com/James-Kousouros/429638-lawyer.htm?view=cr"><img id="home-mh-img" src="<?php echo content_url(); ?>/uploads/2015/06/HomePageMHIcon.jpg"></a></p>
+                                <p class="testimonial-badge" id="testimonial_avvo_badge">
+                                    <a rel="me" target="blank" href="http://www.avvo.com/attorneys/10016-ny-james-kousouros-868249.html?cm_mmc=Avvo-_-Avvo_Badge-_-Micro-_-868249"><img alt="Avvo - Rate your Lawyer. Get Free Legal Advice." src="http://www.avvo.com/assets/microbadge.png" /></a>
+                                </p>
 
+                                <p class="testimonial-badge" id="testimonial_mh_badge">
+                                    <a rel="me" target="blank" href="http://www.martindale.com/James-Kousouros/429638-lawyer.htm?view=cr"><img src="<?php echo content_url(); ?>/uploads/2015/06/HomePageMHIcon200.png"></a>
+                                </p>
+                            </div>
                         </div>
                     </aside>
 

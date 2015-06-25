@@ -90,14 +90,14 @@ $(document).ready(function(){
     // });
 
     //////// back-to-top for testimonials page
-    $('#back-to-top-testimonials').affix({
-        offset: {
-            top: 470,
-            bottom: function () {
-                return (this.bottom = $('.site-footer').outerHeight(true))
-            }
-        }
-    })
+    // $('#back-to-top-testimonials').affix({
+    //     offset: {
+    //         top: 470,
+    //         bottom: function () {
+    //             return (this.bottom = $('.site-footer').outerHeight(true))
+    //         }
+    //     }
+    // })
 
     // $('#back-to-top-testimonials').on('affix.bs.affix', function () {
     //     var divHeight = $('#back-to-top-testimonials').outerHeight(true);

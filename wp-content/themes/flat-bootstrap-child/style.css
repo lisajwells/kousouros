@@ -1079,17 +1079,21 @@ blockquote.testimonial-entry strong {
   font-size: 1.2em;
 }
 
-#contain-fixed-thing {
+/*#contain-fixed-thing {
   padding-top: 35px;
 }
+*/
 #back-to-top-testimonials {
+  font-weight: 400;
   height: 30px;
+  margin-bottom: 1em;
+  text-align: center;
 }
-.affix-top {
+/*.affix-top {
   position: absolute;
   top: 500px;
 }
-
+*/
 #testimonials-badges {
   border-top: 1px solid;
   padding-top: 6px; 
@@ -1097,9 +1101,14 @@ blockquote.testimonial-entry strong {
 
 p.testimonial-badge {
   display: inline-block;
-  /*float: right;*/
   margin: 0 0 3px 0;
   padding-top: 9px;
+}
+p#testimonial_avvo_badge {
+  width: 33%;
+}
+p#testimonial_mh_badge {
+  width: 67%;
 }
 
 /****** ---------------------- ******/

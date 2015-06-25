@@ -228,7 +228,7 @@ get_header(); ?>
                                     }?><!-- is_page -->
 
                 					<div id="back-to-top-notables">
-                                        <a class="smoothscroll" href="#notables_top">back to top&nbsp;<span class="fa fa-angle-up">&nbsp;</span></a>
+                                        <a class="smoothscroll" href="#notables_top">back to top&nbsp;<span class="fa fa-angle-double-up">&nbsp;</span></a>
                                     </div>
 
               	            	</div><!-- notables content -->

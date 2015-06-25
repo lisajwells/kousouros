@@ -16,19 +16,22 @@ Large devices Desktops (≥1200px)
 
 }
 
-@media screen and (max-width: 500px) { /* full width for tiny */
-  div#main-grid {
-    margin: 0 -15px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   h2 {
     font-size: 29px;
   }
+  #primary {
+    padding-top: 10px;
+  }
+  #secondary {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
-
 @media screen and (max-width: 500px) { 
+  div#main-grid { /* full width for tiny */
+    margin: 0 -15px;
+  }
   .content-header {
     padding-top: 25px;
   }
@@ -39,8 +42,17 @@ Large devices Desktops (≥1200px)
 }
 
 /***** MODAL MEDIA QUERIES *****/
+@media only screen and (min-width: 768px) {
+  .close {
+    font-size: 80px;
+    margin: 30px -21px -32px 100px;
+    }
+  #contactModal .close {
+    margin: -20px 0px 0px 100px;
+  }
+}
+
 @media only screen and (max-width: 641px) {
-/*modal-dialog overflow problem at this size (rest of content is overflow instead of filling modal-dialog*/
   .video .modal-body {
     height:100px;
     padding:0;
@@ -57,15 +69,6 @@ Large devices Desktops (≥1200px)
   }
   .close {
     margin:-12px 0 0 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .close {
-    font-size: 80px;
-    margin: 30px -21px -32px 100px;
-    }
-  #contactModal .close {
-    margin: -20px 0px 0px 100px;
   }
 }
 /** end MODAL ***/
@@ -91,7 +94,18 @@ Large devices Desktops (≥1200px)
   .home-blurb {
     font-size: 1.5em;
   }
+  #home-represents-box h2 {
+    text-align: center;
+  }
+  #home-profile h3 {
+    line-height: 1em;
+    margin-bottom: .4em;
+  }
+  #home-profile h3:first-of-type {
+    margin-top: .5em;
+  }
 }
+
 @media screen and (max-width: 768px) { /* bootstrap xs */
   .home-blurb {
     font-size: 1.3em;
@@ -101,24 +115,6 @@ Large devices Desktops (≥1200px)
   .home-blurb p {
     margin-bottom: -4px;
   }
-
-}
-@media screen and (max-width: 500px) { /* bootstrap xs */
-  .home-blurb {
-    font-size: 1em;
-    left: 2em;
-    right: 2em;
-    bottom: .5em;
-  }
-  .home-blurb p {
-    margin-bottom: -4px;
-  }
-  #home-slider {
-    padding-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
   #home-testimonials-carousel {
     margin-bottom: 22px;
   }
@@ -133,29 +129,6 @@ Large devices Desktops (≥1200px)
   }
 }
 
-@media screen and (max-width: 992px) {
-  #home-represents-box h2 {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 500px) {
-  #home-represents-box {
-    margin: 0 15px;
-    width: 100%;
-    left: -15px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #home-profile h3 {
-    line-height: 1em;
-    margin-bottom: .4em;
-  }
-  #home-profile h3:first-of-type {
-    margin-top: .5em;
-  }
-}
-
 @media screen and (max-width: 694px) {
   #home-profile h3 {
     font-size: 1.6em;
@@ -163,9 +136,35 @@ Large devices Desktops (≥1200px)
   }
 }
 
+@media screen and (max-width: 500px) { /* bootstrap xs */
+  .home-blurb {
+    font-size: 1em;
+    left: 2em;
+    right: 2em;
+    bottom: .5em;
+  }
+  .home-blurb p {
+    margin-bottom: -4px;
+  }
+  #home-slider {
+    padding-bottom: 10px;
+  }
+  #home-represents-box {
+    margin: 0 15px;
+    width: 100%;
+    left: -15px;
+  }
+}
+
 /****** ---------------------- ******/
 /* NOTABLES                         */
 /****** ---------------------- ******/
+
+@media only screen and (max-width: 768px) {
+  #notables-img {
+    margin-top: 0;
+  }
+}
 
 @media screen and (max-width: 710px) { 
   .notables_menu_class, 
@@ -176,6 +175,7 @@ Large devices Desktops (≥1200px)
     font-size: 16px;
   }
 }
+
 @media screen and (max-width: 500px) { 
   .notables_menu_class {
     font-size: 14px;
@@ -183,21 +183,23 @@ Large devices Desktops (≥1200px)
   .notables-content {
   padding: 1.6em;
   margin-left: 8.3em;
+  }
 }
 
-}
 @media screen and (max-width: 400px) { 
   .notables_menu_class {
     font-size: 12px;
   }
   .notables-content h3 {
-    font-size: 14px;
+    font-size: 13px;
   }
   .notables-content {
     padding: 1em;
-    margin-left: 7em;
+    margin-left: 8em;
+    font-size: 13px;
   }
 }
+
 
 /****** ---------------------- ******/
 /* FOOTER                           */
