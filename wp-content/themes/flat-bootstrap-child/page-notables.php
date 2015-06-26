@@ -21,6 +21,13 @@ get_header(); ?>
                             <div class="col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 notables-container">
                                 <div id="notables-menu">
                                     <?php wp_nav_menu( array( 'theme_location' => 'notables-menu', 'container_class' => 'notables_menu_class' ) ); ?>
+                                    <div id="back-to-top-notables-fixed">
+                                        <a class="smoothscroll" href="#notables_top">to top<br>
+                                        <span class="fa fa-angle-double-up">&nbsp;</span></a>
+                                    </div>
+
+                                
+
                                 </div>
 
                                 <div class="notables-content">
@@ -231,10 +238,11 @@ get_header(); ?>
                                         <a class="smoothscroll" href="#notables_top">back to top&nbsp;<span class="fa fa-angle-double-up">&nbsp;</span></a>
                                     </div>
 
-              	            	</div><!-- notables content -->
+                                </div><!-- notables content -->
+
                             </div><!-- notables container -->
 
-          				</div><!-- row -->
+                        </div><!-- row -->
                     </div><!-- .entry-content -->
 
                 </article><!-- #post-## -->
@@ -243,5 +251,6 @@ get_header(); ?>
         </div><!-- #primary -->
     </div><!-- .row -->
 </div><!-- .container -->
+
 
 <?php get_footer(); ?>

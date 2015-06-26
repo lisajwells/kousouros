@@ -951,6 +951,25 @@ div.explanation:nth-child(2) {
   margin-top: 2em;
   font-weight: 400;
 }
+#back-to-top-notables-fixed.affix-top {
+  position: absolute;
+  top: 470px;
+  font-weight: 400;
+  text-align: center; 
+  width: 50px;
+}
+#back-to-top-notables-fixed.affix {
+  position: fixed;
+  font-weight: 400;
+  text-align: center; 
+  top: 620px;
+  width: 50px;
+}
+
+.affix,.affix-top {
+   position:static;
+}
+
 
 /****** ---------------------- ******/
 /* PRESS/MEDIA PAGE                 */

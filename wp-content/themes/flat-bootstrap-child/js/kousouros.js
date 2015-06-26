@@ -89,6 +89,21 @@ $(document).ready(function(){
     //     }
     // });
 
+    //////// back-to-top for notables page
+    // $('#back-to-top-notables-fixed').affix('checkPosition');
+
+    $('#back-to-top-notables-fixed').affix({
+        offset: {
+            top: 470
+            // bottom: function () {
+            //     return (this.bottom = $('#colophon').outerHeight(true))
+            // }
+        } 
+    });
+
+// $('#back-to-top-notables-fixed').affix({
+// });
+
     //////// back-to-top for testimonials page
     // $('#back-to-top-testimonials').affix({
     //     offset: {
