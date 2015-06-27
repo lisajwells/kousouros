@@ -40,7 +40,10 @@ Large devices Desktops (≥1200px)
   }
   .content-header h1 {
     font-size: 16px;
-    margin-top: 0;
+    margin-top: 22px;
+  }
+  .searchbox {
+    display: none;
   }
 }
 
