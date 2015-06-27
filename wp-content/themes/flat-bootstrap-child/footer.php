@@ -72,7 +72,7 @@
 				<div class="row footer-content">
 					<?php // Footer nav menu
 					if ( $nav_menu ) : ?>
-						<div class="footer-nav-menu pull-left col-md-4 col-sm-3 col-xs-12">
+						<div class="footer-nav-menu pull-left col-md-4 col-sm-3 col-xs-4">
 							<nav id="footer-navigation" class="secondary-navigation" role="navigation">
 								<h1 class="menu-toggle sr-only"><?php _e( 'Footer Menu', 'flat-bootstrap' ); ?></h1>
 								<?php echo $nav_menu; ?>
@@ -80,12 +80,12 @@
 						</div><!-- .footer-nav-menu -->
 					<?php endif; ?>
 
-					<div id="contact-footer" class="col-md-4 col-sm-5 col-xs-6">
+					<div id="contact-footer" class="col-md-4 col-sm-5 col-xs-4">
 						<p>260 Madison Avenue, 22nd floor, <br>New York, New York 10016-2404</p>
 						<p>Phone 212-532-1934 <br>Fax 212-532-1939</p>
 					</div><!-- contact-footer -->
 
-					<div id="social-footer" class="col-md-4 col-sm-4 col-xs-6">
+					<div id="social-footer" class="col-md-4 col-sm-4 col-xs-4">
 						<p id="social-links">
 							<div class="social-icon">
 								<a target="_blank" href="https://www.facebook.com/kousouroslawoffice?fref=ts">

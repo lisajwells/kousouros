@@ -215,19 +215,31 @@ Large devices Desktops (≥1200px)
   div#social-footer {
     font-size: .8em;
     margin-top: 2em;
-    position: static;
+    /*position: static;*/
     text-align: center;
   }
-  ul#menu-footer-menu {
-  display: none;
+}
+
+/* to override theme centering nav at this size */
+@media (max-width: 640px) {
+  .footer-nav-menu {
+    text-align: left;
   }
 }
-@media screen and (max-width: 500px) { 
+
+@media (max-width: 540px) {
+  ul#menu-footer-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) { 
   div#contact-footer {
     margin-top: 0;
   }
   div#contact-footer,
   div#social-footer {
     width: 100%;
+    position: static;
   }
 }

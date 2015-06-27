@@ -1232,8 +1232,7 @@ ul#menu-footer-menu {
 }
 
 div#contact-footer {
-    font-size: 14px;
-
+  font-size: 14px;
   font-weight: 500;
   color: #14343a;
   position: absolute;
@@ -1243,14 +1242,6 @@ div#contact-footer {
 
 div#contact-footer p:last-child {
   margin-bottom: -2px;
-}
-
-div#contact-footer a {
-  color: #14343a;
-}
-
-div#contact-footer a:hover {
-  color: #000;
 }
 
 div#social-footer {
