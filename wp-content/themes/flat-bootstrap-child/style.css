@@ -515,11 +515,6 @@ div#header-image {
   position: relative;
 }
 
-/*.container.nav-container {
-  width: 100%;
-  max-width: 1170px;
-}
-*/
 /* main navigation */
 #menu-main-menu {
 float: right;
@@ -902,6 +897,10 @@ p.process1 strong {
   margin-top: 4px;
   font-size: 18px;
   font-weight: 400;
+}
+
+.associates_loop img {
+  max-width: 230px;
 }
 
 /****** ---------------------- ******/
