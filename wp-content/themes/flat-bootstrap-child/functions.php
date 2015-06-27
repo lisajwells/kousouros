@@ -116,8 +116,9 @@ add_action( 'init', 'register_my_menu' );
 function klaw_scripts() {
 	/* LOAD STYLESHEETS */
 	/* google fonts */
-	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,100italic,300italic,400italic,500italic,700italic,900,900italic',array(), null, 'screen' );	
-	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700',array(), null, 'screen' );	
+	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic',array(), null, 'screen' );	
+
+	
 
 	wp_enqueue_style( 'klaw_media', get_template_directory_uri() . '-child/css/media.css', array( 'bootstrap', 'theme-base', 'theme-flat', 'font-awesome', 'xtremelysocial-style') );
 

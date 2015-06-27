@@ -548,6 +548,11 @@ float: right;
 #splashModal-image {
   display: none;
 }
+/*#splashModal-image {
+  position: relative;
+  left: -100%;
+}
+*/
 
 /****** ---------------------- ******/
 /* HOME PAGE                        */
@@ -576,19 +581,23 @@ float: right;
 }
 
 .home-blurb {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 6px;
   position: absolute;
   left: 5em;
   right: 5em;
-  bottom: 1em;
+  bottom: .7em;
   color: #fff;
   font-size: 2em;
-  font-weight: 900;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
   text-align: center;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
 .home-blurb p {
   line-height: 1em;
+  margin: 0;
 }
 
 @media screen and (max-width: 992px) { /* bootstrap sm */
@@ -696,9 +705,9 @@ float: right;
 }
 
 #home-testimonials-carousel i {
-  font-size: 140px;
+  font-size: 112px;
+  margin-top: 43px;
 }
-
 #home-testimonials-carousel a:hover {
   color: white;
 }
@@ -761,6 +770,13 @@ float: right;
   margin-bottom: 0;
 }
 
+#home-spectrum-row a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .9em;
+}
+
 #home-spectrum-row a:hover, 
 #home-spectrum-row a:focus {
   color: #d9ce4d;
@@ -796,8 +812,9 @@ float: right;
 }
 
 #home-profile h3 {
-  font-size: 2em;
+  font-size: 1.6em;
   color: #000;
+  line-height: 1.2em;
   margin-bottom: 1em;
 }
 
@@ -1197,9 +1214,13 @@ border: none;
 }
 .footer-nav-menu li {
   display: block;
+  font-weight: 500;
+  font-size: 14px;
+    color: #14343a;
+
 }
 .footer-nav-menu a:not(.btn) {
-  color: #000;
+  color: #14343a;
 }
 .footer-nav-menu a:not(.btn):hover {
   color: #fff;
@@ -1210,7 +1231,10 @@ ul#menu-footer-menu {
 }
 
 div#contact-footer {
-  font-weight: 400;
+    font-size: 14px;
+
+  font-weight: 500;
+  color: #14343a;
   position: absolute;
   left: 30%;
   bottom: 0;
@@ -1221,7 +1245,7 @@ div#contact-footer p:last-child {
 }
 
 div#contact-footer a {
-  color: #fff;
+  color: #14343a;
 }
 
 div#contact-footer a:hover {
@@ -1229,9 +1253,10 @@ div#contact-footer a:hover {
 }
 
 div#social-footer {
-  color: #000;
-  font-size: .8em;
-  font-weight: 700;
+  color: #14343a;
+
+  font-size: 12px;
+  font-weight: 500;
   position: absolute;
   text-transform: uppercase;
   right: 0;

@@ -5,10 +5,10 @@
 $(document).ready(function(){
 
     if($('#splashModal').length) {
-        $("#splashModal-content").fadeIn(2000);
+        $("#splashModal-content").fadeIn(2500);
         // $("#splashModal-image").animate({left: "+=100%"}, 2000);
-        $("#splashModal-image").delay(500).fadeIn(1500);
-        $("#splashModal").delay(3000).fadeOut(600);
+        $("#splashModal-image").delay(500).fadeIn(2000);
+        $("#splashModal").delay(4000).fadeOut(600);
     };
 
     // empty old stuff out of video modals so it doesn't persist
@@ -89,30 +89,15 @@ $(document).ready(function(){
     //     }
     // });
 
-    //////// back-to-top for notables page
-    // $('#back-to-top-notables-fixed').affix('checkPosition');
-
-    $('#back-to-top-notables-fixed').affix({
-        offset: {
-            top: 470
-            // bottom: function () {
-            //     return (this.bottom = $('#colophon').outerHeight(true))
-            // }
-        } 
-    });
-
-// $('#back-to-top-notables-fixed').affix({
-// });
-
     //////// back-to-top for testimonials page
-    // $('#back-to-top-testimonials').affix({
-    //     offset: {
-    //         top: 470,
-    //         bottom: function () {
-    //             return (this.bottom = $('.site-footer').outerHeight(true))
-    //         }
-    //     }
-    // })
+    $('#back-to-top-testimonials').affix({
+        offset: {
+            top: 470,
+            bottom: function () {
+                return (this.bottom = $('.site-footer').outerHeight(true))
+            }
+        }
+    })
 
     // $('#back-to-top-testimonials').on('affix.bs.affix', function () {
     //     var divHeight = $('#back-to-top-testimonials').outerHeight(true);
