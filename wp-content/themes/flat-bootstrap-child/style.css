@@ -1087,7 +1087,7 @@ div.press-tv-text {
   padding: 6px 6px 5px 6px;
 }
 
-a .fa-youtube-play {
+/*a .fa-youtube-play {
   color: #cd201f;
   display: block;
   font-size: 2.4em;
@@ -1099,7 +1099,7 @@ a .fa-youtube-play {
 a:hover .fa-youtube-play {
   color: #14343a;
 }
-
+*/
 /****** ---------------------- ******/
 /* TESTIMONIALS                     */
 /****** ---------------------- ******/
@@ -1186,6 +1186,7 @@ textarea.wpcf7-form-control {
 #back-to-top {
   margin-bottom: 0em;
   font-size: 3em;
+  opacity: 0.5;
   text-align: center;
 }
 #back-to-top a {
@@ -1196,7 +1197,7 @@ textarea.wpcf7-form-control {
 }
 
 #footer-navigation li {
-border: none;
+  border: none;
 }
 /* Take away dividers between footer menu items */
 #footer-navigation ul.dividers > li:nth-child(n+2):before {
@@ -1254,7 +1255,6 @@ div#contact-footer a:hover {
 
 div#social-footer {
   color: #14343a;
-
   font-size: 12px;
   font-weight: 500;
   position: absolute;
@@ -1263,25 +1263,64 @@ div#social-footer {
   bottom: 0;
 }
 
-#social-footer p a {
-  font-size: 2em;
+#social-footer p {
+  margin-bottom: 0;
+  margin-top: 11px;
+  line-height: 1.3em;
+}
+
+div.social-icon {
+  display: inline-block;
+  position: relative;
+}
+
+div#youtube-icon-dv {
+  top: 1px;
+}
+
+div.social-icon a {
+  font-size: 30px;
   margin-right: .3em;
 }
 
+.white-icon-bg {
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  background: #fff;
+  height: 23px;
+  width: 21px;
+  z-index: 0;
+  border-radius: 5px;
+}
+
+#youtube-icon-dv .white-icon-bg {
+  height: 20px;
+  left: 8px;
+}
+
 a .fa-facebook-square {
+  position: relative;
   color: #3b5998;
+  z-index: 50;
 }
 
 a .fa-linkedin-square {
+  position: relative;
   color: #0077b5;
+  z-index: 50;
 }
 
-a .fa-youtube-square {
+a .fa-youtube-play {
+  position: relative;
+  font-size: 35px;
+  margin-top: 1px;
   color: #cd201f;
+  z-index: 50;
 }
 
 a:hover .fa-facebook-square,
 a:hover .fa-linkedin-square,
-a:hover .fa-youtube-square {
+a:hover .fa-youtube-play {
   color: #000;
 }

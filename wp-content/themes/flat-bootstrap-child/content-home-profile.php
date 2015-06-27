@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="col-md-2 col-sm-4 col-xs-3">
-                        <a href="http://www.thenationaltriallawyers.org/profile-view/James/Kousouros/12261/" target="_blank"><img alt="The National Trial Lawyers" src="http://www.thenationaltriallawyers.org/images/NTL-top-100-member-seal.png" width="100" height="100"></a>                    
+                        <a rel="me" target="_blank" href="http://www.thenationaltriallawyers.org/profile-view/James/Kousouros/12261/" target="_blank"><img alt="The National Trial Lawyers" src="http://www.thenationaltriallawyers.org/images/NTL-top-100-member-seal.png" width="100" height="100"></a>                    
                     </div>
 
                 </div><!-- .row -->

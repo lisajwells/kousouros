@@ -87,9 +87,21 @@
 
 					<div id="social-footer" class="col-md-4 col-sm-4 col-xs-6">
 						<p id="social-links">
-						<a target="_blank" href="https://www.facebook.com/kousouroslawoffice?fref=ts"><i class="fa fa-facebook-square"></i></a>&nbsp;
-						<a target="_blank" href="https://www.linkedin.com/pub/james-kousouros/29/72/a66"><i class="fa fa-linkedin-square"></i></a>&nbsp;
-						<a target="_blank" href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ"><i class="fa fa-youtube-square"></i></a>
+							<div class="social-icon">
+								<a target="_blank" href="https://www.facebook.com/kousouroslawoffice?fref=ts">
+									<span class="white-icon-bg"></span><i class="fa fa-facebook-square"></i>
+								</a>&nbsp;
+							</div>
+							<div class="social-icon">
+								<a target="_blank" href="https://www.linkedin.com/pub/james-kousouros/29/72/a66">
+									<span class="white-icon-bg"></span><i class="fa fa-linkedin-square"></i>
+								</a>&nbsp;
+							</div>
+							<div class="social-icon" id="youtube-icon-dv">
+								<a target="_blank" href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ">
+									<span class="white-icon-bg"></span><i class="fa fa-youtube-play"></i>
+								</a>
+							</div>
 						</p>
 		                        
 
