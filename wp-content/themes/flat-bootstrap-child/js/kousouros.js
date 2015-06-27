@@ -8,7 +8,7 @@ $(document).ready(function(){
         $("#splashModal-content").fadeIn(2500);
         // $("#splashModal-image").animate({left: "+=100%"}, 2000);
         $("#splashModal-image").delay(500).fadeIn(2000);
-        $("#splashModal").delay(4000).fadeOut(600);
+       $("#splashModal").delay(4000).fadeOut(600);
     };
 
     // empty old stuff out of video modals so it doesn't persist
