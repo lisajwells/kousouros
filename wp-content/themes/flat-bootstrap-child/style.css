@@ -885,9 +885,18 @@ p.process1 strong {
   background-color: #6d93a0;
 }
 
+.associates_loop .row {
+  margin-bottom: 24px;
+}
+
 .associates_loop h3 {
   margin-top: -4px;
   color: #000;
+}
+.associates_loop h4 {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 /****** ---------------------- ******/
