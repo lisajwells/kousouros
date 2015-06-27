@@ -27,6 +27,9 @@ Large devices Desktops (≥1200px)
     padding-top: 0;
     padding-bottom: 0;
   }
+  header.content-header {
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 500px) { 
   div#main-grid { /* full width for tiny */
@@ -215,7 +218,6 @@ Large devices Desktops (≥1200px)
   div#social-footer {
     font-size: .8em;
     margin-top: 2em;
-    /*position: static;*/
     text-align: center;
   }
 }
@@ -227,13 +229,10 @@ Large devices Desktops (≥1200px)
   }
 }
 
-@media (max-width: 540px) {
+@media screen and (max-width: 540px) { 
   ul#menu-footer-menu {
     display: none;
   }
-}
-
-@media screen and (max-width: 540px) { 
   div#contact-footer {
     margin-top: 0;
   }
