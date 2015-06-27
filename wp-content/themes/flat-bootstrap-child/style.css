@@ -515,6 +515,11 @@ div#header-image {
   position: relative;
 }
 
+/*.container.nav-container {
+  width: 100%;
+  max-width: 1170px;
+}
+*/
 /* main navigation */
 #menu-main-menu {
 float: right;
@@ -789,19 +794,19 @@ float: right;
 }
 
 #home-notable {
-  color: #fff;
+  color: #000;
+}
+
+#home-notable h2 { 
+  color: #fff; 
 }
 
 #home-notable h2.yellowfont { 
   color: #d9ce4d; 
 }
 
-#home-notables-1 p:nth-child(2n+1) {
-  color: #d9ce4d; 
-}
-
-#home-notables-2 p:nth-child(2n) {
-  color: #d9ce4d; 
+#home-notable p { 
+  font-weight: 400; 
 }
 
 #home-profile {

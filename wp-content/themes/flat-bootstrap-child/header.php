@@ -75,7 +75,7 @@
 				// Collapsed navbar menu toggle
 				global $xsbf_theme_options;
 				$navbar = '<div class="navbar ' . $xsbf_theme_options['navbar_classes'] . '">'
-					.'<div class="container">'
+					.'<div class="container nav-container">'
 		        	.'<div class="navbar-header">'
 		        	// the button is the mobile hamburger menu
 		          	.'<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">'

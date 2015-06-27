@@ -13,7 +13,10 @@ Large devices Desktops (≥1200px)
 }
 
 @media screen and (max-width: 992px) {
-
+  .container.nav-container,
+  div#search-container {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
