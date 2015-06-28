@@ -519,6 +519,10 @@ div#header-image {
 #menu-main-menu {
 float: right;
 }
+/* pad 14 instead of 15 to fix 10pt window where it was breaking to 2 lines before hamburger */
+.nav>li>a {
+  padding: 14px 14px;
+}
 
 /****** ---------------------- ******/
 /* SPLASH MODAL                     */
@@ -900,6 +904,7 @@ p.process1 strong {
 }
 
 .associates_loop img {
+  width: 100%;
   max-width: 230px;
 }
 

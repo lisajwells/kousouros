@@ -25,6 +25,7 @@ Large devices Desktops (≥1200px)
   }
   #primary {
     padding-top: 10px;
+    padding-bottom: 0;
   }
   #secondary {
     padding-top: 0;
@@ -181,7 +182,7 @@ Large devices Desktops (≥1200px)
   }
 }
 
-@media screen and (max-width: 500px) { /* bootstrap xs */
+@media screen and (max-width: 500px) { 
   .home-blurb {
     font-size: 1em;
     left: 2em;
@@ -201,6 +202,26 @@ Large devices Desktops (≥1200px)
   }
 }
 
+/****** ---------------------- ******/
+/* PROFILES                         */
+/****** ---------------------- ******/
+
+@media screen and (max-width: 500px) { 
+  .associates_loop .col-xs-4 {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 450px) { 
+  .associates_loop h3 {
+    margin-top: 10px;
+  }
+  .associates_loop .col-xs-4 {
+    width: 45%;
+  }
+  .associates_loop .col-xs-8 {
+    width: 100%;
+  }
+}
 /****** ---------------------- ******/
 /* NOTABLES                         */
 /****** ---------------------- ******/

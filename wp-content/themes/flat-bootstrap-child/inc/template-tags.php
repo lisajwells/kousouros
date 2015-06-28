@@ -21,6 +21,8 @@ function xsbf_get_the_excerpt( $excerpt ) {
 
 	if ( in_category( 'testimonials' )) { 
 		$page_to_go_to = 'Testimonials'; 
+	} elseif ( in_category ( 'profile-associate' )) {
+		$page_to_go_to = 'Associates';  
 	} elseif ( in_category ( 'white-collar-general' )) {
 		$page_to_go_to = 'White Collar: General'; // notables: white-collar-general 
 	} elseif ( in_category ( 'healthcare-and-pharmaceutical' )) {
