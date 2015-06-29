@@ -135,9 +135,9 @@ get_header(); ?>
             			<?php wp_reset_postdata(); ?>
 
             			<!-- link to youtube channel -->
-            			<div id="youtube-link">
+            			<div id="youtube-cta">
 							<a target="_blank" href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ"><i class="fa fa-youtube-play"></i></a>
-							<p class="press-title"><a href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ" target="_blank">Visit Mr. Kousouros’ YouTube channel for additional news coverage</a></p>
+							<p class="press-title"><a href="https://www.youtube.com/channel/UCf0p1mIGTRomb7qsA9648oQ" target="_blank">Visit Mr. Kousouros’ YouTube channel for<br> additional news coverage</a></p>
             			</div>
 
 					</div><!-- .entry-content-press3 -->

@@ -266,6 +266,15 @@ Large devices Desktops (≥1200px)
   }
 }
 
+/****** ---------------------- ******/
+/* PRESS                            */
+/****** ---------------------- ******/
+
+@media screen and (max-width: 380px) {
+  #youtube-cta {
+    font-size: .7em;
+  }
+}
 
 /****** ---------------------- ******/
 /* FOOTER                           */

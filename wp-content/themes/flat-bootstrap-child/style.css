@@ -1100,14 +1100,15 @@ div.press-tv-text {
   line-height: 1em;
 }
 
-#youtube-link {
+#youtube-cta {
   border: 1px solid #000;
   font-size: .8em;
   margin-top: 2em;
   padding: 6px 6px 5px 6px;
+  width: 330px;
 }
 
-/*a .fa-youtube-play {
+#youtube-cta a .fa-youtube-play {
   color: #cd201f;
   display: block;
   font-size: 2.4em;
@@ -1116,10 +1117,10 @@ div.press-tv-text {
   margin-top: -2px;
 }
 
-a:hover .fa-youtube-play {
+#youtube-cta a:hover .fa-youtube-play {
   color: #14343a;
 }
-*/
+
 /****** ---------------------- ******/
 /* TESTIMONIALS                     */
 /****** ---------------------- ******/
