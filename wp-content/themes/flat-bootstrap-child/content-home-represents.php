@@ -17,12 +17,11 @@
                                 <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/<?php echo $video_id?>">
                                 <img class="youtube" rel="<?php echo $video_id?>" src="http://img.youtube.com/vi/<?php echo $video_id?>/mqdefault.jpg" /></a>
                             </figure>
-                            <p style="text-align: center;"><a class="btn btn-hollow-blackborder" href="<?php bloginfo('url'); ?>/press-media">Watch More Videos</a></p>
                         </div>
                         <div class="col-md-7">
                             <h2><?php the_field('home_represents_title'); ?></h2>
-                            <p><?php the_field('home_represents_text'); ?></p>
                         </div>
+                            <p style="text-align: center;"><a class="btn btn-hollow-blackborder" href="<?php bloginfo('url'); ?>/press-media">Watch More Videos</a></p>
                     </div><!-- row-->
                 </div><!-- home-represents-box -->
 
