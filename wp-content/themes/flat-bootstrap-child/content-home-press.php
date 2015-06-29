@@ -8,7 +8,7 @@
             <div class="col-md-5 col-md-offset-1">
                 <h2><?php the_field('home_press_title'); ?></h2>    
                 <p><?php the_field('home_press_subhed'); ?><p>
-                <p style="text-align: center;"><a class="btn btn-hollow-blackborder" href="<?php bloginfo('url'); ?>/press-media">See more press/media</a></p>
+                <p id="home_press_btn_lrg" style="text-align: center;"><a class="btn btn-hollow-blackborder" href="<?php bloginfo('url'); ?>/press-media">See more press/media</a></p>
             </div>
 
             <div class="col-md-5">
@@ -17,6 +17,7 @@
                     <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/<?php echo $video_id?>">
                     <img class="youtube" rel="<?php echo $video_id?>" src="http://img.youtube.com/vi/<?php echo $video_id?>/mqdefault.jpg" /></a>
                 </figure>
+                <p id="home_press_btn_sm" style="text-align: center;"><a class="btn btn-hollow-blackborder" href="<?php bloginfo('url'); ?>/press-media">See more press/media</a></p>
             </div>
 
 

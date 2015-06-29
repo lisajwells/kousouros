@@ -153,6 +153,12 @@ Large devices Desktops (≥1200px)
   #home-profile h3:first-of-type {
     margin-top: .5em;
   }
+  #home_press_btn_sm {
+    display: block;
+  }
+  #home_press_btn_lrg {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) { /* bootstrap xs */

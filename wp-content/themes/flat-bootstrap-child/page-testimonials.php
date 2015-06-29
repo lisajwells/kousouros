@@ -51,13 +51,19 @@ get_header(); ?>
                                 <p>More reviews and testimonials available at Martindale-Hubbell and Avvo</p>
                             </div>
                             <div class="col-md-6">
-                                <p class="testimonial-badge" id="testimonial_avvo_badge">
-                                    <a rel="me" target="blank" href="http://www.avvo.com/attorneys/10016-ny-james-kousouros-868249.html?cm_mmc=Avvo-_-Avvo_Badge-_-Micro-_-868249"><img alt="Avvo - Rate your Lawyer. Get Free Legal Advice." src="http://www.avvo.com/assets/microbadge.png" /></a>
-                                </p>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <p class="testimonial-badge" id="testimonial_avvo_badge">
+                                            <a rel="me" target="blank" href="http://www.avvo.com/attorneys/10016-ny-james-kousouros-868249.html?cm_mmc=Avvo-_-Avvo_Badge-_-Micro-_-868249"><img alt="Avvo - Rate your Lawyer. Get Free Legal Advice." src="http://www.avvo.com/assets/microbadge.png" /></a>
+                                        </p>
+                                    </div>
 
-                                <p class="testimonial-badge" id="testimonial_mh_badge">
-                                    <a rel="me" target="blank" href="http://www.martindale.com/James-Kousouros/429638-lawyer.htm?view=cr"><img src="<?php echo content_url(); ?>/uploads/2015/06/HomePageMHIcon200.png"></a>
-                                </p>
+                                    <div class="col-md-7">
+                                        <p class="testimonial-badge" id="testimonial_mh_badge">
+                                            <a rel="me" target="blank" href="http://www.martindale.com/James-Kousouros/429638-lawyer.htm?view=cr"><img src="<?php echo content_url(); ?>/uploads/2015/06/HomePageMHIcon200.png"></a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </aside>
