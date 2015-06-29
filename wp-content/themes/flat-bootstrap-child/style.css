@@ -1175,12 +1175,15 @@ p.testimonial-badge {
   margin: 0 0 3px 0;
 }
 p#testimonial_avvo_badge {
-  width: 100%;
+  width: 120px;
   margin-right: 0;
+  padding-top: 4px;
 }
 p#testimonial_mh_badge {
-  width: 100%;
+  float: right;
+  width: 158px;
 }
+
 
 /****** ---------------------- ******/
 /* CONTACT                          */

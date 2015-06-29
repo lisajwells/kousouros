@@ -294,6 +294,51 @@ Large devices Desktops (≥1200px)
 }
 
 /****** ---------------------- ******/
+/* TESTIMONIALS                     */
+/****** ---------------------- ******/
+
+@media screen and (max-width: 680px) {
+  #testimonials-badges-bdgs {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  #testimonials-badges-txt, 
+  #testimonials-badges-bdgs {
+    padding-left: 15px;
+    width: 100%;
+  }
+  p#testimonial_avvo_badge {
+    position: absolute;
+    top: 10%;
+  }
+  p#testimonial_mh_badge {
+    float: left;
+    margin-left: 135px;
+  }
+
+}
+@media screen and (max-width: 400px) {
+  p#testimonial_avvo_badge {
+    width: 40%;
+  }
+  p#testimonial_mh_badge {
+    margin-left: 50%;
+    width: 50%;
+  }
+
+}
+
+/*@media only screen and (max-width: 768px) {
+  p#testimonial_avvo_badge img {
+    margin-left: 15px;
+    position: absolute;
+    top: 100%;
+    width: 120px;
+  }
+}*/
+
+/****** ---------------------- ******/
 /* FOOTER                           */
 /****** ---------------------- ******/
 
