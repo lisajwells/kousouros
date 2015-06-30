@@ -292,10 +292,10 @@ function xsbf_save_postdata( $post_id ) {
 	$post_subtitle = sanitize_text_field( $_POST['xsbf_post_subtitle'] );
 	update_post_meta( $post_id, '_subtitle', $post_subtitle );
 
-	// if ( 'post' == $_POST['post_type'] ) {
-		// $post_fullwidth = $_POST['xsbf_post_template'] ? true : false;
-		// update_post_meta( $post_id, '_fullwidth', $post_fullwidth );
-	// }
+	if ( 'post' == $_POST['post_type'] ) {
+		$post_fullwidth = $_POST['xsbf_post_template'] ? true : false;
+		update_post_meta( $post_id, '_fullwidth', $post_fullwidth );
+	}
 }
 endif; // end ! function_exists
 
