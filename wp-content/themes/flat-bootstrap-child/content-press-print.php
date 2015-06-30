@@ -1,5 +1,3 @@
-<!-- <p class="press-date press-print"><?php  the_date();  ?></p> -->
-
 <?php if( get_field( 'external_link') ): ?>
 	<h4 class="press-title press-print"><a target="_blank"  class="press-pdf" href="<?php the_field('external_link'); ?>"><?php  the_title();  ?></a></h4>
 <?php else: ?>

@@ -1045,12 +1045,12 @@ div.explanation:nth-child(2) {
   margin-top: 5px;
 }
 .press-tv-text p.press-content a,
-a.press-pdf,
+a.press-pdf, a.notables-pdf,
 .press-subhed a {
   color: #6d93a0;
 }
 .press-tv-text p.press-content a:hover,
-a.press-pdf:hover,
+a.press-pdf:hover, a.notables-pdf:hover,
 .press-subhed a:hover {
   color: #000;
 }

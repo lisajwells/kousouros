@@ -57,6 +57,15 @@ function xsbf_get_the_excerpt( $excerpt ) {
 	return $excerpt;
 }
 
-// wp_reset_postdata();
-
 endif; // end ! function_exists
+
+function pippin_filter_content_sample($content) {
+if( post_is_in_descendant_category( 86 ) ) {
+		if( get_field( 'download_pdf_file_url') ) {
+			$new_content = 'xxx';
+			$content .= $new_content;	
+		}
+	}	
+	return $content;
+}
+add_filter('the_content', 'pippin_filter_content_sample');
