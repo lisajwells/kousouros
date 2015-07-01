@@ -59,13 +59,17 @@ function xsbf_get_the_excerpt( $excerpt ) {
 
 endif; // end ! function_exists
 
-function pippin_filter_content_sample($content) {
-if( post_is_in_descendant_category( 86 ) ) {
-		if( get_field( 'download_pdf_file_url') ) {
-			$new_content = 'xxx';
-			$content .= $new_content;	
-		}
-	}	
-	return $content;
-}
-add_filter('the_content', 'pippin_filter_content_sample');
+// function pippin_filter_content_sample($content) {
+// 	global $post;
+
+// if( post_is_in_descendant_category( 86 ) ) {
+// 		if( get_field( 'download_pdf_file_url_1') && get_field( 'download_pdf_file_url_2') ) {
+// 			$content .= the_field( 'link_language_1').' xx '.the_field( 'link_language_2');
+// 		}
+// 		elseif( get_field( 'download_pdf_file_url_1') && !get_field( 'download_pdf_file_url_2') ) {
+// 			$content .= the_field( 'link_language_1');
+// 		}
+// 	}	
+// 	return $content;
+// }
+// add_filter('the_content', 'pippin_filter_content_sample');

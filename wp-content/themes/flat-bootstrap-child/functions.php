@@ -190,3 +190,23 @@ function my_menu_notitle( $menu ){
 add_filter( 'wp_nav_menu', 'my_menu_notitle' );
 add_filter( 'wp_page_menu', 'my_menu_notitle' );
 add_filter( 'wp_list_categories', 'my_menu_notitle' );
+
+//[notables pdf links]
+// function download_pdf_1( $atts ){
+// 	$pdf1_url = the_field( 'download_pdf_file_url_1' );
+// 	$language1 = the_field( 'link_language_1' );
+
+// 	return '<a href="#" >"'.$language1.'"</a>';
+// }
+// add_shortcode( 'pdf1', 'download_pdf_1' );
+
+
+
+
+
+
+
+
+
+
+

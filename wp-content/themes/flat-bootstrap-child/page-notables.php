@@ -54,11 +54,7 @@ get_header(); ?>
                                                 </div>
                                             <?php } else { 
                                                 the_content(); 
-                                                    // if( get_field( 'download_pdf_file_url') ): ?>
-                                                        <!-- <a target="_blank" class="notables-pdf" href="<?php// the_field('download_pdf_file_url'); ?>">Downlxxoad PDF</a> -->
-                                                    <?php //else: ?>
-                                                    <?php //endif; ?>
-                                            <?php } ?>
+                                            } ?>
 
                                         <?php endwhile; ?>
                                         <?php wp_reset_postdata(); 
