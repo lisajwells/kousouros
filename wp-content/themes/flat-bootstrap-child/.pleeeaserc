@@ -1,5 +1,5 @@
 {
   "in": ["style.css", "media.css"],
   "out": "stylepleased.css",
-  "minifier": false,
+  "minifier": false
 }
