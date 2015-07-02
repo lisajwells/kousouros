@@ -7,7 +7,7 @@
         <h2><?php the_field('home_testimonials_title'); ?></h2>    
         
         <div class="row"><!-- carousel row -->
-            <?php $testimonial_query = new WP_Query( 'category_name=testimonials&posts_per_page=9');  ?>
+            <?php $testimonial_query = new WP_Query( 'tag=excerpt-home&posts_per_page=9');  ?>
 
             <!-- THE TEXT CAROUSEL -->
             <div id="home-testimonials-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
