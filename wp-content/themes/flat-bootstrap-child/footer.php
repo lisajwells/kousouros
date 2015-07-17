@@ -105,7 +105,7 @@
 						</p>
 		                        
 
-						<p>&copy; <?php echo date ( 'Y' ); ?> Kousouros Law</p>
+						<p>&copy; <?php echo date ( 'Y' ); ?>. All Rights Reserved.</p>
 						<p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
 					</div><!-- social-footer -->
 

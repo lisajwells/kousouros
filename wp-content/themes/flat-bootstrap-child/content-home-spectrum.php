@@ -7,18 +7,22 @@
 
             <div class="col-md-3 home-spectrum">
                 <?php the_field('home_spectrum_text_1'); ?>
+                <a href="<?php the_field('home_spectrum_link_1'); ?>">Firm Overview</a>
             </div>
 
             <div class="col-md-3 home-spectrum">
                 <?php the_field('home_spectrum_text_2'); ?>
+                <a href="<?php the_field('home_spectrum_link_2'); ?>">Services Provided</a>
             </div>
 
             <div class="col-md-3 home-spectrum">
                 <?php the_field('home_spectrum_text_3'); ?>
+                <a href="<?php the_field('home_spectrum_link_3'); ?>">Profile</a>
             </div>
 
             <div class="col-md-3 home-spectrum">
                 <?php the_field('home_spectrum_text_4'); ?>
+                <a href="<?php the_field('home_spectrum_link_4'); ?>">The Process</a>
             </div>
             
         </div><!-- row -->

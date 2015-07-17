@@ -16,6 +16,6 @@
             </div><!-- col-6 -->
 
         </div><!-- row -->
-    <p class="center"><a class="btn btn-hollow" href="<?php bloginfo('url'); ?>/notable-cases/white-collar">Read more notable cases</a></p>
+    <p class="center"><a class="btn btn-hollow" href="<?php bloginfo('url'); ?>/notable-cases/white-collar">Read notable cases</a></p>
     </div><!-- container-->
 </div><!-- section home-notable-->

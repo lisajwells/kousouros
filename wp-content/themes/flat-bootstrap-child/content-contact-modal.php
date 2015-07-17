@@ -9,7 +9,7 @@
                         Phone: 212-532-1934<br>
                         Fax: 212-532-1939</b>
                     </p>
-                    <p id="contact-page-note">Please note, do not send any confidential information over this website. Limit your inquiry to general matters. Confidential issues must be discussed with Mr. Kousouros personally.</p>
+                    <p id="contact-page-note">Please note, do not send any confidential information over this website. Limit your inquiry to general matters. Confidential issues must be discussed with Mr. Kousouros in person.</p>
                     <?php echo do_shortcode( '[contact-form-7 id="2414" title="Contact form 1"]' ); ?>
                 </div>
             </div>

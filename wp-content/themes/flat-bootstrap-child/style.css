@@ -142,8 +142,8 @@ Because it was all in the bootstrap css and everything and I couldn't copy every
 So shoot me. #1abc9c to #8caab4 *****/
 
 /* Enqueued: 'Roboto', 'Roboto Condensed' */
-/* Roboto Weights: 100 thin, 300 light, 400 normal, 500 medium, 700 bold, 900 ultra-bold; */
-/* Roboto Condensed Weights: 400,700,300; */
+/* Roboto Weights: [100 thin], 300 light, 400 normal, 500 medium, 700 bold, [900 ultra-bold]; */
+/* Roboto Condensed Weights: [400],700,[300]; */
 
 /*Extra small devices Phones (<768px) 
 Small devices Tablets (≥768px)  
@@ -915,14 +915,12 @@ float: right;
 
 #home-notable h2 { 
   color: #fff; 
-}
-
-#home-notable h2.yellowfont { 
-  color: #d9ce4d; 
+  text-align: center;
 }
 
 #home-notable p { 
   font-weight: 400; 
+  text-align: center;
 }
 
 #home-profile {
@@ -1135,8 +1133,11 @@ div.explanation:nth-child(2) {
 
 .press-subhed h3 {
   color: #d9ce4d;
-  margin-top: 2em;
   font-size: 1.6em;
+}
+
+#tv-subhed {
+  margin-top: 1.8em;
 }
 
 .press-title {
@@ -1166,8 +1167,6 @@ a.press-pdf:hover, a.notables-pdf:hover,
 .press-subhed a:hover {
   color: #000;
 }
-
-
 
 h4 a.press-pdf {
   color: #000;
@@ -1392,6 +1391,11 @@ div#contact-footer {
   position: absolute;
   left: 30%;
   bottom: 0;
+}
+
+/*phone number becomes <a> on apple. don't turn blue*/
+div#contact-footer a {
+  color: #14343a;
 }
 
 div#contact-footer p:last-child {

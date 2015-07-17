@@ -116,7 +116,9 @@ add_action( 'init', 'register_my_menu' );
 function klaw_scripts() {
 	/* LOAD STYLESHEETS */
 	/* google fonts */
-	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic',array(), null, 'screen' );	
+	wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:700italic,700|Roboto:400,300,300italic,400italic,500,500italic,700,700italic',array(), null, 'screen' );
+	/* google fonts in family, but not in use */
+	/* 100,100italic,,900,900italic | Condensed 300italic,400italic,400,300 */
 
 	/* media queries style */
 	wp_enqueue_style( 'klaw_media', get_template_directory_uri() . '-child/css/media.css', array( 'bootstrap', 'theme-base', 'theme-flat', 'font-awesome', 'xtremelysocial-style') );
@@ -182,15 +184,6 @@ if ( ! function_exists( 'post_is_in_descendant_category' ) ) {
 	}
 }
 
-// remove tooltips from navigation
-function my_menu_notitle( $menu ){
-  return $menu = preg_replace('/ title=\"(.*?)\"/', '', $menu );
-
-}
-add_filter( 'wp_nav_menu', 'my_menu_notitle' );
-add_filter( 'wp_page_menu', 'my_menu_notitle' );
-add_filter( 'wp_list_categories', 'my_menu_notitle' );
-
 //[notables pdf links]
 // function download_pdf_1( $atts ){
 // 	$pdf1_url = the_field( 'download_pdf_file_url_1' );
@@ -199,14 +192,13 @@ add_filter( 'wp_list_categories', 'my_menu_notitle' );
 // 	return '<a href="#" >"'.$language1.'"</a>';
 // }
 // add_shortcode( 'pdf1', 'download_pdf_1' );
+//-------
 
+// remove tooltips from navigation
+function my_menu_notitle( $menu ){
+  return $menu = preg_replace('/ title=\"(.*?)\"/', '', $menu );
 
-
-
-
-
-
-
-
-
-
+}
+add_filter( 'wp_nav_menu', 'my_menu_notitle' );
+add_filter( 'wp_page_menu', 'my_menu_notitle' );
+add_filter( 'wp_list_categories', 'my_menu_notitle' );

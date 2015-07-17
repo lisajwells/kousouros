@@ -24,14 +24,14 @@ get_header(); ?>
 
                             if ( $associates_query->have_posts() ) : while ( $associates_query->have_posts() ) : $associates_query->the_post(); ?>
                                 <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <div class="col-md-3 col-sm-3 col-xs-3">
                                         <?php 
                                         if ( has_post_thumbnail() ) { // check if post has Post Thumbnail assigned to it.
                                             the_post_thumbnail('full');
                                         } 
                                         ?>
                                     </div>
-                                    <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <div class="col-md-9 col-sm-9 col-xs-9">
                                         <h3><?php  the_title();  ?></h3>
                                         <?php the_content(); ?>
                                     </div>
@@ -42,11 +42,13 @@ get_header(); ?>
                                 get_template_part( 'no-results' );
                             endif; ?>
 
+                        <?php get_template_part( 'content', 'page-nav' ); ?>
                         </div><!-- .entry-content -->
 
                     </article><!-- #post-## -->
 
                 <?php //endwhile; // end of the loop. ?>
+
 
             </main><!-- #main -->
         </div><!-- #primary -->
