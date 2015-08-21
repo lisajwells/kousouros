@@ -16,7 +16,7 @@ get_header(); ?>
             <img class="home-slider-img fade-in" id="home-slider-img-2" src="<?php echo content_url(); ?>/uploads/2015/06/HomePage_Center.jpg">
             <img class="home-slider-img fade-in" id="home-slider-img-3" src="<?php echo content_url(); ?>/uploads/2015/06/HomePage_Right.jpg">
         <aside class="home-blurb fadeInUpOutUp" id="home-blurb-1">
-            <p>His distinguished reputation, and his fierce advocacy, result in a better outcome for you.</p>
+            <p>His distinguished reputation and fierce advocacy command superior results.</p>
         </aside>
         <aside class="home-blurb fadeInUpOutUp" id="home-blurb-2">
             <p>Fighting vigorously, relentlessly and strategically at every stage of your defense.</p>

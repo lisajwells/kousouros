@@ -21,7 +21,7 @@
                         <div class="col-md-7">
                             <h2><?php the_field('home_represents_title'); ?></h2>
                         </div>
-                            <p style="text-align: center;"><a class="btn btn-hollow-blackborder" href="<?php bloginfo('url'); ?>/press-media">Watch More Videos</a></p>
+                            <p style="text-align: center;"><a class="btn btn-hollow-blackborder" href="<?php bloginfo('url'); ?>/press-media/#tv-subhed">Watch More Videos</a></p>
                     </div><!-- row-->
                 </div><!-- home-represents-box -->
 
