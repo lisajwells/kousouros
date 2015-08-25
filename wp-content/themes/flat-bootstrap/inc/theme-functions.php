@@ -292,10 +292,10 @@ function xsbf_save_postdata( $post_id ) {
 	$post_subtitle = sanitize_text_field( $_POST['xsbf_post_subtitle'] );
 	update_post_meta( $post_id, '_subtitle', $post_subtitle );
 
-	// if ( 'post' == $_POST['post_type'] ) {
-	// 	$post_fullwidth = $_POST['xsbf_post_template'] ? true : false;
-	// 	update_post_meta( $post_id, '_fullwidth', $post_fullwidth );
-	// }
+	if ( 'post' == $_POST['post_type'] ) {
+		$post_fullwidth = $_POST['xsbf_post_template'] ? true : false;
+		update_post_meta( $post_id, '_fullwidth', $post_fullwidth );
+	}
 }
 endif; // end ! function_exists
 
@@ -310,6 +310,15 @@ function xsbf_get_avatar ( $avatar, $id_or_email, $size, $default, $alt ) {
 	return $avatar;
 }
 endif; // end ! function_exists
+
+/**
+ * Add Bootstrap thumbnail class to gallery images
+ */
+add_filter('wp_get_attachment_link', 'xsbf_attachment_link_class', 10, 1); //Add Bootstrap thumnail class
+function xsbf_attachment_link_class($html) {
+	$html = str_replace('attachment-', 'thumbnail attachment-', $html);
+	return $html;
+}
 
 /**
  * Adjust the number of columns for the footer based on how many widgets were added.

@@ -31,10 +31,19 @@
 		  if (target.length) {
 			$('html,body').animate({
 			  scrollTop: ( target.offset().top - offset )
-			}, 500);
+			}, 1000);
 			return false;
 		  }
 	});
+
+	// Put anything added to content by plugins at the end. This way our sub-pages and
+	// recent post sections appear before it.
+	$(document).ready(function() {
+		// Move Jetpack sharing (sharedaddy) to bottom of page	
+		$( '#after-content' ).wrapAll( '<div class="after-content-wrapper" />' );
+		$( '.entry-content' ).append( $( '.after-content-wrapper' ) );
+	});
+
 	});
 	
 } )( jQuery );
