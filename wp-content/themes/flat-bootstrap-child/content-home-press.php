@@ -14,7 +14,7 @@
             <div class="col-md-5">
                 <figure class="video" id="home-press-1-group">
                     <?php $video_id = get_field( 'home_press_video_id_1' ); ?>
-                    <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/<?php echo $video_id?>">
+                    <a href="#" data-toggle="modal" data-theVideo="http://www.youtube.com/embed/<?php echo $video_id?>">
                     <img class="youtube" rel="<?php echo $video_id?>" src="http://img.youtube.com/vi/<?php echo $video_id?>/mqdefault.jpg" /></a>
                 </figure>
                 
