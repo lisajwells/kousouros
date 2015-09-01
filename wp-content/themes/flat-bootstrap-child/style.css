@@ -4,7 +4,7 @@ Description: Child theme for Flat Bootstrap. For kousouroslaw
 Author: Lisa Wells
 Version: 1.0.0
 Template: flat-bootstrap
-Template Version: 1.4
+Template Version: 1.6
 */
 
 /* Include the parent theme's stylesheet(s). */
@@ -14,7 +14,7 @@ Theme URI: http://xtremelysocial.com/wordpress/flat/
 Author: XtremelySocial
 Author URI: http://xtremelysocial.com
 Description: Flat Bootstrap by XtremelySocial is a modern, fully responsive, "flat" style theme with a nice color palette, big full-width images, and full-width colored sections. It automatically adapts for desktops, tablets, and phones. It is based on the WordPress standard starter theme (_S) and the Twitter Bootstrap CSS framework. Features include a mobile navigation bar, multiple columns (grid), buttons, icons, labels, badges, tabbed content areas, collapsible content areas, progress bars, alert boxes, carousels (sliders) and much, much more. This is a theme for both users and theme developers with lots of features but without the bloat. For a live demo go to http://xtremelysocial.com/wordpress/flat/.
-Version: 1.5
+Version: 1.6
 License: GNU General Public License
 License URI: http://www.opensource.org/licenses/GPL-3.0
 Text Domain: flat-bootstrap
@@ -24,6 +24,9 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 Flat Bootstrap WordPress theme, Copyright (C) 2014 XtremelySocial
 Flat Bootstrap WordPress theme is licensed under the GPL.
 See readme.txt file for license information on components used in this theme.
+*/
+
+/*@import url("/media.css");
 */
 
 /*
@@ -1473,3 +1476,6 @@ a:hover .fa-linkedin-square,
 a:hover .fa-youtube-play {
   color: #000;
 }
+
+
+/*let me try putting all the media css here to see if the problem is one of order*/

@@ -120,9 +120,6 @@ function klaw_scripts() {
 	/* google fonts in family, but not in use */
 	/* 100,100italic,,900,900italic | Condensed 300italic,400italic,400,300 */
 
-	/* media queries style */
-	wp_enqueue_style( 'klaw_media', get_template_directory_uri() . '-child/css/media.css', array( 'bootstrap', 'theme-base', 'theme-flat', 'font-awesome', 'xtremelysocial-style') );
-
 	/* LOAD JAVASCRIPT */
 	/* jquery that makes the bootstrap video modal work */
 	wp_enqueue_script( 'jquery1101_script', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.0.0', true );
@@ -131,15 +128,19 @@ function klaw_scripts() {
 	/* cookie.js  */
 	wp_enqueue_script( 'cookie_script', get_template_directory_uri() . '-child/js/cookie.js', array(), '1.0.0', true );
 	/* kousouros.js  */
-	// wp_enqueue_script( 'splash_script', get_template_directory_uri() . '-child/js/splash.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'kousouros_script', get_template_directory_uri() . '-child/js/kousouros.js', array(), '1.0.0', true );
 
 	/* avvo badge changing to static image instead of js */
 	// wp_enqueue_script( 'avvo_badge_script', 'http://www.avvo.com/assets/badges-v2.js', array(), '1.0.0', true );
-
 }
-
 add_action( 'wp_enqueue_scripts', 'klaw_scripts' );
+
+// enqueuing this one separately so that i can use the priority 99 to make media.css load last
+function media_scripts() {
+	/* media queries style */
+	wp_enqueue_style( 'klaw_media', get_stylesheet_directory_uri() . '/css/media.css', array( 'bootstrap', 'theme-base', 'theme-flat', 'font-awesome' ) );
+}
+add_action( 'wp_enqueue_scripts', 'media_scripts', 99 );
 
 /*
  * OVERRIDE THE SITE CREDITS TO GET RID OF THE "THEME BY XTREMELYSOCIAL" AND JUST LEAVE
