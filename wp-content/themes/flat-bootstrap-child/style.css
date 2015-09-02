@@ -650,6 +650,7 @@ float: right;
   height: 18.5em;
   margin-top: 8%;
   padding: 6em;
+  text-align: center;
 }
 #splashModal-image {
   display: none;
