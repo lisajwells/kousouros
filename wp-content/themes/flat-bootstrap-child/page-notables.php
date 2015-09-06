@@ -46,7 +46,7 @@ get_header(); ?>
                                     <?php if ( is_page( 'white-collar-general' )) {  // White Collar has one category  
                                         if ( $whitecollar_query->have_posts() ) : while ( $whitecollar_query->have_posts() ) : $whitecollar_query->the_post(); ?>
 
-                                            <h3><?php  the_title();  ?></h3>
+                                            <h3><a id="notable-<?php the_ID(); ?>"></a><?php  the_title();  ?></h3>
 
                                             <?php if ( has_tag( 'explanation-notables' )) { ?>
                                                 <div class="explanation">
