@@ -11,7 +11,7 @@
             </div><!-- col-6 -->
 
             <div class="col-md-5" id="home-notables-2">
-                <h2 class="yellowfont"><?php the_field('home_notables_title_2'); ?></h2>    
+                <h2><?php the_field('home_notables_title_2'); ?></h2>    
                 <p><?php the_field('home_notables_body_2'); ?></p>
             </div><!-- col-6 -->
 
