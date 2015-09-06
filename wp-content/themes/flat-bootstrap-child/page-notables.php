@@ -68,7 +68,7 @@ get_header(); ?>
                                     <?php if ( is_page( 'white-collar-healthcare-pharmaceutical' )) {  // Healthcare has one category  
                                         if ( $healthcare_query->have_posts() ) : while ( $healthcare_query->have_posts() ) : $healthcare_query->the_post(); ?>
 
-                                            <h3><?php  the_title();  ?></h3>
+                                            <h3><a id="notable-<?php the_ID(); ?>"></a><?php  the_title();  ?></h3>
 
                                             <?php if ( has_tag( 'explanation-notables' )) { ?>
                                                 <div class="explanation">
@@ -89,7 +89,7 @@ get_header(); ?>
                                     <?php if ( is_page( 'homicide' )) { // Homicide has one category   
                                         if ( $homicide_query->have_posts() ) : while ( $homicide_query->have_posts() ) : $homicide_query->the_post(); ?>
 
-                                            <h3><?php  the_title();  ?></h3>
+                                            <h3><a id="notable-<?php the_ID(); ?>"></a><?php  the_title();  ?></h3>
 
                                             <?php if ( has_tag( 'explanation-notables' )) { ?>
                                                 <div class="explanation">
@@ -114,7 +114,7 @@ get_header(); ?>
                                         <?php
                                             if ( $racketeering_query->have_posts() ) : while ( $racketeering_query->have_posts() ) : $racketeering_query->the_post(); ?>
 
-                                                <h3><?php  the_title();  ?></h3>
+                                            <h3><a id="notable-<?php the_ID(); ?>"></a><?php  the_title();  ?></h3>
 
                                                 <?php if ( has_tag( 'explanation-notables' )) { ?>
                                                     <div class="explanation">
@@ -133,7 +133,7 @@ get_header(); ?>
 
                                             <?php if ( $bribery_query->have_posts() ) : while ( $bribery_query->have_posts() ) : $bribery_query->the_post(); ?>
 
-                                                <h3><?php  the_title();  ?></h3>
+                                            <h3><a id="notable-<?php the_ID(); ?>"></a><?php  the_title();  ?></h3>
 
                                                 <?php if ( has_tag( 'explanation-notables' )) { ?>
                                                     <div class="explanation">
@@ -153,7 +153,7 @@ get_header(); ?>
                                     <?php if ( is_page( 'narcotics' )) { // narcotics has one category   
                                         if ( $narcotics_query->have_posts() ) : while ( $narcotics_query->have_posts() ) : $narcotics_query->the_post(); ?>
 
-                                            <h3><?php  the_title();  ?></h3>
+                                            <h3><a id="notable-<?php the_ID(); ?>"></a><?php  the_title();  ?></h3>
 
                                             <?php if ( has_tag( 'explanation-notables' )) { ?>
                                                 <div class="explanation">
@@ -178,7 +178,7 @@ get_header(); ?>
                                         <?php
                                         if ( $miscellaneous_query->have_posts() ) : while ( $miscellaneous_query->have_posts() ) : $miscellaneous_query->the_post(); ?>
 
-                                            <h3><?php  the_title();  ?></h3>
+                                            <h3><a id="notable-<?php the_ID(); ?>"></a><?php  the_title();  ?></h3>
 
                                             <?php if ( has_tag( 'explanation-notables' )) { ?>
                                                 <div class="explanation">
@@ -198,7 +198,7 @@ get_header(); ?>
 
                                         <?php if ( $appeals_query->have_posts() ) : while ( $appeals_query->have_posts() ) : $appeals_query->the_post(); ?>
 
-                                            <h3><?php  the_title();  ?></h3>
+                                            <h3><a id="notable-<?php the_ID(); ?>"></a><?php  the_title();  ?></h3>
 
                                             <?php if ( has_tag( 'explanation-notables' )) { ?>
                                                 <div class="explanation">
@@ -217,7 +217,7 @@ get_header(); ?>
 
                                         <?php if ( $extradition_query->have_posts() ) : while ( $extradition_query->have_posts() ) : $extradition_query->the_post(); ?>
 
-                                            <h3><?php  the_title();  ?></h3>
+                                            <h3><a id="notable-<?php the_ID(); ?>"></a><?php  the_title();  ?></h3>
 
                                             <?php if ( has_tag( 'explanation-notables' )) { ?>
                                                 <div class="explanation">

@@ -922,6 +922,10 @@ float: right;
   text-align: center;
 }
 
+#home-notable a:hover {
+  color: #fff;
+}
+
 #home-profile {
   background-color: #efefef;
 }
